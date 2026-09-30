@@ -425,6 +425,99 @@
         .charimages img {
             height: 140%;
         }
+
+        .mmainfo {
+            position: absolute;
+            left: 40%;
+            transform-style: preserve-3d;
+            top: 8%;
+            overflow: hidden;
+        }
+
+        .mmainfowrap * {
+            box-sizing: border-box;
+        }
+
+        .carousel {
+            height: 18vw;
+            width: 32vw;
+            max-width: 37rem;
+            max-height: 21rem;
+            position: absolute;
+            border-radius: 18px;
+            opacity: 0;
+            margin: auto;
+            margin: 1rem 4rem;
+            z-index: 100;
+            transition: transform .5s, opacity .5s, z-index .5s;
+            box-shadow: 0 0 15px;
+        }
+
+        .carousel.initial,
+        .carousel.active {
+            opacity: 1;
+            position: relative;
+            z-index: 900;
+        }
+
+        .carousel.prev,
+        .carousel.next {
+            z-index: 800;
+        }
+
+        .carousel.prev {
+            transform: translateX(-100%);
+        }
+
+        .carousel.next {
+            transform: translateX(100%);
+        }
+
+        .carouselprev,
+        .carouselnext {
+            position: absolute;
+            top: 43%;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1001;
+            background-color: rgb(49, 49, 49);
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(83, 83, 83);
+            transition: 0.2s;
+        }
+
+        .carouselprev:hover, .carouselnext:hover {
+            transform: scale(1.03);
+        }
+
+        .carouselprev {
+            left: 0;
+        }
+
+        .carouselnext {
+            right: 0;
+        }
+
+        .carouselprev::after,
+        .carouselnext::after {
+            content: " ";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            left: 54%;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            transform: translate(-50%, -50%) rotate(135deg);
+        }
+
+        .carouselnext::after {
+            left: 47%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
     </style>
 </head>
 
@@ -520,6 +613,18 @@
                 <div class="charimages">
                     <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
                 </div>
+                <div class="mmainfo">
+                    <div class="carouselprev"></div>
+                    <iframe class="carousel carousel-inicial"
+                        src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"></iframe>
+                    <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
+                        frameborder="0"></iframe>
+                    <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
+                        frameborder="0"></iframe>
+                    <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
+                        frameborder="0"></iframe>
+                    <div class="carouselnext"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -549,8 +654,84 @@
             }
         });
 
+        !(function (d) {
+            var itemClassName = "carousel",
+                items = d.getElementsByClassName(itemClassName),
+                totalItems = items.length,
+                slide = 0,
+                moving = true;
+
+            function setInitialClasses() {
+                items[totalItems - 1].classList.add("prev");
+                items[0].classList.add("active");
+                items[1].classList.add("next");
+            }
+            function setEventListeners() {
+                var next = d.getElementsByClassName('carouselnext')[0],
+                    prev = d.getElementsByClassName('carouselprev')[0];
+                next.addEventListener('click', moveNext);
+                prev.addEventListener('click', movePrev);
+            }
+
+            function moveNext() {
+                if (!moving) {
+                    if (slide === (totalItems - 1)) {
+                        slide = 0;
+                    } else {
+                        slide++;
+                    }
+                    moveCarouselTo(slide);
+                }
+            }
+            function movePrev() {
+                if (!moving) {
+                    if (slide === 0) {
+                        slide = (totalItems - 1);
+                    } else {
+                        slide--;
+                    }
+
+                    moveCarouselTo(slide);
+                }
+            }
+
+            function disableInteraction() {
+                moving = true;
+                setTimeout(function () {
+                    moving = false
+                }, 500);
+            }
+
+            function moveCarouselTo(slide) {
+                if (moving) return;
+                disableInteraction();
+
+                var prev = (slide - 1 + totalItems) % totalItems,
+                    next = (slide + 1) % totalItems;
+
+                for (var i = 0; i < totalItems; i++) {
+                    items[i].className = itemClassName;
+                }
+                items[prev].className = itemClassName + " prev";
+                items[slide].className = itemClassName + " active";
+                items[next].className = itemClassName + " next";
+            }
+
+            function initCarousel() {
+                setInitialClasses();
+                setEventListeners();
+                moving = false;
+            }
+
+            initCarousel();
+        }(document));
 
     </script>
+</body>
+
+</html>
+
+</script>
 </body>
 
 </html>
