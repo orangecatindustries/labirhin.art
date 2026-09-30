@@ -251,6 +251,7 @@
         /* animations */
 
         #stuff {
+            margin-top: 45px;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -383,6 +384,7 @@
         #mma {
             display: flex;
             justify-content: center;
+            margin-top: 45px;
         }
 
         .mmacon {
@@ -394,6 +396,34 @@
 
         .mmalogo {
             width: 60%;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+            filter: drop-shadow(0px 0px 6px rgba(255, 151, 32, 1));
+        }
+
+        .mmabackimage {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mmaimg {
+            width: clamp(360px, 87%, 1325px);
+            height: 100%;
+            border-radius: 18px;
+            opacity: 0.4;
+        }
+
+        .charimages {
+            position: absolute;
+            height: 100%;
+            bottom: 15%;
+            left: 0;
+            transform: rotateY(180deg);
+        }
+
+        .charimages img {
+            height: 140%;
         }
     </style>
 </head>
@@ -486,10 +516,13 @@
         <div class="mmacon">
             <img class="mmalogo" src="{{ asset("imgs/mmalogo.png") }}" alt="">
             <div class="mmabackimage">
-                
+                <img class="mmaimg" src="{{ asset("imgs/background-mma.png") }}" alt="">
+                <div class="charimages">
+                    <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
+                </div>
             </div>
         </div>
-</section>
+    </section>
     <script>
 
         const btn = document.getElementById("btn");
