@@ -431,7 +431,6 @@
             left: 40%;
             transform-style: preserve-3d;
             top: 8%;
-            overflow: hidden;
         }
 
         .mmainfowrap * {
@@ -487,9 +486,11 @@
             border-width: 1px;
             border-color: rgb(83, 83, 83);
             transition: 0.2s;
+            transform: translateY(-78px);
         }
 
-        .carouselprev:hover, .carouselnext:hover {
+        .carouselprev:hover,
+        .carouselnext:hover {
             transform: scale(1.03);
         }
 
@@ -517,6 +518,37 @@
         .carouselnext::after {
             left: 47%;
             transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        .mmatext {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mmatext h2 {
+            margin-top: 6px;
+            font-size: 3rem;
+            font-family: "Jaya", sans-serif;
+            text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+        }
+
+        .mma-art-button {
+            background-image: url("{{ asset("imgs/mma.art.png") }}");
+            background-size: cover;
+            height: 110px;
+            width: 550px;
+            border-radius: 18px;
+            margin-top: -16px;
+            border-color: #909090;
+            border-style: solid;
+            border-width: 1px;
+            transition: 0.2s;
+        }
+
+        .mma-art-button:hover {
+            transform: scale(1.03);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -624,6 +656,10 @@
                     <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
                         frameborder="0"></iframe>
                     <div class="carouselnext"></div>
+                    <div class="mmatext">
+                        <h2>WANT TO SEE THE COMIC?</h2>
+                        <a href="https://maumakanapa.art"><button class="mma-art-button"></button></a>
+                    </div>
                 </div>
             </div>
         </div>
