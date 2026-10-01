@@ -113,7 +113,7 @@
         }
 
         .logo:hover h2 {
-            max-height: 100px;
+            max-height: 108px;
             opacity: 1;
         }
 
@@ -251,12 +251,11 @@
         /* animations */
 
         #stuff {
-            margin-top: 45px;
             display: flex;
             flex-direction: column;
             position: relative;
             overflow: hidden;
-            margin-top: 70px;
+            margin-top: 45px;
             align-items: center;
         }
 
@@ -265,7 +264,6 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            margin-top: 30px;
             background: linear-gradient(180deg, rgba(27, 27, 29, 1) 0%, rgba(156, 93, 16, 1) 50%, rgba(255, 151, 32, 1) 100%);
         }
 
@@ -476,8 +474,8 @@
         .carouselnext {
             position: absolute;
             top: 43%;
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
             cursor: pointer;
             z-index: 1001;
@@ -495,11 +493,11 @@
         }
 
         .carouselprev {
-            left: -2%;
+            left: 0%;
         }
 
         .carouselnext {
-            right: -2%;
+            right: 0%;
         }
 
         .carouselprev::after,
@@ -570,7 +568,15 @@
                     </div>
                     <div class="logo">
                         <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
-                        <h2>Comic</h2>
+                        <h2>Mau Makan Apa</h2>
+                    </div>
+                    <div class="logo">
+                        <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
+                        <h2>Animations</h2>
+                    </div>
+                    <div class="logo">
+                        <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
+                        <h2>Music</h2>
                     </div>
                     <div class="logo">
                         <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
@@ -583,6 +589,10 @@
                     <div class="logo">
                         <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
                         <h2>Discord</h2>
+                    </div>
+                    <div class="logo">
+                        <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
+                        <h2>Patreon</h2>
                     </div>
                 </div>
             </div>
@@ -617,7 +627,7 @@
                     <div class="buttons">
                         <button class="btn" id="btn">Music Videos</button>
                         <button class="btn" id="btn2">Animations</button>
-                        <button class="btn" id="btn3">Music</button>
+                        <button class="btn" id="btn3">Music Tracks</button>
                     </div>
                 </div>
                 <div class="carouselcon">
