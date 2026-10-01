@@ -476,8 +476,8 @@
         .carouselnext {
             position: absolute;
             top: 43%;
-            width: 3rem;
-            height: 3rem;
+            width: 4rem;
+            height: 4rem;
             border-radius: 50%;
             cursor: pointer;
             z-index: 1001;
@@ -486,7 +486,7 @@
             border-width: 1px;
             border-color: rgb(83, 83, 83);
             transition: 0.2s;
-            transform: translateY(-78px);
+            margin-top: -100px;
         }
 
         .carouselprev:hover,
@@ -495,11 +495,11 @@
         }
 
         .carouselprev {
-            left: 0;
+            left: -2%;
         }
 
         .carouselnext {
-            right: 0;
+            right: -2%;
         }
 
         .carouselprev::after,
@@ -528,7 +528,7 @@
 
         .mmatext h2 {
             margin-top: 6px;
-            font-size: 3rem;
+            font-size: clamp(10px, 5.5vh, 58px);
             font-family: "Jaya", sans-serif;
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
@@ -536,14 +536,17 @@
         .mma-art-button {
             background-image: url("{{ asset("imgs/mma.art.png") }}");
             background-size: cover;
-            height: 110px;
-            width: 550px;
+            height: 8vw;
+            width: 39vw;
+            max-width: 700px;
+            max-height: 148px;
             border-radius: 18px;
             margin-top: -16px;
             border-color: #909090;
             border-style: solid;
             border-width: 1px;
             transition: 0.2s;
+            background-position: center;
         }
 
         .mma-art-button:hover {
