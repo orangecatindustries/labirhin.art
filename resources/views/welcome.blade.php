@@ -59,6 +59,10 @@
             z-index: 999;
         }
 
+        header a {
+            text-decoration: none;
+        }
+
         .nav {
             display: flex;
             flex-direction: column;
@@ -551,6 +555,23 @@
             transform: scale(1.03);
             cursor: pointer;
         }
+
+        .mmaguyswrap {
+            position: absolute;
+            top: -25%;
+            right: 150px;
+            height: 14.6vw;
+            z-index: 999;
+                max-height: 280px;
+        }
+
+        .sillyguys {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* merch */
+        
     </style>
 </head>
 
@@ -558,42 +579,60 @@
     <header>
         <div class="navwrap">
             <div class="nav">
-                <div class="logo2">
-                    <img class="labirhin" src="{{ asset('imgs/labiPoint.png') }}" alt="">
-                </div>
+                <a href="">
+                    <div class="logo2">
+                        <img class="labirhin" src="{{ asset('imgs/labiPoint.png') }}" alt="">
+                    </div>
+                </a>
                 <div class="navright">
-                    <div class="logo">
-                        <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
-                        <h2>Home</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
-                        <h2>Mau Makan Apa</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
-                        <h2>Animations</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
-                        <h2>Music</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
-                        <h2>Shop</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
-                        <h2>Wiki</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
-                        <h2>Discord</h2>
-                    </div>
-                    <div class="logo">
-                        <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
-                        <h2>Patreon</h2>
-                    </div>
+                    <a href="">
+                        <div class="logo">
+                            <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
+                            <h2>Home</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
+                            <h2>Mau Makan Apa</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
+                            <h2>Animations</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
+                            <h2>Music</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
+                            <h2>Shop</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
+                            <h2>Wiki</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
+                            <h2>Discord</h2>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="logo">
+                            <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
+                            <h2>Patreon</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -654,6 +693,9 @@
         <div class="mmacon">
             <img class="mmalogo" src="{{ asset("imgs/mmalogo.png") }}" alt="">
             <div class="mmabackimage">
+                <div class="mmaguyswrap">
+                    <img class="sillyguys" src="{{ asset("imgs/exogixgigo.png") }}" alt="">
+                </div>
                 <img class="mmaimg" src="{{ asset("imgs/background-mma.png") }}" alt="">
                 <div class="charimages">
                     <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
@@ -661,13 +703,14 @@
                 <div class="mmainfo">
                     <div class="carouselprev"></div>
                     <iframe class="carousel carousel-inicial"
-                        src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"></iframe>
+                        src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
+                        allowfullscreen="true"></iframe>
                     <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
-                        frameborder="0"></iframe>
+                        frameborder="0" allowfullscreen="true"></iframe>
                     <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
-                        frameborder="0"></iframe>
+                        frameborder="0" allowfullscreen="true"></iframe>
                     <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
-                        frameborder="0"></iframe>
+                        frameborder="0" allowfullscreen="true"></iframe>
                     <div class="carouselnext"></div>
                     <div class="mmatext">
                         <h2>WANT TO SEE THE COMIC?</h2>
@@ -676,6 +719,9 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="merch">
+            
     </section>
     <script>
 
