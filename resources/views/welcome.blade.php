@@ -138,7 +138,8 @@
 
         .video,
         .mainstuff,
-        .mmacon {
+        .mmacon,
+        .merchwrap {
             margin-top: 2%;
             width: 80%;
             max-width: 1600px;
@@ -530,7 +531,7 @@
 
         .mmatext h2 {
             margin-top: 6px;
-            font-size: clamp(10px, 5.5vh, 58px);
+            font-size: clamp(10px, 3.5vw, 58px);
             font-family: "Jaya", sans-serif;
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
@@ -562,7 +563,7 @@
             right: 150px;
             height: 14.6vw;
             z-index: 999;
-                max-height: 280px;
+            max-height: 280px;
         }
 
         .sillyguys {
@@ -571,7 +572,55 @@
         }
 
         /* merch */
-        
+
+        #merch {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+
+        .merchwrap {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-height: none;
+        }
+
+        .merchtext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: auto;
+        }
+
+        .merchtext h1 {
+            text-align: center;
+            font-family: "Jaya", sans-serif;
+            color: white;
+            font-size: 9rem;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            margin-top: 15px;
+        }
+
+        .merchtext img {
+            height: 250px;
+        }
+
+        .merchbackimage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 900px;
+        }
+
+        .merchimg {
+            width: clamp(360px, 87%, 1325px);
+            height: 900px;
+            border-radius: 18px;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -721,7 +770,15 @@
         </div>
     </section>
     <section id="merch">
-            
+        <div class="merchwrap">
+            <div class="merchtext">
+                <img src="{{ asset("imgs/xenobotpoint.png") }}" alt="">
+                <h1>MERCH</h1>
+            </div>
+            <div class="merchbackimage">
+                <img class="merchimg" src="{{ asset("imgs/meow.webp") }}" alt="">
+            </div>
+        </div>
     </section>
     <script>
 
