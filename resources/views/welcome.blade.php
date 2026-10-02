@@ -76,7 +76,8 @@
         .logo,
         .logo2,
         .btn,
-        .changables {
+        .changables,
+        .logofoot {
             padding: .15rem;
             background-color: rgb(49, 49, 49);
             border-radius: 12px;
@@ -91,13 +92,23 @@
             border-color: rgb(59, 59, 59);
             overflow: hidden;
             cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .logo2:hover {
+            background-color: #3b3b3b;
+            transform: scale(1.03);
+            transition: 0.2s;
         }
 
         .logo:hover {
             padding: .55rem .55rem 1rem .55rem;
+            background-color: #3b3b3b;
+            transition: 0.2s;
         }
 
-        .logo img {
+        .logo img,
+        .logofoot img {
             margin-top: 5px;
             filter: invert();
             height: 20px;
@@ -621,6 +632,48 @@
             border-radius: 18px;
             object-fit: cover;
         }
+
+        /* footer */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #1b1b1d;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(83, 83, 83);
+            width: 98%;
+            border-radius: 18px;
+            margin: 15px auto 15px;
+            position: relative;
+            align-items: center;
+        }
+
+        footer h3 {
+            filter: opacity(0.5);
+        }
+
+        .extlinks {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logofoot {
+            padding: 10px;
+            box-shadow: rgba(255, 151, 32, 0.2) 0px 0px 12px;
+            transition: 0.2s;
+        }
+
+        .logofoot:hover {
+            transform: scale(1.03);
+            transition: 0.2s;
+            background-color: #3b3b3b;
+        }
+
+        .logofoot img {
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -780,6 +833,54 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footertext">
+            <h3>labirhin - 2026</h3>
+        </div>
+        <div class="extlinks">
+            <a href="">
+                <div class="logofoot">
+                    <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="logofoot">
+                    <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
+                </div>
+            </a>
+        </div>
+        <h3>made with love, by laurah ♥</h3>
+    </footer>
     <script>
 
         const btn = document.getElementById("btn");
