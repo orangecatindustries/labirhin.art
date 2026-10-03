@@ -307,9 +307,15 @@
             margin-top: 15px;
         }
 
+        .xenobotshare {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
         .xenobotshare img {
-            height: 400px;
-            margin-top: -15em;
+            height: 320px;
+            margin-top: -13em;
         }
 
         .content {
@@ -460,6 +466,7 @@
             left: 40%;
             transform-style: preserve-3d;
             top: 8%;
+            overflow: hidden;
         }
 
         .mmainfowrap * {
