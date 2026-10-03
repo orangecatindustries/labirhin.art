@@ -26,6 +26,11 @@
             font-weight: 400;
         }
 
+        html,
+        body {
+            overflow-x: clip;
+        }
+
         body {
             background-color: #0c0c0c;
             font-family: "Outfit", sans-serif;
@@ -77,7 +82,8 @@
         .logo2,
         .btn,
         .changables,
-        .logofoot {
+        .logofoot,
+        .hamburgermenu {
             padding: .15rem;
             background-color: rgb(49, 49, 49);
             border-radius: 12px;
@@ -95,6 +101,10 @@
             transition: 0.2s;
         }
 
+        .hamburgermenu {
+            display: none;
+        }
+
         .logo2:hover {
             background-color: #3b3b3b;
             transform: scale(1.03);
@@ -108,10 +118,15 @@
         }
 
         .logo img,
-        .logofoot img {
+        .logofoot img,
+        .hamburgermenu img {
             margin-top: 5px;
             filter: invert();
             height: 20px;
+        }
+
+        .hamburgermenu img {
+            display: block;
         }
 
         .logo h2 {
@@ -184,7 +199,7 @@
         .maintext h1,
         .maintext h3 {
             font-family: "Jaya", sans-serif;
-            font-size: clamp(16px, 8vw, 160px);
+            font-size: clamp(60px, 8vw, 160px);
             font-weight: 800;
             margin: 0;
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -674,6 +689,157 @@
         .logofoot img {
             margin: 0;
         }
+
+        @media screen and (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video,
+            .mainstuff,
+            .mmacon,
+            .merchwrap {
+                padding: 1.5em;
+            }
+
+            header {
+                position: fixed;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90vw;
+                max-width: 800px;
+                z-index: 9999;
+                box-sizing: border-box;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .logo2 {
+                width: 40px;
+                height: 40px;
+                padding: .15rem;
+            }
+
+            .labirhin {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .hamburgermenu {
+                display: flex;
+                width: 40px;
+                height: 40px;
+            }
+
+            .hamburgermenu img {
+                height: 20px;
+                margin-top: 0;
+            }
+
+            .nav,
+            .navright {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .video {
+                margin-top: 26%;
+                height: 600px;
+                justify-content: center;
+            }
+
+            .video video {
+                object-fit: cover;
+            }
+
+            .sorbitolimg {
+                display: flex;
+                height: 50%;
+                left: 0%;
+                justify-content: center;
+            }
+
+            .mainstuff {
+                max-height: fit-content;
+            }
+
+            .mainstuff h1 {
+                font-size: 15vw;
+                margin-top: 0;
+            }
+
+            .xenobotshare {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .xenobotshare img {
+                height: 135px;
+                margin-top: -5em;
+            }
+
+            .maintext {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 8%;
+                z-index: 999;
+            }
+
+            .t1,
+            .t2,
+            .t3,
+            .maintext img,
+            .maintext p {
+                position: unset;
+            }
+
+            .maintext p {
+                width: 180px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .maintext img {
+                margin-top: -10px;
+                height: 18vw;
+            }
+
+            .content {
+                align-items: center;
+                padding: 0em 1em 1em 1em;
+            }
+
+            .buttons {
+                font-size: 1rem;
+            }
+
+            .btn {
+                font-size: 0.8rem;
+            }
+
+            .buttonarea h2 {
+                font-size: 6vw;
+            }
+
+            .carouselcon {
+                flex-direction: column;
+            }
+
+            .changables {
+                width: 64vw;
+                height: 36vw;
+            }
+        }
     </style>
 </head>
 
@@ -687,6 +853,9 @@
                     </div>
                 </a>
                 <div class="navright">
+                    <div class="hamburgermenu">
+                        <img class="home-svg" src="{{ asset('svg/list.svg') }}" alt="">
+                    </div>
                     <a href="">
                         <div class="logo">
                             <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
@@ -766,9 +935,9 @@
                 <div class="buttonarea">
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
-                        <button class="btn" id="btn">Music Videos</button>
+                        <button class="btn" id="btn">Videos</button>
                         <button class="btn" id="btn2">Animations</button>
-                        <button class="btn" id="btn3">Music Tracks</button>
+                        <button class="btn" id="btn3">Tracks</button>
                     </div>
                 </div>
                 <div class="carouselcon">
