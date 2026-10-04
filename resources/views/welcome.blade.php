@@ -592,16 +592,19 @@
 
         .mmaguyswrap {
             position: absolute;
-            top: -25%;
-            right: 150px;
-            height: 14.6vw;
-            z-index: 999;
+            bottom: 100%;
+            right: 10%;
+            height: 15.3vw;
             max-height: 280px;
+            transform: translateY(8%);
+            z-index: 999;
+            pointer-events: none;
         }
 
         .sillyguys {
             height: 100%;
-            width: 100%;
+            width: auto;
+            display: block;
         }
 
         /* merch */
@@ -845,6 +848,31 @@
             .changables {
                 width: 64vw;
                 height: 36vw;
+            }
+
+            .charimages {
+                display: none;
+            }
+
+            .mmalogo {
+                width: 82vw;
+            }
+
+            .mmaguyswrap {
+                bottom: 100%;
+                right: 3%;
+                top: auto;
+                height: 33vw;
+                transform: translateY(33%);
+            }
+
+            .mmainfo {
+                left: 0;
+            }
+
+            .carousel {
+                height: 36vw;
+                width: 64vw;
             }
         }
     </style>
