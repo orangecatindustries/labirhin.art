@@ -461,7 +461,7 @@
 
         .mma-info {
             position: absolute;
-            left: 40%;
+            left: 46%;
             transform-style: preserve-3d;
             top: 8%;
             overflow: hidden;
