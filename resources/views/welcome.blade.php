@@ -659,6 +659,19 @@
             object-fit: cover;
         }
 
+        .merchpromo {
+            position: absolute;
+        }
+
+        .merchpromo img {
+            width: 64vw;
+            height: 36vw;
+            border-radius: 18px;
+            box-shadow: white 0 0 10px;
+            max-width: 49rem;
+            max-height: 29rem;
+        }
+
         /* footer */
 
         footer {
@@ -709,7 +722,9 @@
             margin: 0;
         }
 
-        .footerfirst, .footersecond, .footerthird {
+        .footerfirst,
+        .footersecond,
+        .footerthird {
             display: flex;
         }
 
@@ -935,7 +950,9 @@
                 margin-top: 3%;
             }
 
-            .footerfirst, .footersecond, .footerthird {
+            .footerfirst,
+            .footersecond,
+            .footerthird {
                 flex-direction: column;
             }
         }
@@ -1098,7 +1115,13 @@
             </div>
             <div class="merchbackimage">
                 <img class="merchimg" src="{{ asset("imgs/meow.webp") }}" alt="">
+                <div class="merchcontent">
+                    <div class="merchpromo">
+                        <img src="{{ asset("imgs/merchpromo.png") }}" alt="">
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
     <footer>
