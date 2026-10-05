@@ -169,7 +169,6 @@
             margin-top: 2%;
             width: 80%;
             max-width: 1600px;
-            max-height: 900px;
             height: 40%;
             padding: 2em;
             border-radius: 18px;
@@ -442,7 +441,7 @@
         }
 
         .mma-img {
-            width: clamp(360px, 87%, 1325px);
+            width: 100%;
             height: 100%;
             border-radius: 18px;
             opacity: 0.4;
@@ -555,20 +554,23 @@
             transform: translate(-50%, -50%) rotate(-45deg);
         }
 
-        .mma-text, .merch-button-area {
+        .mma-text,
+        .merch-button-area {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .mma-text h2, .merch-button-area h2 {
+        .mma-text h2,
+        .merch-button-area h2 {
             margin-top: 6px;
             font-size: clamp(10px, 3.5vw, 58px);
             font-family: "Jaya", sans-serif;
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
 
-        .mma-art-button, .mma-merch-button {
+        .mma-art-button,
+        .mma-merch-button {
             background-image: url("{{ asset("imgs/mma.art.png") }}");
             background-size: cover;
             height: 8vw;
@@ -585,7 +587,8 @@
             box-shadow: 0 0 2px white;
         }
 
-        .mma-art-button:hover, .mma-merch-button:hover {
+        .mma-art-button:hover,
+        .mma-merch-button:hover {
             transform: scale(1.03);
             cursor: pointer;
         }
@@ -653,7 +656,7 @@
         }
 
         .merch-img {
-            width: clamp(360px, 87%, 1325px);
+            width: 100%;
             height: 900px;
             border-radius: 18px;
             object-fit: cover;
@@ -666,12 +669,12 @@
         }
 
         .merch-promo img {
-            width: 56vw;
-            height: 33vw;
+            width: 47vw;
+            height: 27vw;
             border-radius: 18px;
             box-shadow: white 0 0 10px;
-            max-width: 49rem;
-            max-height: 29rem;
+            max-width: 43rem;
+            max-height: 25rem;
         }
 
         .merch-button-area h2 {
@@ -753,7 +756,7 @@
             .main-stuff,
             .mma-con,
             .merch-wrap {
-                padding: 1.5em;
+                padding: 1.8em;
             }
 
             header {
@@ -824,9 +827,11 @@
                 max-height: fit-content;
             }
 
-            .main-stuff h1 {
+            .main-stuff h1,
+            .merch-text h1 {
                 font-size: 15vw;
                 margin-top: 0;
+                margin-bottom: 30px;
             }
 
             .xenobot-share {
@@ -836,7 +841,7 @@
             }
 
             .xenobot-share img {
-                height: 135px;
+                height: 35vw;
                 margin-top: -5em;
             }
 
@@ -870,7 +875,7 @@
 
             .content {
                 align-items: center;
-                padding: 0em 1em 1em 1em;
+                padding: 0;
             }
 
             .buttons {
@@ -899,12 +904,19 @@
             }
 
             .mma-con {
-                margin-top: auto;
+                height: auto;
+                max-height: none;
+                margin-top: 0%;
+                justify-content: flex-start;
             }
 
             .mma-back-image {
-                height: 600px;
-                max-height: max-content;
+                position: relative;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                padding: 1rem 0 2rem;
+                border-radius: 18px;
             }
 
             .mma-logo {
@@ -912,26 +924,35 @@
             }
 
             .mma-img {
-                height: 500px;
+                position: absolute;
+                inset: 0;
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
 
             .mma-guys-wrap {
                 bottom: 100%;
-                right: 3%;
+                left: 0;
                 top: auto;
                 height: 33vw;
             }
 
             .mma-info {
-                left: 0;
-                top: 6%;
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .carousel {
-                height: 36vw;
-                width: 64vw;
-                margin: 1rem 2rem;
+                width: 70vw;
+                height: 40vw;
+                margin: 1rem 0;
             }
 
             .carousel-prev,
@@ -949,19 +970,46 @@
             }
 
             .mma-text {
-                margin-top: 24%;
+                margin-top: 86px;
             }
 
-            .mma-text h2, .merch-button-area h2 {
-                font-size: 8vw;
+            .merch-button-area {
+                margin-top: 6%;
+            }
+
+            .mma-text h2,
+            .merch-button-area h2 {
+                font-size: clamp(16px, 8vw, 38px);
                 width: 234px;
                 text-align: center;
             }
 
-            .mma-art-button, .merch-button-area {
+            .mma-art-button,
+            .mma-merch-button {
                 height: 15vw;
                 width: 70vw;
                 margin-top: 3%;
+            }
+
+            .merch-text img {
+                display: none;
+            }
+
+            .merch-content {
+                display: flex;
+                justify-content: center;
+            }
+
+            .merch-promo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                left: auto;
+            }
+
+            .merch-promo img {
+                width: 71vw;
+                height: 40vw;
             }
 
             .footer-first,
@@ -1092,7 +1140,7 @@
     </section>
     <section id="mma">
         <div class="mma-con">
-            <img class="mma-logo" src="{{ asset("imgs/mma-logo.png") }}" alt="">
+            <img class="mma-logo" src="{{ asset("imgs/mmalogo.png") }}" alt="">
             <div class="mma-back-image">
                 <div class="mma-guys-wrap">
                     <img class="silly-guys" src="{{ asset("imgs/exogixgigo.png") }}" alt="">
