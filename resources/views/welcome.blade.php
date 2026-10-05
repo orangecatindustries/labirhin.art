@@ -596,7 +596,7 @@
             right: 10%;
             height: 15.3vw;
             max-height: 280px;
-            transform: translateY(8%);
+            transform: translateY(33%);
             z-index: 999;
             pointer-events: none;
         }
@@ -636,7 +636,8 @@
             color: white;
             font-size: 9rem;
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-            margin-top: 15px;
+            margin: 0;
+            margin-top: -50px;
         }
 
         .merchtext img {
@@ -690,14 +691,26 @@
             transition: 0.2s;
         }
 
+        .extlinks a {
+            transition: 0.2s;
+        }
+
         .logofoot:hover {
-            transform: scale(1.03);
             transition: 0.2s;
             background-color: #3b3b3b;
         }
 
+        .extlinks a:hover {
+            transform: scale(1.10);
+            transition: 0.2s;
+        }
+
         .logofoot img {
             margin: 0;
+        }
+
+        .footerfirst, .footersecond, .footerthird {
+            display: flex;
         }
 
         @media screen and (max-width: 600px) {
@@ -759,13 +772,15 @@
                 justify-content: space-between;
             }
 
-            .video {
+            .video,
+            .mmacon {
                 margin-top: 26%;
                 height: 600px;
                 justify-content: center;
             }
 
-            .video video {
+            .video video,
+            .mmaimg {
                 object-fit: cover;
             }
 
@@ -854,8 +869,22 @@
                 display: none;
             }
 
+            .mmacon {
+                margin-top: auto;
+            }
+
+            .mmabackimage {
+                height: 600px;
+                max-height: max-content;
+            }
+
             .mmalogo {
                 width: 82vw;
+            }
+
+            .mmaimg {
+                height: 500px;
+                width: 100%;
             }
 
             .mmaguyswrap {
@@ -863,16 +892,51 @@
                 right: 3%;
                 top: auto;
                 height: 33vw;
-                transform: translateY(33%);
             }
 
             .mmainfo {
                 left: 0;
+                top: 6%;
             }
 
             .carousel {
                 height: 36vw;
                 width: 64vw;
+                margin: 1rem 2rem;
+            }
+
+            .carouselprev,
+            .carouselnext {
+                top: auto;
+                bottom: 43%;
+            }
+
+            .carouselprev {
+                left: 30%;
+            }
+
+            .carouselnext {
+                right: 30%;
+            }
+
+            .mmatext {
+                margin-top: 24%;
+            }
+
+            .mmatext h2 {
+                font-size: 8vw;
+                width: 234px;
+                text-align: center;
+            }
+
+            .mma-art-button {
+                height: 15vw;
+                width: 70vw;
+                margin-top: 3%;
+            }
+
+            .footerfirst, .footersecond, .footerthird {
+                flex-direction: column;
             }
         }
     </style>
@@ -1042,46 +1106,57 @@
             <h3>labirhin - 2026</h3>
         </div>
         <div class="extlinks">
-            <a href="">
-                <div class="logofoot">
-                    <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="logofoot">
-                    <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
-                </div>
-            </a>
+            <div class="footerfirst">
+                <a href="">
+                    <div class="logofoot">
+                        <img class="youtube-svg" src="{{ asset('svg/youtube.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="bluesky-svg" src="{{ asset('svg/bluesky.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="twitter-svg" src="{{ asset('svg/twitter.svg') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="footersecond">
+                <a href="">
+                    <div class="logofoot">
+                        <img class="reddit-svg" src="{{ asset('svg/reddit.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="bandcamp-svg" src="{{ asset('svg/bandcamp.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="spotify-svg" src="{{ asset('svg/spotify.svg') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="footerthird">
+                <a href="">
+                    <div class="logofoot">
+                        <img class="apple-music-svg" src="{{ asset('svg/apple-music.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="tiktok-svg" src="{{ asset('svg/tiktok.svg') }}" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logofoot">
+                        <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
+                    </div>
+                </a>
+            </div>
         </div>
         <h3>made with love, by laurah ♥</h3>
     </footer>
