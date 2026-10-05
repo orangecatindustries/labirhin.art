@@ -82,7 +82,7 @@
         .logo2,
         .btn,
         .changables,
-        .logofoot,
+        .logo-foot,
         .hamburgermenu {
             padding: .15rem;
             background-color: rgb(49, 49, 49);
@@ -118,7 +118,7 @@
         }
 
         .logo img,
-        .logofoot img,
+        .logo-foot img,
         .hamburgermenu img {
             margin-top: 5px;
             filter: invert();
@@ -156,16 +156,16 @@
             overflow-x: hidden;
         }
 
-        .maintopic {
+        .main-topic {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .video,
-        .mainstuff,
-        .mmacon,
-        .merchwrap {
+        .main-stuff,
+        .mma-con,
+        .merch-wrap {
             margin-top: 2%;
             width: 80%;
             max-width: 1600px;
@@ -190,22 +190,22 @@
             opacity: 0.4;
         }
 
-        .maintext h1,
-        .maintext h2,
-        .maintext p {
+        .main-text h1,
+        .main-text h2,
+        .main-text p {
             color: white;
         }
 
-        .maintext h1,
-        .maintext h3 {
+        .main-text h1,
+        .main-text h3 {
             font-family: "Jaya", sans-serif;
             font-size: clamp(60px, 8vw, 160px);
             font-weight: 800;
             margin: 0;
-            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.8));
         }
 
-        .maintext p {
+        .main-text p {
             font-size: clamp(16px, 1.3vw, 26px);
             position: absolute;
             left: 25%;
@@ -214,7 +214,7 @@
             font-family: "Labirhin", sans-serif;
         }
 
-        .maintext h3 {
+        .main-text h3 {
             background: linear-gradient(to right,
                     #ffad41 20%,
                     #ffa722 30%,
@@ -223,12 +223,11 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
             background-size: 500% auto;
             animation: textShine 3s ease-in-out infinite alternate;
         }
 
-        .maintext img {
+        .main-text img {
             position: absolute;
             top: 78%;
             left: 12%;
@@ -268,14 +267,14 @@
             top: 78%;
         }
 
-        .sorbitolimg {
+        .sorbitol-img {
             position: absolute;
             height: 100%;
             bottom: 0;
             right: 0;
         }
 
-        .sorbitolimg img {
+        .sorbitol-img img {
             height: 100%;
         }
 
@@ -290,7 +289,7 @@
             align-items: center;
         }
 
-        .mainstuff {
+        .main-stuff {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -298,7 +297,7 @@
             background: linear-gradient(180deg, rgba(27, 27, 29, 1) 0%, rgba(156, 93, 16, 1) 50%, rgba(255, 151, 32, 1) 100%);
         }
 
-        .mainstuff h1 {
+        .main-stuff h1 {
             text-align: center;
             font-family: "Jaya", sans-serif;
             color: white;
@@ -307,13 +306,13 @@
             margin-top: 15px;
         }
 
-        .xenobotshare {
+        .xenobot-share {
             align-items: center;
             display: flex;
             flex-direction: column;
         }
 
-        .xenobotshare img {
+        .xenobot-share img {
             height: 320px;
             margin-top: -13em;
         }
@@ -361,7 +360,7 @@
             transform: scale(0.95);
         }
 
-        .buttonarea h2 {
+        .button-area h2 {
             font-family: "Indie Flower", cursive;
             font-size: 3rem;
             text-align: center;
@@ -374,7 +373,7 @@
             flex-direction: column;
         }
 
-        .carouselcon {
+        .carousel-con {
             display: flex;
             flex-direction: row
         }
@@ -398,7 +397,7 @@
             transition: 0.2s;
         }
 
-        .carouselcon a {
+        .carousel-con a {
             text-decoration: none;
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
@@ -422,34 +421,34 @@
             margin-top: 45px;
         }
 
-        .mmacon {
+        .mma-con {
             display: flex;
             flex-direction: column;
             position: relative;
             align-items: center;
         }
 
-        .mmalogo {
+        .mma-logo {
             width: 60%;
             margin-bottom: 3rem;
             margin-top: 1rem;
             filter: drop-shadow(0px 0px 6px rgba(255, 151, 32, 1));
         }
 
-        .mmabackimage {
+        .mma-back-image {
             display: flex;
             justify-content: center;
             position: relative;
         }
 
-        .mmaimg {
+        .mma-img {
             width: clamp(360px, 87%, 1325px);
             height: 100%;
             border-radius: 18px;
             opacity: 0.4;
         }
 
-        .charimages {
+        .char-images {
             position: absolute;
             height: 100%;
             bottom: 15%;
@@ -457,11 +456,11 @@
             transform: rotateY(180deg);
         }
 
-        .charimages img {
+        .char-images img {
             height: 140%;
         }
 
-        .mmainfo {
+        .mma-info {
             position: absolute;
             left: 40%;
             transform-style: preserve-3d;
@@ -469,7 +468,7 @@
             overflow: hidden;
         }
 
-        .mmainfowrap * {
+        .mma-infowrap * {
             box-sizing: border-box;
         }
 
@@ -508,8 +507,8 @@
             transform: translateX(100%);
         }
 
-        .carouselprev,
-        .carouselnext {
+        .carousel-prev,
+        .carousel-next {
             position: absolute;
             top: 43%;
             width: 3rem;
@@ -525,21 +524,21 @@
             margin-top: -100px;
         }
 
-        .carouselprev:hover,
-        .carouselnext:hover {
+        .carousel-prev:hover,
+        .carousel-next:hover {
             transform: scale(1.03);
         }
 
-        .carouselprev {
+        .carousel-prev {
             left: 0%;
         }
 
-        .carouselnext {
+        .carousel-next {
             right: 0%;
         }
 
-        .carouselprev::after,
-        .carouselnext::after {
+        .carousel-prev::after,
+        .carousel-next::after {
             content: " ";
             position: absolute;
             width: 10px;
@@ -551,18 +550,18 @@
             transform: translate(-50%, -50%) rotate(135deg);
         }
 
-        .carouselnext::after {
+        .carousel-next::after {
             left: 47%;
             transform: translate(-50%, -50%) rotate(-45deg);
         }
 
-        .mmatext {
+        .mma-text {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .mmatext h2 {
+        .mma-text h2 {
             margin-top: 6px;
             font-size: clamp(10px, 3.5vw, 58px);
             font-family: "Jaya", sans-serif;
@@ -590,7 +589,7 @@
             cursor: pointer;
         }
 
-        .mmaguyswrap {
+        .mma-guys-wrap {
             position: absolute;
             bottom: 100%;
             right: 10%;
@@ -601,7 +600,7 @@
             pointer-events: none;
         }
 
-        .sillyguys {
+        .silly-guys {
             height: 100%;
             width: auto;
             display: block;
@@ -615,14 +614,14 @@
             margin-top: 45px;
         }
 
-        .merchwrap {
+        .merch-wrap {
             display: flex;
             justify-content: center;
             flex-direction: column;
             max-height: none;
         }
 
-        .merchtext {
+        .merch-text {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -630,21 +629,21 @@
             overflow: auto;
         }
 
-        .merchtext h1 {
+        .merch-text h1 {
             text-align: center;
             font-family: "Jaya", sans-serif;
             color: white;
             font-size: 9rem;
-            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
             margin: 0;
             margin-top: -50px;
         }
 
-        .merchtext img {
+        .merch-text img {
             height: 250px;
         }
 
-        .merchbackimage {
+        .merch-back-image {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -652,20 +651,22 @@
             height: 900px;
         }
 
-        .merchimg {
+        .merch-img {
             width: clamp(360px, 87%, 1325px);
             height: 900px;
             border-radius: 18px;
             object-fit: cover;
         }
 
-        .merchpromo {
+        .merch-promo {
             position: absolute;
+            top: 8%;
+            left: 12%;
         }
 
-        .merchpromo img {
-            width: 64vw;
-            height: 36vw;
+        .merch-promo img {
+            width: 56vw;
+            height: 33vw;
             border-radius: 18px;
             box-shadow: white 0 0 10px;
             max-width: 49rem;
@@ -693,38 +694,38 @@
             filter: opacity(0.5);
         }
 
-        .extlinks {
+        .ext-links {
             display: flex;
             justify-content: center;
         }
 
-        .logofoot {
+        .logo-foot {
             padding: 10px;
             box-shadow: rgba(255, 151, 32, 0.2) 0px 0px 12px;
             transition: 0.2s;
         }
 
-        .extlinks a {
+        .ext-links a {
             transition: 0.2s;
         }
 
-        .logofoot:hover {
+        .logo-foot:hover {
             transition: 0.2s;
             background-color: #3b3b3b;
         }
 
-        .extlinks a:hover {
+        .ext-links a:hover {
             transform: scale(1.10);
             transition: 0.2s;
         }
 
-        .logofoot img {
+        .logo-foot img {
             margin: 0;
         }
 
-        .footerfirst,
-        .footersecond,
-        .footerthird {
+        .footer-first,
+        .footer-second,
+        .footer-third {
             display: flex;
         }
 
@@ -736,9 +737,9 @@
             }
 
             .video,
-            .mainstuff,
-            .mmacon,
-            .merchwrap {
+            .main-stuff,
+            .mma-con,
+            .merch-wrap {
                 padding: 1.5em;
             }
 
@@ -788,45 +789,45 @@
             }
 
             .video,
-            .mmacon {
+            .mma-con {
                 margin-top: 26%;
                 height: 600px;
                 justify-content: center;
             }
 
             .video video,
-            .mmaimg {
+            .mma-img {
                 object-fit: cover;
             }
 
-            .sorbitolimg {
+            .sorbitol-img {
                 display: flex;
                 height: 50%;
                 left: 0%;
                 justify-content: center;
             }
 
-            .mainstuff {
+            .main-stuff {
                 max-height: fit-content;
             }
 
-            .mainstuff h1 {
+            .main-stuff h1 {
                 font-size: 15vw;
                 margin-top: 0;
             }
 
-            .xenobotshare {
+            .xenobot-share {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            .xenobotshare img {
+            .xenobot-share img {
                 height: 135px;
                 margin-top: -5em;
             }
 
-            .maintext {
+            .main-text {
                 position: absolute;
                 display: flex;
                 flex-direction: column;
@@ -838,18 +839,18 @@
             .t1,
             .t2,
             .t3,
-            .maintext img,
-            .maintext p {
+            .main-text img,
+            .main-text p {
                 position: unset;
             }
 
-            .maintext p {
+            .main-text p {
                 width: 180px;
                 text-align: center;
                 margin: 0;
             }
 
-            .maintext img {
+            .main-text img {
                 margin-top: -10px;
                 height: 18vw;
             }
@@ -867,11 +868,11 @@
                 font-size: 0.8rem;
             }
 
-            .buttonarea h2 {
+            .button-area h2 {
                 font-size: 6vw;
             }
 
-            .carouselcon {
+            .carousel-con {
                 flex-direction: column;
             }
 
@@ -880,36 +881,36 @@
                 height: 36vw;
             }
 
-            .charimages {
+            .char-images {
                 display: none;
             }
 
-            .mmacon {
+            .mma-con {
                 margin-top: auto;
             }
 
-            .mmabackimage {
+            .mma-back-image {
                 height: 600px;
                 max-height: max-content;
             }
 
-            .mmalogo {
+            .mma-logo {
                 width: 82vw;
             }
 
-            .mmaimg {
+            .mma-img {
                 height: 500px;
                 width: 100%;
             }
 
-            .mmaguyswrap {
+            .mma-guys-wrap {
                 bottom: 100%;
                 right: 3%;
                 top: auto;
                 height: 33vw;
             }
 
-            .mmainfo {
+            .mma-info {
                 left: 0;
                 top: 6%;
             }
@@ -920,25 +921,25 @@
                 margin: 1rem 2rem;
             }
 
-            .carouselprev,
-            .carouselnext {
+            .carousel-prev,
+            .carousel-next {
                 top: auto;
                 bottom: 43%;
             }
 
-            .carouselprev {
+            .carousel-prev {
                 left: 30%;
             }
 
-            .carouselnext {
+            .carousel-next {
                 right: 30%;
             }
 
-            .mmatext {
+            .mma-text {
                 margin-top: 24%;
             }
 
-            .mmatext h2 {
+            .mma-text h2 {
                 font-size: 8vw;
                 width: 234px;
                 text-align: center;
@@ -950,9 +951,9 @@
                 margin-top: 3%;
             }
 
-            .footerfirst,
-            .footersecond,
-            .footerthird {
+            .footer-first,
+            .footer-second,
+            .footer-third {
                 flex-direction: column;
             }
         }
@@ -1025,30 +1026,30 @@
         </div>
     </header>
     <section id="main">
-        <div class="maintopic">
+        <div class="main-topic">
             <div class="video">
                 <video src="{{ asset('imgs/preview.mp4') }}" autoplay loop muted playsinline alt=""></video>
-                <div class="maintext">
+                <div class="main-text">
                     <h1 class="t1">ART</h1>
                     <h1 class="t2">MUSIC</h2>
                         <h3 class="t3">ANIMATION</h3>
                         <img src="{{  asset('imgs/markiplier.png') }}" alt="">
                         <p class="t4">CREATOR OF ‘MAU MAKAN APA?’ COMIC, SOUNDTRACK & SERIES</p>
                 </div>
-                <div class="sorbitolimg">
+                <div class="sorbitol-img">
                     <img src="{{  asset('imgs/SORBITOL.png') }}" alt="">
                 </div>
             </div>
         </div>
     </section>
     <section id="stuff">
-        <div class="mainstuff">
-            <div class="xenobotshare">
+        <div class="main-stuff">
+            <div class="xenobot-share">
                 <h1>ANIMATIONS</h1>
                 <img src="{{ asset('imgs/xenobot 2.png') }}" alt="">
             </div>
             <div class="content">
-                <div class="buttonarea">
+                <div class="button-area">
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
                         <button class="btn" id="btn">Videos</button>
@@ -1056,7 +1057,7 @@
                         <button class="btn" id="btn3">Tracks</button>
                     </div>
                 </div>
-                <div class="carouselcon">
+                <div class="carousel-con">
                     <a href="">
                         <div class="changables change1">
                             <h2>Placeholder Text</h2>
@@ -1077,18 +1078,18 @@
         </div>
     </section>
     <section id="mma">
-        <div class="mmacon">
-            <img class="mmalogo" src="{{ asset("imgs/mmalogo.png") }}" alt="">
-            <div class="mmabackimage">
-                <div class="mmaguyswrap">
-                    <img class="sillyguys" src="{{ asset("imgs/exogixgigo.png") }}" alt="">
+        <div class="mma-con">
+            <img class="mma-logo" src="{{ asset("imgs/mma-logo.png") }}" alt="">
+            <div class="mma-back-image">
+                <div class="mma-guys-wrap">
+                    <img class="silly-guys" src="{{ asset("imgs/exogixgigo.png") }}" alt="">
                 </div>
-                <img class="mmaimg" src="{{ asset("imgs/background-mma.png") }}" alt="">
-                <div class="charimages">
+                <img class="mma-img" src="{{ asset("imgs/background-mma.png") }}" alt="">
+                <div class="char-images">
                     <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
                 </div>
-                <div class="mmainfo">
-                    <div class="carouselprev"></div>
+                <div class="mma-info">
+                    <div class="carousel-prev"></div>
                     <iframe class="carousel carousel-inicial"
                         src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
                         allowfullscreen="true"></iframe>
@@ -1098,8 +1099,8 @@
                         frameborder="0" allowfullscreen="true"></iframe>
                     <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
                         frameborder="0" allowfullscreen="true"></iframe>
-                    <div class="carouselnext"></div>
-                    <div class="mmatext">
+                    <div class="carousel-next"></div>
+                    <div class="mma-text">
                         <h2>WANT TO SEE THE COMIC?</h2>
                         <a href="https://maumakanapa.art"><button class="mma-art-button"></button></a>
                     </div>
@@ -1108,16 +1109,20 @@
         </div>
     </section>
     <section id="merch">
-        <div class="merchwrap">
-            <div class="merchtext">
+        <div class="merch-wrap">
+            <div class="merch-text">
                 <img src="{{ asset("imgs/xenobotpoint.png") }}" alt="">
                 <h1>MERCH</h1>
             </div>
-            <div class="merchbackimage">
-                <img class="merchimg" src="{{ asset("imgs/meow.webp") }}" alt="">
-                <div class="merchcontent">
-                    <div class="merchpromo">
+            <div class="merch-back-image">
+                <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
+                <div class="merch-content">
+                    <div class="merch-promo">
                         <img src="{{ asset("imgs/merchpromo.png") }}" alt="">
+                        <div class="merch-button-area">
+                            <h2>CHECK OUT THE SHOP HERE!</h2>
+                            <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1125,57 +1130,57 @@
         </div>
     </section>
     <footer>
-        <div class="footertext">
+        <div class="footer-text">
             <h3>labirhin - 2026</h3>
         </div>
-        <div class="extlinks">
-            <div class="footerfirst">
+        <div class="ext-links">
+            <div class="footer-first">
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="youtube-svg" src="{{ asset('svg/youtube.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="bluesky-svg" src="{{ asset('svg/bluesky.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="twitter-svg" src="{{ asset('svg/twitter.svg') }}" alt="">
                     </div>
                 </a>
             </div>
-            <div class="footersecond">
+            <div class="footer-second">
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="reddit-svg" src="{{ asset('svg/reddit.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="bandcamp-svg" src="{{ asset('svg/bandcamp.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="spotify-svg" src="{{ asset('svg/spotify.svg') }}" alt="">
                     </div>
                 </a>
             </div>
-            <div class="footerthird">
+            <div class="footer-third">
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="apple-music-svg" src="{{ asset('svg/apple-music.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="tiktok-svg" src="{{ asset('svg/tiktok.svg') }}" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="logofoot">
+                    <div class="logo-foot">
                         <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
                     </div>
                 </a>
@@ -1222,8 +1227,8 @@
                 items[1].classList.add("next");
             }
             function setEventListeners() {
-                var next = d.getElementsByClassName('carouselnext')[0],
-                    prev = d.getElementsByClassName('carouselprev')[0];
+                var next = d.getElementsByClassName('carousel-next')[0],
+                    prev = d.getElementsByClassName('carousel-prev')[0];
                 next.addEventListener('click', moveNext);
                 prev.addEventListener('click', movePrev);
             }
