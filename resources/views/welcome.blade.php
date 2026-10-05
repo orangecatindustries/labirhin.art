@@ -555,20 +555,20 @@
             transform: translate(-50%, -50%) rotate(-45deg);
         }
 
-        .mma-text {
+        .mma-text, .merch-button-area {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .mma-text h2 {
+        .mma-text h2, .merch-button-area h2 {
             margin-top: 6px;
             font-size: clamp(10px, 3.5vw, 58px);
             font-family: "Jaya", sans-serif;
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
 
-        .mma-art-button {
+        .mma-art-button, .mma-merch-button {
             background-image: url("{{ asset("imgs/mma.art.png") }}");
             background-size: cover;
             height: 8vw;
@@ -582,9 +582,10 @@
             border-width: 1px;
             transition: 0.2s;
             background-position: center;
+            box-shadow: 0 0 2px white;
         }
 
-        .mma-art-button:hover {
+        .mma-art-button:hover, .mma-merch-button:hover {
             transform: scale(1.03);
             cursor: pointer;
         }
@@ -671,6 +672,18 @@
             box-shadow: white 0 0 10px;
             max-width: 49rem;
             max-height: 29rem;
+        }
+
+        .merch-button-area h2 {
+            margin-top: revert-layer;
+        }
+
+        .merch-button-area a {
+            margin-top: 1rem;
+        }
+
+        .mma-merch-button {
+            background-image: url({{ asset("imgs/merchbutton.png") }});
         }
 
         /* footer */
@@ -939,13 +952,13 @@
                 margin-top: 24%;
             }
 
-            .mma-text h2 {
+            .mma-text h2, .merch-button-area h2 {
                 font-size: 8vw;
                 width: 234px;
                 text-align: center;
             }
 
-            .mma-art-button {
+            .mma-art-button, .merch-button-area {
                 height: 15vw;
                 width: 70vw;
                 margin-top: 3%;
