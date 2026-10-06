@@ -300,7 +300,7 @@
             text-align: center;
             font-family: "Jaya", sans-serif;
             color: white;
-            font-size: 9rem;
+            font-size: clamp(60px, 8vw, 160px);
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
             margin-top: 15px;
         }
@@ -312,8 +312,9 @@
         }
 
         .xenobot-share img {
-            height: 320px;
-            margin-top: -13em;
+            height: 24vw;
+            max-height: 310px;
+            margin-top: -22%;
         }
 
         .content {
@@ -463,7 +464,7 @@
             position: absolute;
             left: 46%;
             transform-style: preserve-3d;
-            top: 8%;
+            top: 10%;
             overflow: hidden;
         }
 
@@ -687,6 +688,11 @@
 
         .mma-merch-button {
             background-image: url({{ asset("imgs/merchbutton.png") }});
+        }
+
+        .merch-character {
+            position: absolute;
+            display: none;
         }
 
         /* footer */
@@ -1184,6 +1190,9 @@
                             <h2>CHECK OUT THE SHOP HERE!</h2>
                             <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
                         </div>
+                        <div class="merch-character">
+                            <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1196,51 +1205,51 @@
         </div>
         <div class="ext-links">
             <div class="footer-first">
-                <a href="">
+                <a href="https://youtube.com/@labirhin">
                     <div class="logo-foot">
                         <img class="youtube-svg" src="{{ asset('svg/youtube.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://bsky.app/profile/labirhin.art">
                     <div class="logo-foot">
                         <img class="bluesky-svg" src="{{ asset('svg/bluesky.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://x.com/LabiLabirhin/with_replies?lang=en">
                     <div class="logo-foot">
                         <img class="twitter-svg" src="{{ asset('svg/twitter.svg') }}" alt="">
                     </div>
                 </a>
             </div>
             <div class="footer-second">
-                <a href="">
+                <a href="https://www.reddit.com/r/MauMakanApa/">
                     <div class="logo-foot">
                         <img class="reddit-svg" src="{{ asset('svg/reddit.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://labilabirhin.bandcamp.com">
                     <div class="logo-foot">
                         <img class="bandcamp-svg" src="{{ asset('svg/bandcamp.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ">
                     <div class="logo-foot">
                         <img class="spotify-svg" src="{{ asset('svg/spotify.svg') }}" alt="">
                     </div>
                 </a>
             </div>
             <div class="footer-third">
-                <a href="">
+                <a href="https://music.apple.com/us/artist/labirhin/1711481933">
                     <div class="logo-foot">
                         <img class="apple-music-svg" src="{{ asset('svg/apple-music.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://www.tiktok.com/@labirhin_fr">
                     <div class="logo-foot">
                         <img class="tiktok-svg" src="{{ asset('svg/tiktok.svg') }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="https://discord.gg/labirhin">
                     <div class="logo-foot">
                         <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
                     </div>
