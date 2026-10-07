@@ -909,14 +909,16 @@
                 display: none;
             }
 
-            .mma-con {
+            .mma-con,
+            .merch-wrap {
                 height: auto;
                 max-height: none;
                 margin-top: 0%;
                 justify-content: flex-start;
             }
 
-            .mma-back-image {
+            .mma-back-image,
+            .merch-back-image {
                 position: relative;
                 width: 100%;
                 height: auto;
@@ -929,7 +931,8 @@
                 width: 82vw;
             }
 
-            .mma-img {
+            .mma-img,
+            .merch-img {
                 position: absolute;
                 inset: 0;
                 width: 100%;
@@ -944,7 +947,8 @@
                 height: 33vw;
             }
 
-            .mma-info {
+            .mma-info,
+            .merch-promo {
                 position: relative;
                 left: auto;
                 right: auto;
@@ -1001,16 +1005,15 @@
                 display: none;
             }
 
-            .merch-content {
-                display: flex;
-                justify-content: center;
-            }
-
             .merch-promo {
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                left: auto;
             }
 
             .merch-promo img {
@@ -1183,16 +1186,14 @@
             </div>
             <div class="merch-back-image">
                 <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
-                <div class="merch-content">
-                    <div class="merch-promo">
-                        <img src="{{ asset("imgs/merchpromo.png") }}" alt="">
-                        <div class="merch-button-area">
-                            <h2>CHECK OUT THE SHOP HERE!</h2>
-                            <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
-                        </div>
-                        <div class="merch-character">
-                            <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
-                        </div>
+                <div class="merch-promo">
+                    <img src="{{ asset("imgs/merchpromo.png") }}" alt="">
+                    <div class="merch-button-area">
+                        <h2>CHECK OUT THE SHOP HERE!</h2>
+                        <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
+                    </div>
+                    <div class="merch-character">
+                        <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
                     </div>
                 </div>
             </div>
