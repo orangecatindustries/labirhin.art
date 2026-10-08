@@ -620,10 +620,8 @@
         }
 
         .merch-wrap {
-            display: flex;
-            justify-content: center;
+            height: auto;
             flex-direction: column;
-            max-height: none;
         }
 
         .merch-text {
@@ -649,27 +647,43 @@
         }
 
         .merch-back-image {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             position: relative;
-            height: 900px;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            overflow: hidden;
         }
 
         .merch-img {
+            position: absolute;
+            inset: 0;
             width: 100%;
-            height: 900px;
-            border-radius: 18px;
+            height: 100%;
             object-fit: cover;
+            opacity: 0.4;
+            border-radius: 18px;
         }
 
         .merch-promo {
-            position: absolute;
-            top: 8%;
-            left: 12%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 100%;
+            padding: 3rem;
+            box-sizing: border-box;
         }
 
-        .merch-promo img {
+        .merch-stuff {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .merch-promo-image {
             width: 47vw;
             height: 27vw;
             border-radius: 18px;
@@ -691,8 +705,16 @@
         }
 
         .merch-character {
-            position: absolute;
-            display: none;
+            position: relative;
+            align-self: flex-end;
+            flex-shrink: 0;
+        }
+
+        .merch-character img {
+            display: block;
+            height: auto;
+            width: 28vw;
+            max-width: 28rem;
         }
 
         /* footer */
@@ -1016,9 +1038,18 @@
                 align-items: center;
             }
 
-            .merch-promo img {
+            .merch-promo-image {
                 width: 71vw;
                 height: 40vw;
+            }
+
+            .merch-character {
+                position: relative;
+                transform: translateY(40px);
+            }
+
+            .merch-character img {
+                height: 86vw;
             }
 
             .footer-first,
@@ -1187,18 +1218,18 @@
             <div class="merch-back-image">
                 <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
                 <div class="merch-promo">
-                    <img src="{{ asset("imgs/merchpromo.png") }}" alt="">
-                    <div class="merch-button-area">
-                        <h2>CHECK OUT THE SHOP HERE!</h2>
-                        <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
+                    <div class="merch-stuff">
+                        <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.png") }}" alt="">
+                        <div class="merch-button-area">
+                            <h2>CHECK OUT THE SHOP HERE!</h2>
+                            <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
+                        </div>
                     </div>
                     <div class="merch-character">
                         <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
                     </div>
                 </div>
             </div>
-
-        </div>
     </section>
     <footer>
         <div class="footer-text">
