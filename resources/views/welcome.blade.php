@@ -165,7 +165,8 @@
         .video,
         .main-stuff,
         .mma-con,
-        .merch-wrap {
+        .merch-wrap,
+        .community-wrap {
             margin-top: 2%;
             width: 80%;
             max-width: 1600px;
@@ -563,7 +564,8 @@
         }
 
         .mma-text h2,
-        .merch-button-area h2 {
+        .merch-button-area h2,
+        .community-button-area h2 {
             margin-top: 6px;
             font-size: clamp(10px, 3.5vw, 58px);
             font-family: "Jaya", sans-serif;
@@ -571,7 +573,8 @@
         }
 
         .mma-art-button,
-        .mma-merch-button {
+        .mma-merch-button,
+        .mma-community-button {
             background-image: url("{{ asset("imgs/mma.art.png") }}");
             background-size: cover;
             height: 8vw;
@@ -589,7 +592,8 @@
         }
 
         .mma-art-button:hover,
-        .mma-merch-button:hover {
+        .mma-merch-button:hover,
+        .mma-community-button {
             transform: scale(1.03);
             cursor: pointer;
         }
@@ -714,6 +718,106 @@
         }
 
         .merch-character img {
+            display: block;
+            width: 100%;
+            max-width: 51rem;
+        }
+
+        /* community */
+
+        #community {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+
+        .community-wrap {
+            height: auto;
+            flex-direction: column;
+        }
+
+        .community-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: auto;
+        }
+
+        .community-text h1 {
+            text-align: center;
+            font-family: "Jaya", sans-serif;
+            color: white;
+            font-size: 9rem;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
+            margin-top: -4px;
+        }
+
+        .community-text img {
+            height: 250px;
+        }
+
+        .community-back-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .community-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            border-radius: 18px;
+            filter: saturate(4) blur(3px);
+        }
+
+        .community-promo {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 3rem;
+            box-sizing: border-box;
+        }
+
+        .community-stuff {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            left: 2%;
+        }
+
+        .community-button-area h2 {
+            margin-top: revert-layer;
+        }
+
+        .community-button-area a {
+            margin-top: 1rem;
+        }
+
+        .community-merch-button {
+            background-image: url({{ asset("imgs/merchbutton.png") }});
+        }
+
+        .community-character {
+            position: absolute;
+            align-self: flex-end;
+            flex-shrink: 0;
+            right: -6%;
+            bottom: 0;
+            width: 59%;
+        }
+
+        .community-character img {
             display: block;
             width: 100%;
             max-width: 51rem;
@@ -1048,10 +1152,11 @@
             .merch-character {
                 position: relative;
                 transform: translateY(40px);
+                width: auto;
             }
 
             .merch-character img {
-                height: 86vw;
+                width: 71vw;
             }
 
             .footer-first,
@@ -1228,6 +1333,26 @@
                         </div>
                     </div>
                     <div class="merch-character">
+                        <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="community">
+        <div class="community-wrap">
+            <div class="community-text">
+                <h1>COMMUNITY</h1>
+            </div>
+            <div class="community-back-image">
+                <img class="community-img" src="{{ asset("imgs/background-community.png") }}" alt="">
+                <div class="community-promo">
+                    <div class="community-stuff">
+                        <div class="community-button-area">
+                            <h2>JOIN THE COMMUNITY HERE!</h2>
+                            <a href="https://discord.gg/labirhin"><button class="mma-community-button"></button></a>
+                        </div>
+                    </div>
+                    <div class="community-character">
                         <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
                     </div>
                 </div>
