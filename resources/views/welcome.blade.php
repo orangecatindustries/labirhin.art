@@ -670,18 +670,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 2rem;
             width: 100%;
             padding: 3rem;
             box-sizing: border-box;
         }
 
         .merch-stuff {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            left: 2%;
         }
-
 
         .merch-promo-image {
             width: 47vw;
@@ -705,16 +705,18 @@
         }
 
         .merch-character {
-            position: relative;
+            position: absolute;
             align-self: flex-end;
             flex-shrink: 0;
+            right: -6%;
+            bottom: 0;
+            width: 59%;
         }
 
         .merch-character img {
             display: block;
-            height: auto;
-            width: 28vw;
-            max-width: 28rem;
+            width: 100%;
+            max-width: 51rem;
         }
 
         /* footer */
