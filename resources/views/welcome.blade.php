@@ -572,6 +572,10 @@
             text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
         }
 
+        .mma-text h2 {
+            margin: 1.5rem 0 3.5rem 0;
+        }
+
         .mma-art-button,
         .mma-merch-button,
         .mma-community-button {
@@ -666,6 +670,7 @@
             object-fit: cover;
             opacity: 0.4;
             border-radius: 18px;
+            filter: saturate(2);
         }
 
         .merch-promo {
@@ -710,7 +715,6 @@
 
         .merch-character {
             position: absolute;
-            align-self: flex-end;
             flex-shrink: 0;
             right: -6%;
             bottom: 0;
@@ -804,8 +808,10 @@
             margin-top: 1rem;
         }
 
-        .community-merch-button {
-            background-image: url({{ asset("imgs/merchbutton.png") }});
+        .mma-community-button {
+            background-image: url({{ asset("imgs/communitybutton.png") }});
+            background-size: 130%;
+            background-position-y: 48%;
         }
 
         .community-character {
@@ -1260,24 +1266,24 @@
                 <div class="button-area">
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
-                        <button class="btn" id="btn">Videos</button>
+                        <button class="btn" onclick="changeContent()" id="btn">Videos</button>
                         <button class="btn" id="btn2">Animations</button>
                         <button class="btn" id="btn3">Tracks</button>
                     </div>
                 </div>
                 <div class="carousel-con">
                     <a href="">
-                        <div class="changables change1">
+                        <div id="changables" class="changables change1">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
                     <a href="">
-                        <div class="changables change1">
+                        <div id="changables" class="changables change2">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
                     <a href="">
-                        <div class="changables change1">
+                        <div id="changables" class="changables change3">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
@@ -1442,6 +1448,10 @@
                 }, 201);;
             }
         });
+
+        function changeContent() {
+            document.getElementById("changables").innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
+        }
 
         !(function (d) {
             var itemClassName = "carousel",
