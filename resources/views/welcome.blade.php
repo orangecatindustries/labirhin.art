@@ -1266,24 +1266,24 @@
                 <div class="button-area">
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
-                        <button class="btn" onclick="changeContent()" id="btn">Videos</button>
+                        <button class="btn" id="btn">Videos</button>
                         <button class="btn" id="btn2">Animations</button>
                         <button class="btn" id="btn3">Tracks</button>
                     </div>
                 </div>
                 <div class="carousel-con">
                     <a href="">
-                        <div id="changables" class="changables change1">
+                        <div id="changable1" class="changables change1">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
                     <a href="">
-                        <div id="changables" class="changables change2">
+                        <div id="changable2" class="changables change2">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
                     <a href="">
-                        <div id="changables" class="changables change3">
+                        <div id="changable3" class="changables change3">
                             <h2>Placeholder Text</h2>
                         </div>
                     </a>
@@ -1425,10 +1425,6 @@
     </footer>
     <script>
 
-        const btn = document.getElementById("btn");
-        const btn2 = document.getElementById("btn2");
-        const btn3 = document.getElementById("btn3");
-
         document.addEventListener('mousedown', function (event) {
             if (event.target.classList.contains("btn")) {
                 const isClicked = document.querySelector('.btn.clicked')
@@ -1449,9 +1445,31 @@
             }
         });
 
-        function changeContent() {
-            document.getElementById("changables").innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
-        }
+        const btn = document.getElementById("btn");
+        const btn2 = document.getElementById("btn2");
+        const btn3 = document.getElementById("btn3");
+
+        let changable1 = document.getElementById("changable1");
+        let changable2 = document.getElementById("changable2");
+        let changable3 = document.getElementById("changable3");
+
+        btn.addEventListener("mousedown", (event) => {
+            changable1.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
+            changable2.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
+            changable3.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
+        })
+
+        btn2.addEventListener("mousedown", (event) => {
+            changable1.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
+            changable2.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
+            changable3.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
+        })
+        
+        btn3.addEventListener("mousedown", (event) => {
+            changable1.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
+            changable2.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
+            changable3.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
+        })
 
         !(function (d) {
             var itemClassName = "carousel",
