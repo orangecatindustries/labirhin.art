@@ -45,6 +45,40 @@
             margin: 0;
         }
 
+        /* essential loading */
+
+        .loading-meow {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+            background-color: #0c0c0cc0;
+            opacity: 1;
+            transition: 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loading-meow img {
+            animation: rotation infinite 3s;
+            height: 150px;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* moving on */
+
         h1,
         h2,
         h3,
@@ -212,7 +246,7 @@
         }
 
         .main-text p {
-            font-size: clamp(16px, 1.3vw, 26px);
+            font-size: clamp(12px, 1.3vw, 26px);
             position: absolute;
             left: 25%;
             font-weight: 700;
@@ -357,6 +391,8 @@
         .content {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            transition: 0.4s ease;
         }
 
         .carousel-con {
@@ -377,7 +413,9 @@
         }
 
         .changables img {
+            width: 100%;
             height: 100%;
+            object-fit: cover;
             transition: 0.2s;
             border-radius: 12px;
         }
@@ -393,6 +431,9 @@
             position: absolute;
             font-size: clamp(16px, 1.4vw, 25px);
             bottom: 10%;
+            left: 0;
+            right: 0;
+            text-align: center;
         }
 
         .carousel-con a {
@@ -408,6 +449,20 @@
 
         .changables:hover h2 {
             opacity: 1;
+        }
+
+        .patreon-support {
+            max-width: 300px;
+            max-height: 86px;
+            margin-top: 25px;
+            transition: 0.2s;
+            width: 33vw;
+            height: 9vw;
+        }
+
+        .patreon-support:hover {
+            transform: scale(1.03);
+            transition: 0.2s;
         }
 
         /* maumakanapa */
@@ -583,7 +638,7 @@
         .mma-art-button,
         .mma-merch-button,
         .mma-community-button {
-            background-image: url("{{ asset("imgs/mma.art.png") }}");
+            background-image: url("{{ asset("imgs/mma.art.webp") }}");
             background-size: cover;
             height: 8vw;
             width: 39vw;
@@ -713,7 +768,7 @@
         }
 
         .mma-merch-button {
-            background-image: url({{ asset("imgs/merchbutton.png") }});
+            background-image: url({{ asset("imgs/merchbutton.webp") }});
         }
 
         .merch-character {
@@ -807,6 +862,7 @@
         .community-image img {
             height: 30vw;
             max-height: 700px;
+            transform: rotateY(180deg);
         }
 
         .community-button-area {
@@ -820,7 +876,7 @@
         }
 
         .mma-community-button {
-            background-image: url({{ asset("imgs/communitybutton.png") }});
+            background-image: url({{ asset("imgs/communitybutton.webp") }});
             background-size: 130%;
             background-position-y: 48%;
         }
@@ -1057,6 +1113,7 @@
                 width: 180px;
                 text-align: center;
                 margin: 0;
+                font-size: 16px;
             }
 
             .main-text img {
@@ -1089,6 +1146,12 @@
             .changables {
                 width: 64vw;
                 height: 36vw;
+            }
+
+            .patreon-support {
+                width: 230px;
+                height: 66px;
+                margin-bottom: 25px;
             }
 
             .char-images {
@@ -1225,6 +1288,7 @@
                 transform: translateY(40px);
                 width: auto;
                 right: 0;
+                margin-top: -2rem;
             }
 
             .merch-character img {
@@ -1235,6 +1299,7 @@
                 flex-direction: column-reverse;
                 left: 0;
                 width: 100%;
+                gap: 0;
             }
 
             .community-button-area {
@@ -1259,13 +1324,17 @@
 </head>
 
 <body>
+    <div class="loading-meow">
+        <img id="loading-image" src="{{ asset("imgs/labiPoint.webp") }}" alt="">
+        <h2>we're loading sum epikness....</h2>
+    </div>
     <header>
         <div class="navwrap">
             <div class="nav">
                 <div class="main-nav">
                     <a href="">
                         <div class="logo2">
-                            <img class="labirhin" src="{{ asset('imgs/labiPoint.png') }}" alt="">
+                            <img class="labirhin" src="{{ asset('imgs/labiPoint.webp') }}" alt="">
                         </div>
                     </a>
                     <div class="navright">
@@ -1387,11 +1456,11 @@
                     <h1 class="t1">ART</h1>
                     <h1 class="t2">MUSIC</h2>
                         <h3 class="t3">ANIMATION</h3>
-                        <img src="{{  asset('imgs/markiplier.png') }}" alt="">
+                        <img src="{{  asset('imgs/markiplier.webp') }}" alt="">
                         <p class="t4">CREATOR OF ‘MAU MAKAN APA?’ COMIC, SOUNDTRACK & SERIES</p>
                 </div>
                 <div class="sorbitol-img">
-                    <img src="{{  asset('imgs/SORBITOL.png') }}" alt="">
+                    <img src="{{  asset('imgs/SORBITOL.webp') }}" alt="">
                 </div>
             </div>
         </div>
@@ -1400,7 +1469,7 @@
         <div class="main-stuff">
             <div class="xenobot-share">
                 <h1>ANIMATIONS</h1>
-                <img src="{{ asset('imgs/xenobot 2.png') }}" alt="">
+                <img src="{{ asset('imgs/xenobot 2.webp') }}" alt="">
             </div>
             <div class="content">
                 <div class="button-area">
@@ -1412,36 +1481,41 @@
                     </div>
                 </div>
                 <div class="carousel-con">
-                    <a href="">
+                    <a class="links" href="">
                         <div id="changable1" class="changables change1">
-                            <h2>Placeholder Text</h2>
-                            <img src="{{ asset("imgs/background-community.png") }}" alt="">
+                            <img src="{{ asset("imgs/fightover.webp") }}" alt="">
+                            <h2>Fight Over! Scene from MMA4</h2>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="links" href="">
                         <div id="changable2" class="changables change2">
-                            <h2>Placeholder Text</h2>
+                            <img src="{{ asset("imgs/thestarsarefalling.webp") }}" alt="">
+                            <h2>The Stars Are Falling</h2>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="links" href="">
                         <div id="changable3" class="changables change3">
-                            <h2>Placeholder Text</h2>
+                            <img src="{{ asset("imgs/revisionafterrevision.webp") }}" alt="">
+                            <h2>Revision After Revision</h2>
                         </div>
                     </a>
                 </div>
+                <a href="https://patreon.com/@labirhin">
+                    <img class="patreon-support" src="{{ asset("imgs/patreon-support.webp") }}" alt="">
+                </a>
             </div>
         </div>
     </section>
     <section id="mma">
         <div class="mma-con">
-            <img class="mma-logo" src="{{ asset("imgs/mmalogo.png") }}" alt="">
+            <img class="mma-logo" src="{{ asset("imgs/mmalogo.webp") }}" alt="">
             <div class="mma-back-image">
                 <div class="mma-guys-wrap">
-                    <img class="silly-guys" src="{{ asset("imgs/exogixgigo.png") }}" alt="">
+                    <img class="silly-guys" src="{{ asset("imgs/exogixgigo.webp") }}" alt="">
                 </div>
-                <img class="mma-img" src="{{ asset("imgs/background-mma.png") }}" alt="">
+                <img class="mma-img" src="{{ asset("imgs/background-mma.webp") }}" alt="">
                 <div class="char-images">
-                    <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
+                    <img src="{{ asset("imgs/exoworomma.webp") }}" alt="">
                 </div>
                 <div class="mma-info">
                     <div class="carousel-wrap">
@@ -1468,21 +1542,21 @@
     <section id="merch">
         <div class="merch-wrap">
             <div class="merch-text">
-                <img src="{{ asset("imgs/xenobotpoint.png") }}" alt="">
+                <img src="{{ asset("imgs/xenobotpoint.webp") }}" alt="">
                 <h1>MERCH</h1>
             </div>
             <div class="merch-back-image">
                 <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
                 <div class="merch-promo">
                     <div class="merch-stuff">
-                        <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.png") }}" alt="">
+                        <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.webp") }}" alt="">
                         <div class="merch-button-area">
                             <h2>CHECK OUT THE SHOP HERE!</h2>
                             <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
                         </div>
                     </div>
                     <div class="merch-character">
-                        <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
+                        <img src="{{ asset("imgs/merchcharacters.webp") }}" alt="">
                     </div>
                 </div>
             </div>
@@ -1493,11 +1567,11 @@
                 <h1>COMMUNITY</h1>
             </div>
             <div class="community-back-image">
-                <img class="community-img" src="{{ asset("imgs/background-community.png") }}" alt="">
+                <img class="community-img" src="{{ asset("imgs/background-community.webp") }}" alt="">
                 <div class="community-promo">
                     <div class="community-stuff">
                         <div class="community-image">
-                            <img src="{{ asset("imgs/communitypic.png") }}" alt="">
+                            <img src="{{ asset("imgs/communitypic.webp") }}" alt="">
                         </div>
                         <div class="community-button-area">
                             <h2>JOIN THE COMMUNITY HERE!</h2>
@@ -1566,7 +1640,37 @@
         </div>
         <h3>made with love, by laurah ♥</h3>
     </footer>
+    <!-- i.. could be your exo <3 -->
     <script>
+
+        function stuffChange() {
+            const images = [
+                "{{ asset('imgs/WEEWEE.webp') }}",
+                "{{ asset('imgs/kepala_loby.webp') }}",
+                "{{ asset('imgs/EXOHEAD.webp') }}",
+                "{{ asset('imgs/GIXHEAD.webp') }}",
+                "{{ asset('imgs/ERIKAHEAD.webp') }}",
+            ];
+
+            const diceroll = Math.floor(Math.random() * 10);
+
+            if (diceroll < images.length) {
+                const imgElement = document.getElementById("loading-image");
+                imgElement.src = images[diceroll];
+            }
+        }
+
+        stuffChange();
+
+        const loadingscreen = document.querySelector(".loading-meow");
+
+        window.addEventListener('load', (event) => {
+            console.log('website finished loading!');
+            loadingscreen.style.opacity = "0";
+            setTimeout(function () {
+                loadingscreen.style.display = "none";
+            }, 1000);
+        });
 
         document.addEventListener('mousedown', function (event) {
             if (event.target.classList.contains("btn")) {
@@ -1591,6 +1695,26 @@
         const dropdownbtn = document.getElementById("ham-expand");
         const navdrop = document.querySelector(".nav");
 
+        const animationLinks = [
+            "https://youtu.be/Y5hOaY8GwMY?si=QJ5UFIlyrKnYUVKZ",
+            "https://youtu.be/mNnNFEJ-6f8?si=pCfXgWymlDxrdyA0",
+            "https://youtu.be/oUMFNhB4dK8?si=t0jwgmwTcjFGfTeR"
+        ];
+
+        const musicLinks = [
+            "https://youtu.be/Vesh2adg2kI?si=tXeOJLAfvy2EnqWe",
+            "https://youtu.be/I0MUW5PIEno?si=YzI4jIOcUZjZhnkk",
+            "https://youtu.be/6dSgJIDNgbA?si=r2v3WdLgph3tqL37"
+        ];
+
+        const videoLinks = [
+            "https://youtu.be/zEls1QXNgV8?si=kC89S6U6hQsdEuGw",
+            "https://youtu.be/TwZo7bzVfoo?si=hcP1MUj5MtbObvhV",
+            "https://youtu.be/3MwTd8UIJTM?si=-gSnNHujc74nML4Z"
+        ];
+
+        const links = document.querySelectorAll(".links");
+
         dropdownbtn.addEventListener("click", (event) => {
             event.stopPropagation();
             navdrop.classList.toggle("open");
@@ -1609,22 +1733,38 @@
         let changable3 = document.getElementById("changable3");
 
         btn.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
-        })
+            changable1.innerHTML = '<img src="{{ asset("imgs/advertisement.webp") }}" alt=""><h2>TUGAS BAHASA INGGRIS</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/mereka.webp") }}" alt=""><h2>MEREKA NYATA?</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/blender.webp") }}" alt=""><h2>RGB LED Monitor Tutorial</h2>';
+            links.forEach((link, index) => {
+                if (videoLinks[index]) {
+                    link.href = videoLinks[index];
+                }
+            })
+        });
+
 
         btn2.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/fightover.avif") }}" alt=""><h2>Fight Over! Scene from MMA4</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/newmenu.avif") }}" alt=""><h2>Placeholder Text</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt=""><h2>Placeholder Text</h2>';
-        })
+            changable1.innerHTML = '<img src="{{ asset("imgs/fightover.webp") }}" alt=""><h2>Fight Over! Scene from MMA4</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/thestarsarefalling.webp") }}" alt=""><h2>The Stars Are Falling</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/revisionafterrevision.webp") }}" alt=""><h2>Revision After Revision</h2>';
+            links.forEach((link, index) => {
+                if (animationLinks[index]) {
+                    link.href = animationLinks[index];
+                }
+            })
+        });
 
         btn3.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
-        })
+            changable1.innerHTML = '<img src="{{ asset("imgs/newmenu.webp") }}" alt=""><h2>New Menu</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/runaway.webp") }}" alt=""><h2>Runway of Catalog Horror</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/STOP.webp") }}" alt=""><h2>STOP</h2>';
+            links.forEach((link, index) => {
+                if (musicLinks[index]) {
+                    link.href = musicLinks[index];
+                }
+            })
+        });
 
         !(function (d) {
             var itemClassName = "carousel",
