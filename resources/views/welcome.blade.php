@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>labirhin.art</title>
+    <link rel="preload" as="image" href="{{ asset("imgs/WEEWEE.webp")}}">
+    <link rel="preload" as="image" href="{{ asset("imgs/kepala_lobi.webp")}}">
+    <link rel="preload" as="image" href="{{ asset("imgs/EXOHEAD.webp")}}">
+    <link rel="preload" as="image" href="{{ asset("imgs/GIXHEAD.webp")}}">
+    <link rel="preload" as="image" href="{{ asset("imgs/ERIKAHEAD.webp")}}">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
@@ -223,11 +228,23 @@
             overflow: hidden;
         }
 
-        .video video {
+        .video video,
+        .canvas {
             width: 100%;
             height: 100%;
             border-radius: var(--main-border-radius);
             opacity: 0.4;
+        }
+
+        .canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            filter: blur(40px);
         }
 
         .main-text h1,
@@ -529,6 +546,10 @@
             top: 2vw;
             overflow: hidden;
             padding: 1em;
+            background-color: rgb(28 28 28 / 71%);
+            backdrop-filter: blur(8px) saturate(3.5);
+            border-radius: var(--main-border-radius);
+            border: 1px solid var(--main-border-color);
         }
 
         .mma-infowrap * {
@@ -757,6 +778,11 @@
             flex-direction: column;
             align-items: center;
             left: 2%;
+            background-color: rgb(9 9 9 / 71%);
+            backdrop-filter: blur(8px) saturate(3.5);
+            border-radius: var(--main-border-radius);
+            border: 1px solid var(--main-border-color);
+            padding: 1em;
         }
 
         .merch-promo-image {
@@ -866,6 +892,11 @@
             align-items: center;
             left: 2%;
             gap: 2rem;
+            background-color: rgb(9 9 9 / 70%);
+            backdrop-filter: blur(8px) saturate(3.5);
+            border-radius: var(--main-border-radius);
+            border: 1px solid var(--main-border-color);
+            padding: 0.6em;
         }
 
         .community-image img {
@@ -1217,6 +1248,12 @@
                 align-items: center;
             }
 
+            .mma-info,
+            .merch-stuff,
+            .community-stuff {
+                padding: 0.6em;
+            }
+
             .carousel {
                 width: 70vw;
                 height: 40vw;
@@ -1465,7 +1502,9 @@
     <section id="main">
         <div class="main-topic">
             <div class="video">
-                <video src="{{ asset('imgs/preview.mp4') }}" autoplay loop muted playsinline alt=""></video>
+                <video src="{{ asset('imgs/preview.mp4') }}" id="js-video" autoplay loop muted playsinline
+                    alt=""></video>
+                <canvas aria-hidden="true" class="canvas" id="js-canvas"></canvas>
                 <div class="main-text">
                     <h1 class="t1">ART</h1>
                     <h1 class="t2">MUSIC</h2>
@@ -1656,24 +1695,20 @@
     </footer>
     <script>
 
-        function stuffChange() {
-            const images = [
-                "{{ asset('imgs/WEEWEE.webp') }}",
-                "{{ asset('imgs/kepala_loby.webp') }}",
-                "{{ asset('imgs/EXOHEAD.webp') }}",
-                "{{ asset('imgs/GIXHEAD.webp') }}",
-                "{{ asset('imgs/ERIKAHEAD.webp') }}",
-            ];
+        const images = [
+            "{{ asset('imgs/WEEWEE.webp') }}",
+            "{{ asset('imgs/kepala_lobi.webp') }}",
+            "{{ asset('imgs/EXOHEAD.webp') }}",
+            "{{ asset('imgs/GIXHEAD.webp') }}",
+            "{{ asset('imgs/ERIKAHEAD.webp') }}"
+        ];
 
-            const diceroll = Math.floor(Math.random() * 10);
+        const diceroll = Math.floor(Math.random() * 10);
 
-            if (diceroll < images.length) {
-                const imgElement = document.getElementById("loading-image");
-                imgElement.src = images[diceroll];
-            }
+        if (diceroll < images.length) {
+            const imgElement = document.getElementById("loading-image");
+            imgElement.src = images[diceroll];
         }
-
-        stuffChange();
 
         const loadingscreen = document.querySelector(".loading-meow");
 
@@ -1684,6 +1719,32 @@
                 loadingscreen.style.display = "none";
             }, 1000);
         });
+
+        const video = document.getElementById("js-video");
+        const canvas = document.getElementById("js-canvas");
+        const ctx = canvas.getContext("2d");
+
+        let step;
+
+        const draw = () => {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        };
+
+        const drawLoop = () => {
+            draw();
+            step = window.requestAnimationFrame(drawLoop);
+        };
+
+        const drawPause = () => {
+            window.cancelAnimationFrame(step);
+            step = undefined;
+        };
+
+        const init = () => {
+            video.addEventListener("play", drawLoop, false);
+        };
+
+        window.addEventListener("DOMContentLoaded", init);
 
         document.addEventListener('mousedown', function (event) {
             if (event.target.classList.contains("btn")) {
@@ -1864,7 +1925,7 @@
 
     </script>
 </body>
-    <!-- i.. could be your exo <3
+<!-- i.. could be your exo <3
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------+--------------+--------------------------------------
 ---------------------------------------------:%%-----------:%%::------------------------------------
@@ -1931,6 +1992,7 @@
 --------------------------+--------------------==-----==----------------------=-+-------------------
 --------------------------=---------------------*------=-----------------------*+=------------------
 -->
+
 </html>
 
 </body>
