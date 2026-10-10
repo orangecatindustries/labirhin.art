@@ -443,6 +443,7 @@
             height: 100%;
             border-radius: var(--main-border-radius);
             opacity: 0.4;
+            filter: blur(3px) saturate(2);
         }
 
         .char-images {
@@ -463,6 +464,7 @@
             transform-style: preserve-3d;
             top: 10%;
             overflow: hidden;
+            padding: 1em;
         }
 
         .mma-infowrap * {
@@ -909,6 +911,7 @@
                 margin: 5px;
                 padding: 0.65rem 0.2rem;
                 margin-bottom: 8px;
+                border: 1px solid var(--main-border-color);
             }
 
             .logo-expand img {
@@ -920,7 +923,8 @@
 
             .logo-expand h2 {
                 font-size: 0.9rem;
-                margin: 0
+                margin: 0;
+                margin-left: 3px;
             }
 
             .video,
@@ -984,11 +988,16 @@
                 justify-content: flex-start;
                 max-height: 68px;
                 overflow-y: hidden;
+                transition: max-height 0.5s ease;
+            }
+
+            .nav.open {
+                max-height: 300px;
             }
 
             .video,
             .mma-con {
-                margin-top: 26%;
+                margin-top: 6rem;
                 height: 600px;
                 justify-content: center;
             }
@@ -1174,7 +1183,7 @@
             .merch-button-area h2,
             .community-button-area h2 {
                 font-size: clamp(16px, 8vw, 38px);
-                width: 270px;
+                width: clamp(16px, 57vw, 350px);
                 text-align: center;
             }
 
@@ -1260,7 +1269,7 @@
                         </div>
                     </a>
                     <div class="navright">
-                        <div class="hamburgermenu">
+                        <div id="ham-expand" class="hamburgermenu">
                             <img class="home-svg" src="{{ asset('svg/list.svg') }}" alt="">
                         </div>
                         <a href="">
@@ -1579,12 +1588,17 @@
             }
         });
 
-        const dropdownbtn = document.querySelectorAll("hamburgermenu");
+        const dropdownbtn = document.getElementById("ham-expand");
         const navdrop = document.querySelector(".nav");
 
         dropdownbtn.addEventListener("click", (event) => {
-            navdrop.
-        })
+            event.stopPropagation();
+            navdrop.classList.toggle("open");
+        });
+
+        document.addEventListener("click", () => {
+            navdrop.classList.remove("open");
+        });
 
         const btn = document.getElementById("btn");
         const btn2 = document.getElementById("btn2");
