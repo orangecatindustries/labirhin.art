@@ -31,6 +31,7 @@
             --main-orange-color: rgba(255, 151, 32, 1);
             --main-border-color: rgb(83, 83, 83);
             --main-border-radius: 18px;
+            --main-background-color: rgb(49, 49, 49);
         }
 
         html,
@@ -79,6 +80,10 @@
             justify-content: flex-end;
         }
 
+        .hamburger-expand {
+            display: none;
+        }
+
         .labirhin {
             width: 100%;
         }
@@ -90,7 +95,7 @@
         .logo-foot,
         .hamburgermenu {
             padding: .15rem;
-            background-color: rgb(49, 49, 49);
+            background-color: var(--main-background-color);
             border-radius: 12px;
             display: flex;
             flex-direction: column;
@@ -516,7 +521,7 @@
             border-radius: 50%;
             cursor: pointer;
             z-index: 1001;
-            background-color: rgb(49, 49, 49);
+            background-color: var(--main-background-color);
             border: 1px solid var(--main-border-color);
             transition: 0.2s;
             transform: translateY(-50%);
@@ -876,9 +881,46 @@
             display: flex;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
             body {
                 align-items: stretch;
+            }
+
+            .main-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 98%;
+            }
+
+            .hamburger-expand {
+                display: flex;
+                margin-bottom: 6px;
+            }
+
+            .logo-expand {
+                display: flex;
+                gap: 5px;
+                background-color: var(--main-background-color);
+                border-radius: 12px;
+                align-items: center;
+                width: 37vw;
+                max-width: 160px;
+                margin: 5px;
+                padding: 0.65rem 0.2rem;
+                margin-bottom: 8px;
+            }
+
+            .logo-expand img {
+                filter: invert();
+                height: 16px;
+                margin-top: 1px;
+                margin-left: 11px;
+            }
+
+            .logo-expand h2 {
+                font-size: 0.9rem;
+                margin: 0
             }
 
             .video,
@@ -898,7 +940,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 90vw;
-                max-width: 800px;
+                max-width: 370px;
                 z-index: 9999;
                 box-sizing: border-box;
             }
@@ -934,7 +976,14 @@
             .navright {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav {
+                flex-direction: column;
+                justify-content: flex-start;
+                max-height: 68px;
+                overflow-y: hidden;
             }
 
             .video,
@@ -1004,6 +1053,7 @@
             .main-text img {
                 margin-top: -10px;
                 height: 18vw;
+                max-height: 64px;
             }
 
             .content {
@@ -1203,63 +1253,119 @@
     <header>
         <div class="navwrap">
             <div class="nav">
-                <a href="">
-                    <div class="logo2">
-                        <img class="labirhin" src="{{ asset('imgs/labiPoint.png') }}" alt="">
+                <div class="main-nav">
+                    <a href="">
+                        <div class="logo2">
+                            <img class="labirhin" src="{{ asset('imgs/labiPoint.png') }}" alt="">
+                        </div>
+                    </a>
+                    <div class="navright">
+                        <div class="hamburgermenu">
+                            <img class="home-svg" src="{{ asset('svg/list.svg') }}" alt="">
+                        </div>
+                        <a href="">
+                            <div class="logo">
+                                <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
+                                <h2>Home</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
+                                <h2>Mau Makan Apa</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
+                                <h2>Animations</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
+                                <h2>Music</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
+                                <h2>Shop</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
+                                <h2>Wiki</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
+                                <h2>Discord</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo">
+                                <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
+                                <h2>Patreon</h2>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <div class="navright">
-                    <div class="hamburgermenu">
-                        <img class="home-svg" src="{{ asset('svg/list.svg') }}" alt="">
+                </div>
+                <div class="hamburger-expand">
+                    <div class="first-header">
+                        <a href="">
+                            <div class="logo-expand">
+                                <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
+                                <h2>Home</h2>
+                            </div>
+                            <a href="">
+                                <div class="logo-expand">
+                                    <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
+                                    <h2>Mau Makan Apa</h2>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-expand">
+                                    <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
+                                    <h2>Animations</h2>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="logo-expand">
+                                    <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
+                                    <h2>Music</h2>
+                                </div>
+                            </a>
+                        </a>
                     </div>
-                    <a href="">
-                        <div class="logo">
-                            <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
-                            <h2>Home</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
-                            <h2>Mau Makan Apa</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="pen-svg" src="{{ asset('svg/pen.svg') }}" alt="">
-                            <h2>Animations</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="music-svg" src="{{ asset('svg/music-note.svg') }}" alt="">
-                            <h2>Music</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
-                            <h2>Shop</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
-                            <h2>Wiki</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
-                            <h2>Discord</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="logo">
-                            <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
-                            <h2>Patreon</h2>
-                        </div>
-                    </a>
+                    <div class="second-header">
+                        <a href="">
+                            <div class="logo-expand">
+                                <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
+                                <h2>Shop</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo-expand">
+                                <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
+                                <h2>Wiki</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo-expand">
+                                <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
+                                <h2>Discord</h2>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="logo-expand">
+                                <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
+                                <h2>Patreon</h2>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1473,6 +1579,13 @@
             }
         });
 
+        const dropdownbtn = document.querySelectorAll("hamburgermenu");
+        const navdrop = document.querySelector(".nav");
+
+        dropdownbtn.addEventListener("click", (event) => {
+            navdrop.
+        })
+
         const btn = document.getElementById("btn");
         const btn2 = document.getElementById("btn2");
         const btn3 = document.getElementById("btn3");
@@ -1576,7 +1689,6 @@
 
 </html>
 
-</script>
 </body>
 
 </html>
