@@ -26,6 +26,11 @@
             font-weight: 400;
         }
 
+        :root {
+            --header-size: clamp(60px, 8vw, 160px);
+            --main-orange-color: rgba(255, 151, 32, 1);
+        }
+
         html,
         body {
             overflow-x: clip;
@@ -199,7 +204,7 @@
         .main-text h1,
         .main-text h3 {
             font-family: "Jaya", sans-serif;
-            font-size: clamp(60px, 8vw, 160px);
+            font-size: var(--header-size);
             font-weight: 800;
             margin: 0;
             filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.8));
@@ -215,16 +220,7 @@
         }
 
         .main-text h3 {
-            background: linear-gradient(to right,
-                    #ffad41 20%,
-                    #ffa722 30%,
-                    #ff9101 70%,
-                    #fa9d23 80%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 500% auto;
-            animation: textShine 3s ease-in-out infinite alternate;
+            color: var(--main-orange-color);
         }
 
         .main-text img {
@@ -232,16 +228,6 @@
             top: 78%;
             left: 12%;
             height: 10%;
-        }
-
-        @keyframes textShine {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            100% {
-                background-position: 100% 50%;
-            }
         }
 
         .t1,
@@ -350,11 +336,11 @@
         .btn:hover {
             transform: scale(1.05);
             transition: 0.2s;
-            background-color: rgba(255, 151, 32, 1);
+            background-color: var(--main-orange-color);
         }
 
         .btn.hovering {
-            background-color: rgba(255, 151, 32, 1);
+            background-color: var(--main-orange-color);
         }
 
         .btn.clicked {
@@ -393,21 +379,32 @@
             box-shadow: rgba(0, 0, 0, 1) 0px 0px 3px;
         }
 
+        .changables img {
+            height: 100%;
+            transition: 0.2s;
+        }
+
+        .changables:hover img {
+            transition: 0.2s;
+            filter: brightness(0.6);
+        }
+
         .changables h2 {
             opacity: 0;
             transition: 0.2s;
+            position: absolute;
+            bottom: 10%;
         }
 
         .carousel-con a {
             text-decoration: none;
-            text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+            text-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
         }
 
         .changables:hover {
             transform: scale(1.02);
             transition: 0.2s;
             border-color: rgb(100, 100, 100);
-            box-shadow: inset 0 -33px 18px -11px #0000008a;
         }
 
         .changables:hover h2 {
@@ -433,7 +430,7 @@
             width: 60%;
             margin-bottom: 3rem;
             margin-top: 1rem;
-            filter: drop-shadow(0px 0px 6px rgba(255, 151, 32, 1));
+            filter: drop-shadow(0px 0px 6px var(--main-orange-color));
         }
 
         .mma-back-image {
@@ -644,14 +641,15 @@
             text-align: center;
             font-family: "Jaya", sans-serif;
             color: white;
-            font-size: 9rem;
+            font-size: var(--header-size);
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
             margin: 0;
             margin-top: -50px;
         }
 
         .merch-text img {
-            height: 250px;
+            height: 16vw;
+            max-height: 400px;
         }
 
         .merch-back-image {
@@ -752,7 +750,7 @@
             text-align: center;
             font-family: "Jaya", sans-serif;
             color: white;
-            font-size: 9rem;
+            font-size: var(--header-size);
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
             margin-bottom: 30px;
             margin-top: -4px;
@@ -786,22 +784,30 @@
             z-index: 1;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
-            padding: 3rem;
+            padding: 1rem;
             box-sizing: border-box;
         }
 
         .community-stuff {
             position: relative;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             left: 2%;
+            gap: 2rem;
         }
 
-        .community-button-area h2 {
-            margin-top: revert-layer;
+        .community-image img {
+            height: 30vw;
+            max-height: 700px;
+        }
+
+        .community-button-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .community-button-area a {
@@ -812,21 +818,6 @@
             background-image: url({{ asset("imgs/communitybutton.png") }});
             background-size: 130%;
             background-position-y: 48%;
-        }
-
-        .community-character {
-            position: absolute;
-            align-self: flex-end;
-            flex-shrink: 0;
-            right: -6%;
-            bottom: 0;
-            width: 59%;
-        }
-
-        .community-character img {
-            display: block;
-            width: 100%;
-            max-width: 51rem;
         }
 
         /* footer */
@@ -877,6 +868,10 @@
 
         .logo-foot img {
             margin: 0;
+        }
+
+        footer {
+            margin-top: 45px;
         }
 
         .footer-first,
@@ -1122,21 +1117,30 @@
             }
 
             .mma-text h2,
-            .merch-button-area h2 {
+            .merch-button-area h2,
+            .community-button-area h2 {
                 font-size: clamp(16px, 8vw, 38px);
-                width: 234px;
+                width: 270px;
                 text-align: center;
             }
 
             .mma-art-button,
-            .mma-merch-button {
+            .mma-merch-button,
+            .mma-community-button {
                 height: 15vw;
                 width: 70vw;
-                margin-top: 3%;
+            }
+
+            .mma-community-button {
+                width: 55vw;
             }
 
             .merch-text img {
                 display: none;
+            }
+
+            .merch-stuff {
+                left: 0;
             }
 
             .merch-promo {
@@ -1148,6 +1152,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 1.5rem;
             }
 
             .merch-promo-image {
@@ -1159,10 +1164,23 @@
                 position: relative;
                 transform: translateY(40px);
                 width: auto;
+                right: 0;
             }
 
             .merch-character img {
                 width: 71vw;
+            }
+
+            .community-stuff {
+                flex-direction: column-reverse;
+            }
+
+            .community-stuff img {
+                height: 90vw;
+            }
+            
+            footer {
+                width: 92%;
             }
 
             .footer-first,
@@ -1275,6 +1293,7 @@
                     <a href="">
                         <div id="changable1" class="changables change1">
                             <h2>Placeholder Text</h2>
+                            <img src="{{ asset("imgs/background-community.png") }}" alt="">
                         </div>
                     </a>
                     <a href="">
@@ -1353,13 +1372,13 @@
                 <img class="community-img" src="{{ asset("imgs/background-community.png") }}" alt="">
                 <div class="community-promo">
                     <div class="community-stuff">
+                        <div class="community-image">
+                            <img src="{{ asset("imgs/communitypic.png") }}" alt="">
+                        </div>
                         <div class="community-button-area">
                             <h2>JOIN THE COMMUNITY HERE!</h2>
                             <a href="https://discord.gg/labirhin"><button class="mma-community-button"></button></a>
                         </div>
-                    </div>
-                    <div class="community-character">
-                        <img src="{{ asset("imgs/merchcharacters.png") }}" alt="">
                     </div>
                 </div>
             </div>
@@ -1427,7 +1446,7 @@
 
         document.addEventListener('mousedown', function (event) {
             if (event.target.classList.contains("btn")) {
-                const isClicked = document.querySelector('.btn.clicked')
+                const isClicked = document.querySelector('.btn.clicked');
 
                 if (isClicked && isClicked !== event.target) {
                     isClicked.classList.remove('clicked');
@@ -1454,21 +1473,21 @@
         let changable3 = document.getElementById("changable3");
 
         btn.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
-            changable2.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
-            changable3.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt="">';
+            changable1.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/merchpromo.png") }}" alt=""><h2>Placeholder Text</h2>';
         })
 
         btn2.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
-            changable2.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
-            changable3.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt="">';
+            changable1.innerHTML = '<img src="{{ asset("imgs/fightover.avif") }}" alt=""><h2>Fight Over! Scene from MMA4</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/newmenu.avif") }}" alt=""><h2>Placeholder Text</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/communitybutton.png") }}" alt=""><h2>Placeholder Text</h2>';
         })
-        
+
         btn3.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
-            changable2.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
-            changable3.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt="">';
+            changable1.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
+            changable2.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
+            changable3.innerHTML = '<img src="{{ asset("imgs/background-community.png") }}" alt=""><h2>Placeholder Text</h2>';
         })
 
         !(function (d) {
