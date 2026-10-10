@@ -418,6 +418,15 @@
             object-fit: cover;
             transition: 0.2s;
             border-radius: 12px;
+            transition: opacity 0.25s ease, filter 0.2s;
+        }
+
+        .changables.fading img {
+            opacity: 0;
+        }
+
+        .changables.fading h2 {
+            opacity: 0 !important;
         }
 
         .changables:hover img {
@@ -1332,7 +1341,7 @@
         <div class="navwrap">
             <div class="nav">
                 <div class="main-nav">
-                    <a href="">
+                    <a href="https://labirhin.art">
                         <div class="logo2">
                             <img class="labirhin" src="{{ asset('imgs/labiPoint.webp') }}" alt="">
                         </div>
@@ -1341,13 +1350,13 @@
                         <div id="ham-expand" class="hamburgermenu">
                             <img class="home-svg" src="{{ asset('svg/list.svg') }}" alt="">
                         </div>
-                        <a href="">
+                        <a href="https://labirhin.art">
                             <div class="logo">
                                 <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
                                 <h2>Home</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://maumakanapa.art">
                             <div class="logo">
                                 <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
                                 <h2>Mau Makan Apa</h2>
@@ -1365,25 +1374,25 @@
                                 <h2>Music</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://shop.labirhin.art">
                             <div class="logo">
                                 <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
                                 <h2>Shop</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://maumakanapa.wiki.gg">
                             <div class="logo">
                                 <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
                                 <h2>Wiki</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://discord.gg/labirhin">
                             <div class="logo">
                                 <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
                                 <h2>Discord</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://patreon.com/@labirhin">
                             <div class="logo">
                                 <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
                                 <h2>Patreon</h2>
@@ -1393,12 +1402,12 @@
                 </div>
                 <div class="hamburger-expand">
                     <div class="first-header">
-                        <a href="">
+                        <a href="https://labirhin.art">
                             <div class="logo-expand">
                                 <img class="home-svg" src="{{ asset('svg/home.svg') }}" alt="">
                                 <h2>Home</h2>
                             </div>
-                            <a href="">
+                            <a href="https://maumakanapa.art">
                                 <div class="logo-expand">
                                     <img class="comic-svg" src="{{ asset('svg/comic.svg') }}" alt="">
                                     <h2>Mau Makan Apa</h2>
@@ -1419,25 +1428,25 @@
                         </a>
                     </div>
                     <div class="second-header">
-                        <a href="">
+                        <a href="https://shop.labirhin.art">
                             <div class="logo-expand">
                                 <img class="shop-svg" src="{{ asset('svg/shop.svg') }}" alt="">
                                 <h2>Shop</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://maumakanapa.wiki.gg">
                             <div class="logo-expand">
                                 <img class="wiki-svg" src="{{ asset('svg/wiki.svg') }}" alt="">
                                 <h2>Wiki</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://discord.gg/labirhin">
                             <div class="logo-expand">
                                 <img class="discord-svg" src="{{ asset('svg/discord.svg') }}" alt="">
                                 <h2>Discord</h2>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://patreon.com/@labirhin">
                             <div class="logo-expand">
                                 <img class="patreon-svg" src="{{ asset('svg/patreon-icon.svg') }}" alt="">
                                 <h2>Patreon</h2>
@@ -1728,14 +1737,25 @@
         const btn2 = document.getElementById("btn2");
         const btn3 = document.getElementById("btn3");
 
+        let changables = document.querySelectorAll(".changables");
+
         let changable1 = document.getElementById("changable1");
         let changable2 = document.getElementById("changable2");
         let changable3 = document.getElementById("changable3");
 
+        function swapContent(owo, html) {
+            owo.classList.add("fading");
+            setTimeout(() => {
+                owo.innerHTML = html;
+                void owo.offsetWidth;
+                owo.classList.remove("fading");
+            }, 250);
+        }
+
         btn.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/advertisement.webp") }}" alt=""><h2>TUGAS BAHASA INGGRIS</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/mereka.webp") }}" alt=""><h2>MEREKA NYATA?</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/blender.webp") }}" alt=""><h2>RGB LED Monitor Tutorial</h2>';
+            swapContent(changable1, '<img src="{{ asset("imgs/advertisement.webp") }}" alt=""><h2>TUGAS BAHASA INGGRIS</h2>');
+            swapContent(changable2, '<img src="{{ asset("imgs/mereka.webp") }}" alt=""><h2>MEREKA NYATA?</h2>');
+            swapContent(changable3, '<img src="{{ asset("imgs/blender.webp") }}" alt=""><h2>RGB LED Monitor Tutorial</h2>');
             links.forEach((link, index) => {
                 if (videoLinks[index]) {
                     link.href = videoLinks[index];
@@ -1745,9 +1765,9 @@
 
 
         btn2.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/fightover.webp") }}" alt=""><h2>Fight Over! Scene from MMA4</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/thestarsarefalling.webp") }}" alt=""><h2>The Stars Are Falling</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/revisionafterrevision.webp") }}" alt=""><h2>Revision After Revision</h2>';
+            swapContent(changable1, '<img src="{{ asset("imgs/fightover.webp") }}" alt=""><h2>Fight Over! Scene from MMA4</h2>');
+            swapContent(changable2, '<img src="{{ asset("imgs/thestarsarefalling.webp") }}" alt=""><h2>The Stars Are Falling</h2>');
+            swapContent(changable3, '<img src="{{ asset("imgs/revisionafterrevision.webp") }}" alt=""><h2>Revision After Revision</h2>');
             links.forEach((link, index) => {
                 if (animationLinks[index]) {
                     link.href = animationLinks[index];
@@ -1756,9 +1776,9 @@
         });
 
         btn3.addEventListener("mousedown", (event) => {
-            changable1.innerHTML = '<img src="{{ asset("imgs/newmenu.webp") }}" alt=""><h2>New Menu</h2>';
-            changable2.innerHTML = '<img src="{{ asset("imgs/runaway.webp") }}" alt=""><h2>Runway of Catalog Horror</h2>';
-            changable3.innerHTML = '<img src="{{ asset("imgs/STOP.webp") }}" alt=""><h2>STOP</h2>';
+            swapContent(changable1, '<img src="{{ asset("imgs/newmenu.webp") }}" alt=""><h2>New Menu</h2>');
+            swapContent(changable2, '<img src="{{ asset("imgs/runaway.webp") }}" alt=""><h2>Runway of Catalog Horror</h2>');
+            swapContent(changable3, '<img src="{{ asset("imgs/STOP.webp") }}" alt=""><h2>STOP</h2>');
             links.forEach((link, index) => {
                 if (musicLinks[index]) {
                     link.href = musicLinks[index];
