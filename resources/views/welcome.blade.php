@@ -29,6 +29,8 @@
         :root {
             --header-size: clamp(60px, 8vw, 160px);
             --main-orange-color: rgba(255, 151, 32, 1);
+            --main-border-color: rgb(83, 83, 83);
+            --main-border-radius: 18px;
         }
 
         html,
@@ -59,10 +61,8 @@
             height: auto;
             width: 60px;
             box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
-            border-style: solid;
-            border-color: rgb(59, 59, 59);
-            border-width: 1px;
-            border-radius: 18px;
+            border: 1px solid var(--main-border-color);
+            border-radius: var(--main-border-radius);
             background-color: #1b1b1d;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -98,9 +98,7 @@
             align-items: center;
             margin: 10px;
             transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(59, 59, 59);
+            border: 1px solid var(--main-border-color);
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
@@ -177,11 +175,9 @@
             max-width: 1600px;
             height: 40%;
             padding: 2em;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
-            border-style: solid;
-            border-color: rgb(59, 59, 59);
-            border-width: 1px;
+            border: 1px solid var(--main-border-color);
             background-color: #1b1b1d;
             position: relative;
             display: flex;
@@ -191,7 +187,7 @@
         .video video {
             width: 100%;
             height: 100%;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             opacity: 0.4;
         }
 
@@ -306,12 +302,10 @@
 
         .content {
             margin-top: -5px;
-            padding: 0em 2em 2em 2em;
-            border-radius: 18px;
+            padding: 0em 1em 2em 1em;
+            border-radius: var(--main-border-radius);
             box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
-            border-style: solid;
-            border-color: rgb(59, 59, 59);
-            border-width: 1px;
+            border: 1px solid var(--main-border-color);
             background-color: #1b1b1dc4;
             position: relative;
             display: flex;
@@ -371,9 +365,7 @@
             max-height: 240px;
             height: 15vw;
             transition: 0.2s;
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(80, 80, 80);
+            border: 1px solid var(--main-border-color);
             display: flex;
             justify-content: flex-end;
             box-shadow: rgba(0, 0, 0, 1) 0px 0px 3px;
@@ -382,6 +374,7 @@
         .changables img {
             height: 100%;
             transition: 0.2s;
+            border-radius: 12px;
         }
 
         .changables:hover img {
@@ -393,6 +386,7 @@
             opacity: 0;
             transition: 0.2s;
             position: absolute;
+            font-size: clamp(16px, 1.4vw, 25px);
             bottom: 10%;
         }
 
@@ -442,7 +436,7 @@
         .mma-img {
             width: 100%;
             height: 100%;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             opacity: 0.4;
         }
 
@@ -470,13 +464,21 @@
             box-sizing: border-box;
         }
 
+        .carousel-wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .carousel {
+            display: block;
             height: 18vw;
             width: 32vw;
             max-width: 37rem;
             max-height: 21rem;
             position: absolute;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             opacity: 0;
             margin: auto;
             margin: 1rem 4rem;
@@ -508,23 +510,21 @@
         .carousel-prev,
         .carousel-next {
             position: absolute;
-            top: 43%;
+            top: 50%;
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
             cursor: pointer;
             z-index: 1001;
             background-color: rgb(49, 49, 49);
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(83, 83, 83);
+            border: 1px solid var(--main-border-color);
             transition: 0.2s;
-            margin-top: -100px;
+            transform: translateY(-50%);
         }
 
         .carousel-prev:hover,
         .carousel-next:hover {
-            transform: scale(1.03);
+            transform: scale(1.03) translateY(-50%);
         }
 
         .carousel-prev {
@@ -582,11 +582,9 @@
             width: 39vw;
             max-width: 700px;
             max-height: 148px;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             margin-top: -16px;
-            border-color: #909090;
-            border-style: solid;
-            border-width: 1px;
+            border: 1px solid #909090;
             transition: 0.2s;
             background-position: center;
             box-shadow: 0 0 2px white;
@@ -594,7 +592,7 @@
 
         .mma-art-button:hover,
         .mma-merch-button:hover,
-        .mma-community-button {
+        .mma-community-button:hover {
             transform: scale(1.03);
             cursor: pointer;
         }
@@ -656,7 +654,7 @@
             position: relative;
             display: flex;
             align-items: center;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             overflow: hidden;
         }
 
@@ -667,7 +665,7 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.4;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             filter: saturate(2);
         }
 
@@ -693,7 +691,7 @@
         .merch-promo-image {
             width: 47vw;
             height: 27vw;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             box-shadow: white 0 0 10px;
             max-width: 43rem;
             max-height: 25rem;
@@ -764,7 +762,7 @@
             position: relative;
             display: flex;
             align-items: center;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             overflow: hidden;
         }
 
@@ -775,7 +773,7 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.4;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             filter: saturate(4) blur(3px);
         }
 
@@ -827,11 +825,9 @@
             flex-direction: column;
             justify-content: center;
             background-color: #1b1b1d;
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(83, 83, 83);
+            border: 1px solid var(--main-border-color);
             width: 98%;
-            border-radius: 18px;
+            border-radius: var(--main-border-radius);
             margin: 15px auto 15px;
             position: relative;
             align-items: center;
@@ -882,16 +878,18 @@
 
         @media screen and (max-width: 600px) {
             body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                align-items: stretch;
             }
 
             .video,
             .main-stuff,
             .mma-con,
-            .merch-wrap {
-                padding: 1.8em;
+            .merch-wrap,
+            .community-wrap {
+                box-sizing: border-box;
+                max-width: none;
+                padding: 1rem;
+                width: 90vw;
             }
 
             header {
@@ -1053,7 +1051,7 @@
                 height: auto;
                 max-height: none;
                 padding: 1rem 0 2rem;
-                border-radius: 18px;
+                border-radius: var(--main-border-radius);
             }
 
             .mma-logo {
@@ -1096,8 +1094,14 @@
 
             .carousel-prev,
             .carousel-next {
-                top: auto;
-                bottom: 43%;
+                top: 110%;
+                bottom: 0;
+                transform: none;
+            }
+
+            .carousel-prev:hover,
+            .carousel-next:hover {
+                transform: scale(1.03);
             }
 
             .carousel-prev {
@@ -1129,10 +1133,7 @@
             .mma-community-button {
                 height: 15vw;
                 width: 70vw;
-            }
-
-            .mma-community-button {
-                width: 55vw;
+                max-width: 100%;
             }
 
             .merch-text img {
@@ -1173,12 +1174,18 @@
 
             .community-stuff {
                 flex-direction: column-reverse;
+                left: 0;
+                width: 100%;
+            }
+
+            .community-button-area {
+                width: 100%;
             }
 
             .community-stuff img {
                 height: 90vw;
             }
-            
+
             footer {
                 width: 92%;
             }
@@ -1322,17 +1329,19 @@
                     <img src="{{ asset("imgs/exoworomma.png") }}" alt="">
                 </div>
                 <div class="mma-info">
-                    <div class="carousel-prev"></div>
-                    <iframe class="carousel carousel-inicial"
-                        src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
-                        allowfullscreen="true"></iframe>
-                    <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
-                        frameborder="0" allowfullscreen="true"></iframe>
-                    <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
-                        frameborder="0" allowfullscreen="true"></iframe>
-                    <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
-                        frameborder="0" allowfullscreen="true"></iframe>
-                    <div class="carousel-next"></div>
+                    <div class="carousel-wrap">
+                        <div class="carousel-prev"></div>
+                        <iframe class="carousel carousel-inicial"
+                            src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
+                            allowfullscreen="true"></iframe>
+                        <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
+                            frameborder="0" allowfullscreen="true"></iframe>
+                        <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
+                            frameborder="0" allowfullscreen="true"></iframe>
+                        <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
+                            frameborder="0" allowfullscreen="true"></iframe>
+                        <div class="carousel-next"></div>
+                    </div>
                     <div class="mma-text">
                         <h2>WANT TO SEE THE COMIC?</h2>
                         <a href="https://maumakanapa.art"><button class="mma-art-button"></button></a>
