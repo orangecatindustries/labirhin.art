@@ -25,7 +25,7 @@
                         <img src="{{ asset('svg/list.svg') }}" alt="">
                     </div>
                     @foreach ($links as [$href, $icon, $label])
-                        <a href="{{ $href }}">
+                        <a href="{{ $href }}" alt="{{ $label }}">
                             <div class="logo">
                                 <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
                                 <h2>{{ $label }}</h2>
@@ -36,7 +36,7 @@
             </div>
             <div class="hamburger-expand">
                 @foreach ($links as [$href, $icon, $label])
-                    <a href="{{ $href }}">
+                    <a href="{{ $href }}" alt="{{ $label }}">
                         <div class="logo-expand">
                             <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
                             <h2>{{ $label }}</h2>

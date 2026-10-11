@@ -83,7 +83,7 @@
                 </div>
                 <div class="mma-info">
                     <div class="carousel-wrap">
-                        <div class="carousel-prev"></div>
+                        <button class="carousel-prev"></button>
                         <iframe class="carousel carousel-inicial"
                             src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
                             allowfullscreen="true"></iframe>
@@ -93,11 +93,11 @@
                             frameborder="0" allowfullscreen="true"></iframe>
                         <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
                             frameborder="0" allowfullscreen="true"></iframe>
-                        <div class="carousel-next"></div>
+                        <button class="carousel-next"></button>
                     </div>
                     <div class="mma-text">
                         <h2>WANT TO SEE THE COMIC?</h2>
-                        <a href="https://maumakanapa.art"><button class="mma-art-button"></button></a>
+                        <a href="https://maumakanapa.art" alt="Read the Webcomic here"><button class="mma-art-button"></button></a>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                         <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.webp") }}" alt="">
                         <div class="merch-button-area">
                             <h2>CHECK OUT THE SHOP HERE!</h2>
-                            <a href="https://shop.labirhin.com"><button class="mma-merch-button"></button></a>
+                            <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button class="mma-merch-button"></button></a>
                         </div>
                     </div>
                     <div class="merch-character">
@@ -139,7 +139,7 @@
                         </div>
                         <div class="community-button-area">
                             <h2>JOIN THE COMMUNITY HERE!</h2>
-                            <a href="https://discord.gg/labirhin"><button class="mma-community-button"></button></a>
+                            <a href="https://discord.gg/labirhin" alt="Discord Server"><button class="mma-community-button"></button></a>
                         </div>
                     </div>
                 </div>

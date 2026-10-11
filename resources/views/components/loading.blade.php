@@ -9,7 +9,7 @@
         "we're loading sum epikness....",
         "meow meow mrrrp!",
         "laaaaaaaaaaaaabirhin.",
-        "it's revision.. after revision.. after revision..",
+        "revision.. after revision..",
         "everything, only from jaya abadi!",
         "let jaya blow your mind!"
     ];
