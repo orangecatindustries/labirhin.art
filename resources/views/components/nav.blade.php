@@ -9,6 +9,20 @@
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
     ];
+
+    $linksFirst = [
+        ['https://labirhin.art', 'home', 'Home'],
+        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['', 'pen', 'Animations'],
+        ['', 'music-note', 'Music'],
+    ];
+
+    $linksSecond = [
+        ['https://shop.labirhin.art', 'shop', 'Shop'],
+        ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
+        ['https://discord.gg/labirhin', 'discord', 'Discord'],
+        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
+    ];
 @endphp
 
 <header>
@@ -35,7 +49,8 @@
                 </div>
             </div>
             <div class="hamburger-expand">
-                @foreach ($links as [$href, $icon, $label])
+                <div class="first-header">
+                @foreach ($linksFirst as [$href, $icon, $label])
                     <a href="{{ $href }}" alt="{{ $label }}">
                         <div class="logo-expand">
                             <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
@@ -43,6 +58,17 @@
                         </div>
                     </a>
                 @endforeach
+                </div>
+                <div class="second-header">
+                @foreach ($linksSecond as [$href, $icon, $label])
+                    <a href="{{ $href }}" alt="{{ $label }}">
+                        <div class="logo-expand">
+                            <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
+                            <h2>{{ $label }}</h2>
+                        </div>
+                    </a>
+                @endforeach
+                </div>
             </div>
         </div>
     </div>
