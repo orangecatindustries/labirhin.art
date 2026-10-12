@@ -15,6 +15,16 @@
             font-weight: 600;
             justify-content: center;
             height: 90vh;
+            animation: expand 0.8s ease forwards;
+        }
+
+        @keyframes expand {
+            0% {
+                letter-spacing: -7px;
+            }
+            100% {
+                letter-spacing: 2px;
+            }
         }
 
         body,
@@ -62,9 +72,15 @@
             margin-bottom: 3rem;
         }
 
-        .eas-tiny img {
-            margin: 10px;
+        .jaya {
+            margin-right: 12px;
             height: 45px;
+        }
+
+        .atomo {
+            margin-left: 9px;
+            margin-top: 10px;
+            height: 35px;
         }
 
         .eas-images {
