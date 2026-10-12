@@ -769,7 +769,7 @@ header a {
     backdrop-filter: blur(8px) saturate(3.5);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--main-border-color);
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .merch-promo-image {
@@ -883,7 +883,7 @@ header a {
     backdrop-filter: blur(8px) saturate(3.5);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--main-border-color);
-    padding: 0.6em;
+    padding: 1.5em;
 }
 
 .community-image img {
@@ -1301,6 +1301,7 @@ footer {
 
     .merch-stuff {
         left: 0;
+        padding: 1em;
     }
 
     .merch-promo {
@@ -1337,6 +1338,7 @@ footer {
         left: 0;
         width: 100%;
         gap: 0;
+        padding: 0.6em;
     }
 
     .community-button-area {
