@@ -4,6 +4,20 @@
 </div>
 
 <script>
+
+    const loadingImages = [
+        "{{ asset('imgs/WEEWEE.webp') }}",
+        "{{ asset('imgs/kepala_lobi.webp') }}",
+        "{{ asset('imgs/EXOHEAD.webp') }}",
+        "{{ asset('imgs/GIXHEAD.webp') }}",
+        "{{ asset('imgs/ERIKAHEAD.webp') }}"
+    ];
+
+    const diceroll = Math.floor(Math.random() * 10);
+    if (diceroll < loadingImages.length) {
+        document.getElementById("loading-image").src = loadingImages[diceroll];
+    }
+
     const loadingTexts = [
         "we're making things awesum,,",
         "we're loading sum epikness....",
@@ -15,18 +29,6 @@
     ];
     document.getElementById("loading-text").textContent =
         loadingTexts[Math.floor(Math.random() * loadingTexts.length)];
-
-    const loadingImages = [
-        "{{ asset('imgs/WEEWEE.webp') }}",
-        "{{ asset('imgs/kepala_lobi.webp') }}",
-        "{{ asset('imgs/EXOHEAD.webp') }}",
-        "{{ asset('imgs/GIXHEAD.webp') }}",
-        "{{ asset('imgs/ERIKAHEAD.webp') }}"
-    ];
-    const diceroll = Math.floor(Math.random() * 10);
-    if (diceroll < loadingImages.length) {
-        document.getElementById("loading-image").src = loadingImages[diceroll];
-    }
 
     const loadingscreen = document.querySelector(".loading-meow");
     window.addEventListener('load', () => {
