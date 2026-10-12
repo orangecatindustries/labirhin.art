@@ -97,7 +97,8 @@
                     </div>
                     <div class="mma-text">
                         <h2>WANT TO SEE THE COMIC?</h2>
-                        <a href="https://maumakanapa.art" alt="Read the Webcomic here"><button class="mma-art-button"></button></a>
+                        <a href="https://maumakanapa.art" alt="Read the Webcomic here"><button
+                                class="mma-art-button"></button></a>
                     </div>
                 </div>
             </div>
@@ -116,7 +117,8 @@
                         <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.webp") }}" alt="">
                         <div class="merch-button-area">
                             <h2>CHECK OUT THE SHOP HERE!</h2>
-                            <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button class="mma-merch-button"></button></a>
+                            <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button
+                                    class="mma-merch-button"></button></a>
                         </div>
                     </div>
                     <div class="merch-character">
@@ -139,7 +141,8 @@
                         </div>
                         <div class="community-button-area">
                             <h2>JOIN THE COMMUNITY HERE!</h2>
-                            <a href="https://discord.gg/labirhin" alt="Discord Server"><button class="mma-community-button"></button></a>
+                            <a href="https://discord.gg/labirhin" alt="Discord Server"><button
+                                    class="mma-community-button"></button></a>
                         </div>
                     </div>
                 </div>
