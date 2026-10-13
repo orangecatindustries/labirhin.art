@@ -15,7 +15,7 @@
             font-weight: 600;
             justify-content: center;
             height: 90vh;
-            animation: expand 0.8s ease forwards;
+            animation: expand 1s ease forwards;
         }
 
         @keyframes expand {
@@ -24,6 +24,33 @@
             }
             100% {
                 letter-spacing: 2px;
+            }
+        }
+
+        @keyframes expandbig {
+            0% {
+                letter-spacing: -50px;
+            }
+            100% {
+                letter-spacing: 2px;
+            }
+        }
+
+        @keyframes left {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: 9px;
+            }
+        }
+
+        @keyframes right {
+            0% {
+                margin-right: 0px;
+            }
+            100% {
+                margin-right: 12px;
             }
         }
 
@@ -44,6 +71,7 @@
             font-size: 8rem;
             font-weight: 600;
             margin-bottom: 6rem;
+            animation: expandbig 1s ease forwards;
         }
 
         h2 {
@@ -73,12 +101,12 @@
         }
 
         .jaya {
-            margin-right: 12px;
+            animation: right 1s ease forwards;
             height: 45px;
         }
 
         .atomo {
-            margin-left: 9px;
+            animation: left 1s ease forwards;
             margin-top: 10px;
             height: 35px;
         }
