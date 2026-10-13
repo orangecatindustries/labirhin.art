@@ -26,20 +26,26 @@
                                 celebration day.<br>
 
                                 I'm passionate about movies and animation. Though I’m selective with anime, I do enjoy
-                                classics like Akira and Doraemon. My favorite movie, surprisingly, is Bullet Train —
-                                it’s not too deep but it just gets me locked in. For animation, Isle of Dogs holds a
-                                special place for inspiring my love for whimsical, talking-animal stories.<br>
-
-                                Music has been a passion since I was young. I started with FL Studio, influenced by my
-                                early obsession with dubstep and artists like Eliminate. After struggling with loudness
-                                issues in my tracks, I transitioned to creating soundtrack-style music, appreciating its
-                                depth and how it enhances a story without overwhelming it.<br>
-
-                                I’m not too huge of a Gamer but I enjoy Drawing Attack on Roblox a lot. :D<br>
-
-                                I’m excited to keep exploring music, animation, and storytelling.
-                                Thanks for getting to know a bit about me!</h2>
+                                classics like Akira and Doraemon.</h2>
                         </div>
+                    </div>
+                </div>
+                <div class="info2">
+                    <div class="text">
+                        <h2 class="bottom-text">My favorite movie, surprisingly, is Bullet Train —
+                            it’s not too deep but it just gets me locked in. For animation, Isle of Dogs holds a
+                            special place for inspiring my love for whimsical, talking-animal stories.<br>
+
+                            Music has been a passion since I was young. I started with FL Studio, influenced by my
+                            early obsession with dubstep and artists like Eliminate. After struggling with loudness
+                            issues in my tracks, I transitioned to creating soundtrack-style music, appreciating its
+                            depth and how it enhances a story without overwhelming it.<br>
+
+                            I’m not too huge of a Gamer but I enjoy Drawing Attack on Roblox a lot. :D<br>
+
+                            I’m excited to keep exploring music, animation, and storytelling.
+                            Thanks for getting to know a bit about me!</h2>
+                        </h2>
                     </div>
                 </div>
             </div>

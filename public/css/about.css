@@ -50,7 +50,9 @@
     background-color: #1b1b1d;
     position: relative;
     display: flex;
+    flex-direction: column;
     overflow: hidden;
+    height: 1050px;
 }
 
 .background-video video,
@@ -74,9 +76,6 @@
 }
 
 .hanging-gix {
-    left: 8%;
-    top: 10%;
-    position: absolute;
     padding: 2em;
     border-radius: var(--main-border-radius);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
@@ -93,11 +92,15 @@
     background-color: #5a5a5a69;
 }
 
-.info {
-    right: 6%;
-    top: 10%;
+.main-info {
     position: absolute;
-    left: 38%;
+    display: flex;
+    align-items: center;
+    top: 10%;
+}
+
+.info,
+.info2 {
     border-radius: var(--main-border-radius);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
     border: 1px solid var(--main-border-color);
@@ -106,24 +109,34 @@
     padding: 0em 1.5em 0em 1.5em;
 }
 
-.top-text {
+.info2 {
+    position: absolute;
+}
+
+.top-text,
+.bottom-text {
     display: flex;
     align-items: center;
 }
 
 .top-text h1 {
     font-family: "Jaya", sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .top-text h2 {
     font-family: "Labirhin", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
 }
 
 .h2-below {
     margin: 0em 1em 1em 0em;
+    line-height: 38px;
+}
+
+.bottom-text {
+    margin: 1em 1em 1em 0em;
     line-height: 38px;
 }
 
