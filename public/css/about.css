@@ -199,7 +199,7 @@ span {
 
     .top-text h1 {
         margin-top: 2rem;
-        font-size: 3rem;
+        font-size: clamp(12px, 13vw, 48px);
     }
 
     .top-text h2 {
