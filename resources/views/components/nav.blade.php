@@ -2,6 +2,8 @@
     $links = [
         ['https://labirhin.art', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['', 'person', 'About'],
+        ['', 'camera-reels', 'English Dub'],
         ['', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
         ['https://shop.labirhin.art', 'shop', 'Shop'],
@@ -13,13 +15,15 @@
     $linksFirst = [
         ['https://labirhin.art', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['', 'person', 'About'],
+        ['', 'camera-reels', 'English Dub'],
         ['', 'pen', 'Animations'],
-        ['', 'music-note', 'Music'],
     ];
 
     $linksSecond = [
         ['https://shop.labirhin.art', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
+        ['', 'music-note', 'Music'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
     ];
