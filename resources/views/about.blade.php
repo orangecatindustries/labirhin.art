@@ -20,7 +20,7 @@
                                     <h2>(about me)</h2>
                                 </div>
                                 <h2 class="h2-below">I'm <strong>Bajra Gadha Panglima Balangga</strong>, but most people
-                                    call me <span>Labirhin</span>. <br>
+                                    call me <span id="meow">Labirhin</span>. <br>
                                     I
                                     got myself the nickname after watching The Maze Runner. I just really like Mazes.
                                     Born
@@ -56,6 +56,13 @@
         </div>
     </section>
     <script>
+
+        const labiclick = document.getElementById("meow");
+
+        labiclick.addEventListener("click", (event) => {
+            new Audio("{{ asset("sound/xeno3.mp3") }}").play();
+        })
+
         const video = document.getElementById("js-video");
         const canvas = document.getElementById("js-canvas");
         const ctx = canvas.getContext("2d");

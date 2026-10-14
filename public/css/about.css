@@ -152,6 +152,10 @@
     line-height: 38px;
 }
 
+#meow {
+    cursor: pointer;
+}
+
 strong {
     text-decoration: underline;
     color: orange;
