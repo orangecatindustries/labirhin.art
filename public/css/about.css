@@ -119,6 +119,11 @@
     max-width: 700px;
 }
 
+.text-again {
+    display: flex;
+    align-items: center;
+}
+
 .info2 {
     margin-top: 2rem;
     width: 66vw;
@@ -129,6 +134,10 @@
 .bottom-text {
     display: flex;
     align-items: center;
+}
+
+.top-text {
+    justify-content: space-between;
 }
 
 .top-text h1 {
@@ -167,6 +176,15 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 5s infinite linear;
+}
+
+#langswitch {
+    font-size: 20px;
+    border-radius: var(--main-border-radius);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
+    border: 1px solid var(--main-border-color);
+    background-color: #1b1b1d63;
+    padding: 0.8rem;
 }
 
 #xenobotlittle {

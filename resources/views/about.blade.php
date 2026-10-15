@@ -16,8 +16,15 @@
                         <div class="info">
                             <div class="text">
                                 <div class="top-text">
-                                    <h1>ABOUT ME</h1>
-                                    <h2>(about me)</h2>
+                                    <div class="text-again">
+                                        <h1>ABOUT ME</h1>
+                                        <h2>(about me)</h2>
+                                    </div>
+                                    <button id="langswitch">Change to Indonesian!</button>
+                                    <div class="langdrop">
+                                        <a class="English" href="#">English</a>
+                                        <a class="Indonesian" href="#">Indonesian</a>
+                                    </div>
                                 </div>
                                 <h2 class="h2-below">I'm <strong>Bajra Gadha Panglima Balangga</strong>, but most people
                                     call me <span id="meow">Labirhin</span>. <br>
@@ -91,6 +98,12 @@
                 move.classList.remove("animate")
             }, 500);
         })
+
+        function changeLang(language) {
+            const langText = document.querySelectorAll("h2-below");
+            const langButton = document.getElementById("langbutton");
+            if (langText)
+        }
 
 
     </script>
