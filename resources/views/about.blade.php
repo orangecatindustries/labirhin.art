@@ -97,7 +97,7 @@
                 move.style.display = "none";
                 move.classList.remove("animate")
             }, 500);
-        })
+        })}
 
         function changeLang(language) {
             const langText = document.querySelectorAll("h2-below");
