@@ -55,6 +55,9 @@
             </div>
         </div>
     </section>
+    <div id="xenobotlittle">
+        <img src="{{ asset("imgs/kepala_lobi.webp") }}" alt="">
+    </div>
     <script>
 
         const labiclick = document.getElementById("meow");
@@ -74,5 +77,21 @@
             step = window.requestAnimationFrame(drawLoop);
         };
         video.addEventListener("play", drawLoop, false);
+
+        const move = document.getElementById("xenobotlittle");
+
+        document.body.addEventListener("mousedown", (event) => {
+            const { clientX, clientY } = event;
+            move.style.display = "block";
+            move.style.left = `calc(${clientX}px - 20px)`;
+            move.style.top = `calc(${clientY}px - 40px)`;
+            move.classList.add("animate");
+            setTimeout(() => {
+                move.style.display = "none";
+                move.classList.remove("animate")
+            }, 500);
+        })
+
+
     </script>
 </x-layout>
