@@ -89,13 +89,15 @@
 
         document.body.addEventListener("mousedown", (event) => {
             const { clientX, clientY } = event;
+            if (!move) return;
+            move.classList.remove("animate")
+            void move.offsetWidth;
+            move.classList.add("animate");
             move.style.display = "block";
             move.style.left = `calc(${clientX}px - 20px)`;
             move.style.top = `calc(${clientY}px - 40px)`;
-            move.classList.add("animate");
             setTimeout(() => {
                 move.style.display = "none";
-                move.classList.remove("animate")
             }, 500);
         })
 
