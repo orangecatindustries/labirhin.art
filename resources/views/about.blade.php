@@ -87,16 +87,19 @@
 
         const move = document.getElementById("xenobotlittle");
 
+        let animOut;
+
         document.body.addEventListener("mousedown", (event) => {
             const { clientX, clientY } = event;
             if (!move) return;
+            clearTimeout(animOut);
             move.classList.remove("animate")
             void move.offsetWidth;
             move.classList.add("animate");
             move.style.display = "block";
             move.style.left = `calc(${clientX}px - 20px)`;
             move.style.top = `calc(${clientY}px - 40px)`;
-            setTimeout(() => {
+            animOut = setTimeout(() => {
                 move.style.display = "none";
             }, 500);
         })
