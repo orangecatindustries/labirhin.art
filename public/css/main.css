@@ -119,7 +119,8 @@ header a {
 .btn,
 .changables,
 .logo-foot,
-.hamburgermenu {
+.hamburgermenu,
+#skip-loading-button {
     padding: .15rem;
     background-color: var(--main-background-color);
     border-radius: 12px;
@@ -362,15 +363,20 @@ header a {
     margin-bottom: 20px;
 }
 
-.btn {
+.btn, #skip-loading-button {
     padding: .55rem 1rem;
     border-radius: 12px;
     font-size: 1.3rem;
     transition: 0.2s;
     box-shadow: rgba(255, 151, 32, 0.2) 0px 0px 12px;
+    color: white;
 }
 
-.btn:hover {
+#skip-loading-button {
+    display: none;
+}
+
+.btn:hover, #skip-loading-button:hover {
     transform: scale(1.05);
     transition: 0.2s;
     background-color: var(--main-orange-color);

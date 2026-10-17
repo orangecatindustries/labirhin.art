@@ -1,6 +1,7 @@
 <div class="loading-meow">
     <img id="loading-image" src="{{ asset('imgs/labiPoint.webp') }}" alt="">
     <h2 id="loading-text">we're loading sum epikness....</h2>
+    <a id="skip-loading-button">skip loading</a>
 </div>
 
 <script>
@@ -31,11 +32,19 @@
         loadingTexts[Math.floor(Math.random() * loadingTexts.length)];
 
     const loadingscreen = document.querySelector(".loading-meow");
-    document.addEventListener('readystatechange', () => {
-        if (document.readyState === 'interactive') {
-            console.log("meow meow, loaded!")
-            loadingscreen.style.opacity = "0";
-            setTimeout(() => { loadingscreen.style.display = "none"; }, 1000);
-        }
+    const loadingSkip = document.getElementById("skip-loading-button")
+
+    window.addEventListener('load', () => {
+        loadingscreen.style.opacity = "0";
+        setTimeout(() => { loadingscreen.style.display = "none"; }, 1000);
+    });
+
+    setTimeout(() => {
+        loadingSkip.style.display = "block";
+    }, 3000);
+
+    loadingSkip.addEventListener('click', (event) => {
+        loadingscreen.style.opacity = "0";
+        setTimeout(() => { loadingscreen.style.display = "none"; }, 1000);
     });
 </script>
