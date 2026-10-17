@@ -114,7 +114,7 @@
                 <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
                 <div class="merch-promo">
                     <div class="merch-stuff">
-                        <img class="merch-promo-image" src="{{ asset("imgs/merchpromo.webp") }}" alt="">
+                        <img class="merch-promo-image" src="{{ asset("imgs/october_promo.png") }}" alt="">
                         <div class="merch-button-area">
                             <h2>CHECK OUT THE SHOP HERE!</h2>
                             <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button
