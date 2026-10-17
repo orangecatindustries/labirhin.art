@@ -15,6 +15,9 @@
             font-weight: 600;
             justify-content: center;
             height: 90vh;
+        }
+
+        h2, h3, p {
             animation: expand 1s ease forwards;
         }
 
@@ -119,6 +122,23 @@
             height: 50px;
             width: 1px;
             background-color: white;
+        }
+
+        @media screen and (max-width: 900px) {
+            h1 {
+                font-size: 10vw;
+                animation: expand 1s ease forwards;
+            }
+
+            h2 {
+                font-size: 4vw;
+                text-align: center;
+            }
+
+            p {
+                font-size: 3vw;
+                text-align: center;
+            }
         }
     </style>
 </head>

@@ -89,7 +89,7 @@
 
         let animOut;
 
-        document.body.addEventListener("mousedown", (event) => {
+        document.body.addEventListener("click", (event) => {
             const { clientX, clientY } = event;
             if (!move) return;
             clearTimeout(animOut);

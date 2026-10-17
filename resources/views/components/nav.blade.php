@@ -2,7 +2,7 @@
     $links = [
         ['https://labirhin.art', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
-        ['', 'person', 'About'],
+        ['/about', 'person', 'About'],
         ['', 'camera-reels', 'English Dub'],
         ['', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
