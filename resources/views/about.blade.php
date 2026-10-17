@@ -20,10 +20,12 @@
                                         <h1>ABOUT ME</h1>
                                         <h2>(about me)</h2>
                                     </div>
-                                    <button id="langswitch">Language</button>
-                                    <div id="langdrop" class="langdrop">
-                                        <a class="English" href="#">English</a>
-                                        <a class="Indonesian" href="#">Indonesian</a>
+                                    <div class="button-wrap">
+                                        <button id="langswitch">Language</button>
+                                        <div id="langdrop" class="langdrop">
+                                            <a href="#" data-value="english">English</a>
+                                            <a href="#" data-value="indonesian">Indonesian</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <h2 class="h2-below">I'm <strong>Bajra Gadha Panglima Balangga</strong>, but most people
@@ -67,11 +69,42 @@
     </div>
     <script>
 
+        const topText = document.querySelector(".h2-below");
+        const bottomText = document.querySelector(".bottom-text");
+        const langSwitch = document.getElementById("langswitch");
+        const langDrop = document.getElementById("langdrop");
+
+        const text = {
+            english: {
+                top: topText.innerHTML,
+                bottom: bottomText.innerHTML
+            },
+            indonesian: {
+                top: "test1",
+                bottom: "test2",
+            }
+        };
+
+        langSwitch.addEventListener("click", (event) => {
+            langDrop.classList.toggle("show");
+        });
+
+        langDrop.addEventListener("click", (event) => {
+            const selChoice = event.target.closest("a");
+            if (!selChoice) return;
+            event.preventDefault();
+
+            const lang = text[selChoice.dataset.value];
+            topText.innerHTML = lang.top;
+            bottomText.innerHTML = lang.bottom;
+            langDrop.classList.remove("show");
+        })
+
         const labiclick = document.getElementById("meow");
 
         labiclick.addEventListener("click", (event) => {
             new Audio("{{ asset("sound/xeno3.mp3") }}").play();
-        })
+        });
 
         const video = document.getElementById("js-video");
         const canvas = document.getElementById("js-canvas");

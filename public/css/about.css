@@ -189,13 +189,27 @@ span {
 
 .langdrop {
     display: none;
+    position: absolute;
+    right: 24px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 0.3s;
+}
+
+.langdrop.show {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(12px);
+    opacity: 1;
+    transition: all 0.3s;
+    align-items: center;
 }
 
 .langdrop a {
     color: white;
     text-decoration: none;
+    padding: 5px;
 }
-
 
 #xenobotlittle {
     display: none;
@@ -203,6 +217,7 @@ span {
     top: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    pointer-events: none;
 }
 
 #xenobotlittle img {
