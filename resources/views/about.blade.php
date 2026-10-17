@@ -80,8 +80,8 @@
                 bottom: bottomText.innerHTML
             },
             indonesian: {
-                top: "test1",
-                bottom: "test2",
+                top: `Aku <strong>Bajra Gadha Panglima Balangga</strong>, tapi kebanyakan orang mengenalku sebagai <span id="meow">Labirhin</span>.<br> Aku mendapat nickname itu setelah aku menonton The Maze Runner, trus aku jadi suka labirin.<br>Aku lahir tahun 2006 di Indonesia, sekarang aku tinggal di Yogyakarta, Ulang tahun ku bersamaan dengan ulang tahun kota. Aku suka film dan animasi, tapi aku milih-milih kalo sama anime, aku suka anime klasik seperti Akira dan Doraemon.`,
+                bottom: `Film kesukaanku, Bullet Train -- bukan film yang deep, tapi berhasil bikin lock in. Untuk animasi, Isle of Dogs punya tempat special untuk menginspirasi kecintaanku terhadap cerita tentang hewan yang bisa berbicara.<br>Aku suka musik dari waktu aku masih kecil. Aku mulai dari FL Studio, terpengaruh dari kesukaanku terhadap Dubstep dan artist seperti Eliminate. Setelah suara keras menjadi masalah di musik musikku, aku bertransisi untuk membuat musik dengan style soundtrack, menghargai mendalamnya dan bagaimana itu meningkatkan cerita tanpa harus berlebihan.<br>Aku bukanlah penggemar game, tapi aku suka sekali Drawing Attack di Roblox. Aku tidak sabar untuk menjelajahi musik, animasi, dan bercerita.<br>Terima kasih untuk mengenal sedikit hal tentang aku!`,
             }
         };
 
