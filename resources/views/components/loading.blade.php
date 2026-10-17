@@ -31,8 +31,11 @@
         loadingTexts[Math.floor(Math.random() * loadingTexts.length)];
 
     const loadingscreen = document.querySelector(".loading-meow");
-    window.addEventListener('load', () => {
-        loadingscreen.style.opacity = "0";
-        setTimeout(() => { loadingscreen.style.display = "none"; }, 1000);
+    document.addEventListener('readystatechange', () => {
+        if (document.readyState === 'interactive') {
+            console.log("meow meow, loaded!")
+            loadingscreen.style.opacity = "0";
+            setTimeout(() => { loadingscreen.style.display = "none"; }, 1000);
+        }
     });
 </script>

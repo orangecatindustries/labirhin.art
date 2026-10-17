@@ -20,8 +20,8 @@
                                         <h1>ABOUT ME</h1>
                                         <h2>(about me)</h2>
                                     </div>
-                                    <button id="langswitch">Change to Indonesian!</button>
-                                    <div class="langdrop">
+                                    <button id="langswitch">Language</button>
+                                    <div id="langdrop" class="langdrop">
                                         <a class="English" href="#">English</a>
                                         <a class="Indonesian" href="#">Indonesian</a>
                                     </div>
@@ -103,7 +103,6 @@
                 move.style.display = "none";
             }, 500);
         })
-
 
     </script>
 </x-layout>

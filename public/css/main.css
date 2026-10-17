@@ -19,7 +19,7 @@
 }
 
 :root {
-    --header-size: clamp(60px, 8vw, 160px);
+    --header-size: clamp(60px, 7vw, 160px);
     --main-orange-color: rgba(255, 151, 32, 1);
     --main-border-color: rgb(83, 83, 83);
     --main-border-radius: 18px;
@@ -202,7 +202,7 @@ header a {
 .merch-wrap,
 .community-wrap {
     margin-top: 2%;
-    width: 80%;
+    width: 68%;
     max-width: 1600px;
     height: 40%;
     padding: 2em;
@@ -250,7 +250,7 @@ header a {
 }
 
 .main-text p {
-    font-size: clamp(12px, 1.3vw, 26px);
+    font-size: clamp(12px, 1.1vw, 26px);
     position: absolute;
     left: 25%;
     font-weight: 700;
@@ -338,7 +338,7 @@ header a {
 }
 
 .xenobot-share img {
-    height: 24vw;
+    height: 16vw;
     max-height: 310px;
     margin-top: -22%;
 }
@@ -386,7 +386,7 @@ header a {
 
 .button-area h2 {
     font-family: "Indie Flower", cursive;
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-align: center;
     margin: 20px;
     text-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
@@ -405,10 +405,10 @@ header a {
 }
 
 .changables {
-    width: 24vw;
+    width: 20vw;
     max-width: 426px;
     max-height: 240px;
-    height: 15vw;
+    height: 12vw;
     transition: 0.2s;
     border: 1px solid var(--main-border-color);
     display: flex;
@@ -465,8 +465,8 @@ header a {
 }
 
 .patreon-support {
-    max-width: 300px;
-    max-height: 86px;
+    max-width: 260px;
+    max-height: 75px;
     margin-top: 25px;
     transition: 0.2s;
     width: 33vw;
@@ -643,13 +643,13 @@ header a {
 .merch-button-area h2,
 .community-button-area h2 {
     margin-top: 6px;
-    font-size: clamp(10px, 3.5vw, 58px);
+    font-size: clamp(10px, 2.6vw, 58px);
     font-family: "Jaya", sans-serif;
     text-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
 }
 
 .mma-text h2 {
-    margin: 2.5vw 0 4.5vw 0;
+    margin: 0.5vw 0 3vw 0;
 }
 
 .mma-art-button,
@@ -657,8 +657,8 @@ header a {
 .mma-community-button {
     background-image: url("/imgs/mmaart.webp");
     background-size: cover;
-    height: 8vw;
-    width: 39vw;
+    width: 29vw;
+    height: 6vw;
     max-width: 700px;
     max-height: 148px;
     border-radius: var(--main-border-radius);
@@ -725,7 +725,7 @@ header a {
 }
 
 .merch-text img {
-    height: 16vw;
+    height: 13vw;
     max-height: 400px;
 }
 
@@ -805,6 +805,7 @@ header a {
     display: block;
     width: 100%;
     max-width: 51rem;
+    clip-path: inset(0px 0px 0px 16%);
 }
 
 /* community */

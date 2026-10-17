@@ -245,26 +245,31 @@
                 items[0].classList.add("active");
                 items[1].classList.add("next");
             }
+
             function setEventListeners() {
                 d.getElementsByClassName('carousel-next')[0].addEventListener('click', moveNext);
                 d.getElementsByClassName('carousel-prev')[0].addEventListener('click', movePrev);
             }
+
             function moveNext() {
                 if (!moving) {
                     slide = (slide === totalItems - 1) ? 0 : slide + 1;
                     moveCarouselTo(slide);
                 }
             }
+
             function movePrev() {
                 if (!moving) {
                     slide = (slide === 0) ? totalItems - 1 : slide - 1;
                     moveCarouselTo(slide);
                 }
             }
+
             function disableInteraction() {
                 moving = true;
-                setTimeout(function () { moving = false; }, 500);
+                setTimeout(function () { moving = false; }, 100);
             }
+
             function moveCarouselTo(slide) {
                 if (moving) return;
                 disableInteraction();
@@ -277,12 +282,15 @@
                 items[slide].className = itemClassName + " active";
                 items[next].className = itemClassName + " next";
             }
+
             function initCarousel() {
                 setInitialClasses();
                 setEventListeners();
                 moving = false;
             }
+
             initCarousel();
+
         }(document));
     </script>
 </x-layout>
