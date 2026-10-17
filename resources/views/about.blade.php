@@ -100,10 +100,10 @@
             langDrop.classList.remove("show");
         })
 
-        const labiclick = document.getElementById("meow");
-
-        labiclick.addEventListener("click", (event) => {
-            new Audio("{{ asset("sound/xeno3.mp3") }}").play();
+        document.addEventListener("click", (event) => {
+            if (event.target.closest("#meow")) {
+                new Audio("{{ asset('sound/xeno3.mp3') }}").play();
+            }
         });
 
         const video = document.getElementById("js-video");

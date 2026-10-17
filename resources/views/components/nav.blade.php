@@ -1,10 +1,10 @@
 @php
     $links = [
-        ['https://labirhin.art', 'home', 'Home'],
+        ['/', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
         ['', 'camera-reels', 'English Dub'],
-        ['', 'pen', 'Animations'],
+        ['/#stuff', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
         ['https://shop.labirhin.art', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
@@ -15,9 +15,9 @@
     $linksFirst = [
         ['https://labirhin.art', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
-        ['', 'person', 'About'],
+        ['/about', 'person', 'About'],
         ['', 'camera-reels', 'English Dub'],
-        ['', 'pen', 'Animations'],
+        ['/#stuff', 'pen', 'Animations'],
     ];
 
     $linksSecond = [
