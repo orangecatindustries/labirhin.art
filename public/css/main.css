@@ -969,7 +969,7 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 15rem;
     align-items: center;
 }
 
@@ -1379,6 +1379,10 @@ footer {
     }
 
     footer {
+        margin-top: 5em;
+    }
+
+    .footer-nav {
         width: 92%;
     }
 
