@@ -20,21 +20,26 @@
 @endphp
 
 <footer>
-    <div class="footer-text">
-        <h3>labirhin - 2026</h3>
+    <div class="footer-image">
+         <img class="together" src="{{ asset("imgs/footer-down.png") }}" alt="">
     </div>
-    <div class="ext-links">
-        @foreach ($groups as $i => $group)
-            <div class="{{ $classes[$i] }}">
-                @foreach ($group as [$href, $icon])
-                    <a href="{{ $href }}">
-                        <div class="logo-foot">
-                            <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
-                        </div>
-                    </a>
-                @endforeach
-            </div>
-        @endforeach
+    <div class="footer-nav">
+        <div class="footer-text">
+            <h3>labirhin - 2026</h3>
+        </div>
+        <div class="ext-links">
+            @foreach ($groups as $i => $group)
+                <div class="{{ $classes[$i] }}">
+                    @foreach ($group as [$href, $icon])
+                        <a href="{{ $href }}">
+                            <div class="logo-foot">
+                                <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            @endforeach
+        </div>
+        <h3>made with love, by laurah ♥</h3>
     </div>
-    <h3>made with love, by laurah ♥</h3>
 </footer>
