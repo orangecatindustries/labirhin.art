@@ -13,7 +13,7 @@
     ];
 
     $linksFirst = [
-        ['https://labirhin.art', 'home', 'Home'],
+        ['/', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
         ['', 'camera-reels', 'English Dub'],

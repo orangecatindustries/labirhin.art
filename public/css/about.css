@@ -178,7 +178,8 @@ span {
     -webkit-animation: hue 5s infinite linear;
 }
 
-#langswitch, .langdrop {
+#langswitch,
+.langdrop {
     font-size: 20px;
     border-radius: var(--main-border-radius);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
@@ -234,6 +235,7 @@ span {
         transform: translateY(0px) rotate(0deg);
         opacity: 1;
     }
+
     100% {
         transform: translateY(-50px) rotate(240deg);
         opacity: 0;
@@ -268,12 +270,37 @@ span {
         max-height: 430px;
     }
 
-    .top-text {
+    .button-wrap {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .top-text h1, h2 {
+    #langswitch {
+        font-size: 16px;
+    }
+
+    .langdrop {
+        display: none;
+        left: 0;
+        opacity: 0;
+        transform: translateY(0px);
+        transition: all 0.3s;
+        position: unset;
+    }
+
+    .langdrop a {
+        font-size: 16px;
+    }
+
+    .top-text,
+    .text-again {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-text h1,
+    h2 {
         margin: 0;
     }
 
@@ -288,7 +315,8 @@ span {
         font-size: 2rem;
     }
 
-    .h2-below, .bottom-text {
+    .h2-below,
+    .bottom-text {
         text-align: center;
         font-size: 16px;
         margin: 1em 0em 0.5em 0em;
