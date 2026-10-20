@@ -204,6 +204,7 @@ span {
     opacity: 1;
     transition: all 0.3s;
     align-items: center;
+    backdrop-filter: blur(5px);
 }
 
 .langdrop a {
