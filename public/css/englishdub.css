@@ -1,0 +1,9 @@
+#info-top {
+    display: flex;
+    justify-content: center;
+}
+
+.engdubleft, .engdubright {
+    height: 20vw;
+    
+}

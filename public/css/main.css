@@ -201,7 +201,8 @@ header a {
 .main-stuff,
 .mma-con,
 .merch-wrap,
-.community-wrap {
+.community-wrap,
+.reusables {
     margin-top: 2%;
     width: 68%;
     max-width: 1600px;
