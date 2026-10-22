@@ -3,7 +3,7 @@
         ['/', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
-        ['', 'camera-reels', 'English Dub'],
+        ['/english-dub', 'camera-reels', 'English Dub'],
         ['/#stuff', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
         ['https://shop.labirhin.art', 'shop', 'Shop'],
@@ -16,7 +16,7 @@
         ['/', 'home', 'Home'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
-        ['', 'camera-reels', 'English Dub'],
+        ['/english-dub', 'camera-reels', 'English Dub'],
         ['/#stuff', 'pen', 'Animations'],
     ];
 

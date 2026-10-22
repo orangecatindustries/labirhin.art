@@ -4,8 +4,11 @@
     </x-slot:head>
     <section id="info-top">
         <div class="reusables">
-            <img class="engdubleft" src=""{{ asset("imgs/engdubleft.png") }} alt="">
-            <img class="engdubright" src=""{{ asset("imgs/engdubright.png") }} alt="">
+            <div class="info-content">
+                <img class="engdubleft" src="{{ asset("imgs/engdubleft.png") }}" alt="">
+                <h1>SUPPORT THE OFFICIAL ENGLISH DUB!</h1>
+                <img class="engdubright" src="{{ asset("imgs/engdubright.png") }}" alt="">
+            </div>
         </div>
     </section>
     <section id="english-dub">

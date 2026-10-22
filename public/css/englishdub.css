@@ -3,7 +3,19 @@
     justify-content: center;
 }
 
-.engdubleft, .engdubright {
+.engdubleft,
+.engdubright {
     height: 20vw;
-    
+}
+
+.engdubleft {
+    clip-path: inset(0px 54% 0px 0px);
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-content h1 {
+    font-family: "Jaya", sans-serif;
 }
