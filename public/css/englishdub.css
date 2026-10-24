@@ -8,15 +8,17 @@
     height: 20vw;
 }
 
-.engdubleft {
-    clip-path: inset(0px 54% 0px 0px);
-}
-
 .info-content {
     display: flex;
 }
 
+.engdubright {
+    transform: rotateY(180deg);
+}
+
 .info-content h1 {
     font-family: "Jaya", sans-serif;
-    font-size: 20vw;
+    font-size: 4vw;
+    text-align: center;
+    margin: 0px -80px 0px;
 }

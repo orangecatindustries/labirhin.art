@@ -940,6 +940,8 @@ footer h3 {
 .ext-links {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 99999;
 }
 
 .logo-foot {
