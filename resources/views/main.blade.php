@@ -18,10 +18,10 @@
                 <canvas aria-hidden="true" class="canvas" id="js-canvas"></canvas>
                 <div class="main-text">
                     <h1 class="t1">ART</h1>
-                    <h1 class="t2">MUSIC</h2>
-                        <h3 class="t3">ANIMATION</h3>
-                        <img src="{{  asset('imgs/markiplier.webp') }}" alt="">
-                        <p class="t4">CREATOR OF ‘MAU MAKAN APA?’ COMIC, SOUNDTRACK & SERIES</p>
+                    <h1 class="t2">MUSIC</h1>
+                    <h3 class="t3">ANIMATION</h3>
+                    <img src="{{  asset('imgs/markiplier.webp') }}" alt="">
+                    <p class="t4">CREATOR OF ‘MAU MAKAN APA?’ COMIC, SOUNDTRACK & SERIES</p>
                 </div>
                 <div class="sorbitol-img">
                     <img src="{{  asset('imgs/SORBITOL.webp') }}" alt="">
@@ -126,6 +126,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <section id="community">
         <div class="community-wrap">
@@ -147,6 +148,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <script>
@@ -154,13 +156,29 @@
         const canvas = document.getElementById("js-canvas");
         const ctx = canvas.getContext("2d");
         let step;
+        canvas.width = 32;
+        canvas.height = 18;
 
         const draw = () => ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
         const drawLoop = () => {
             draw();
             step = window.requestAnimationFrame(drawLoop);
         };
-        video.addEventListener("play", drawLoop, false);
+
+        const start = () => {
+            if (!step) drawLoop();
+        };
+
+        const stop = () => {
+            cancelAnimationFrame(step); step = null;
+        };
+
+        video.addEventListener("play", start);
+        video.addEventListener("pause", stop);
+
+        new IntersectionObserver(([event]) => {
+            event.isIntersecting ? video.play().catch(() => { }) : video.pause();
+        }).observe(video);
 
         document.addEventListener('mousedown', function (event) {
             if (event.target.classList.contains("btn")) {
