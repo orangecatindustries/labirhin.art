@@ -6,7 +6,7 @@
         ['/english-dub', 'camera-reels', 'English Dub'],
         ['/#stuff', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
-        ['https://shop.labirhin.art', 'shop', 'Shop'],
+        ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
@@ -21,7 +21,7 @@
     ];
 
     $linksSecond = [
-        ['https://shop.labirhin.art', 'shop', 'Shop'],
+        ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
         ['', 'music-note', 'Music'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
