@@ -78,27 +78,29 @@
                     <img class="silly-guys" src="{{ asset("imgs/exogixgigo.webp") }}" alt="">
                 </div>
                 <img class="mma-img" src="{{ asset("imgs/background-mma.webp") }}" alt="">
-                <div class="char-images">
-                    <img src="{{ asset("imgs/exoworomma.webp") }}" alt="">
-                </div>
-                <div class="mma-info">
-                    <div class="carousel-wrap">
-                        <button class="carousel-prev"></button>
-                        <iframe class="carousel carousel-inicial"
-                            src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
-                            allowfullscreen="true"></iframe>
-                        <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
-                            frameborder="0" allowfullscreen="true"></iframe>
-                        <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
-                            frameborder="0" allowfullscreen="true"></iframe>
-                        <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
-                            frameborder="0" allowfullscreen="true"></iframe>
-                        <button class="carousel-next"></button>
+                <div class="mma-thingies">
+                    <div class="char-images">
+                        <img src="{{ asset("imgs/exoworomma.webp") }}" alt="">
                     </div>
-                    <div class="mma-text">
-                        <h2>WANT TO SEE THE COMIC?</h2>
-                        <a href="https://maumakanapa.art" alt="Read the Webcomic here"><button
-                                class="mma-art-button"></button></a>
+                    <div class="mma-info">
+                        <div class="carousel-wrap">
+                            <button class="carousel-prev"></button>
+                            <iframe class="carousel carousel-inicial"
+                                src="https://www.youtube.com/embed/KxKA8qY0Shs?si=8mlVh86oWe-hFBcb" frameborder="0"
+                                allowfullscreen="true"></iframe>
+                            <iframe class="carousel" src="https://www.youtube.com/embed/nULDCRuoCx0?si=dL3_Zc52fzghALma"
+                                frameborder="0" allowfullscreen="true"></iframe>
+                            <iframe class="carousel" src="https://www.youtube.com/embed/FMm5TtjC5LE?si=7W-KyADnFYXdpgfk"
+                                frameborder="0" allowfullscreen="true"></iframe>
+                            <iframe class="carousel" src="https://www.youtube.com/embed/FVEOZCu91i8?si=_xjOUFerXCmaTwJY"
+                                frameborder="0" allowfullscreen="true"></iframe>
+                            <button class="carousel-next"></button>
+                        </div>
+                        <div class="mma-text">
+                            <h2>WANT TO SEE THE COMIC?</h2>
+                            <a href="https://maumakanapa.art" alt="Read the Webcomic here"><button
+                                    class="mma-art-button"></button></a>
+                        </div>
                     </div>
                 </div>
             </div>

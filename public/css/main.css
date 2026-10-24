@@ -448,6 +448,7 @@ header a {
 }
 
 .changables h2 {
+    display: none;
     opacity: 0;
     transition: 0.2s;
     position: absolute;
@@ -470,6 +471,7 @@ header a {
 }
 
 .changables:hover h2 {
+    display: block;
     opacity: 1;
 }
 
@@ -520,7 +522,7 @@ header a {
     height: 100%;
     border-radius: var(--main-border-radius);
     opacity: 0.4;
-    filter: blur(3px) saturate(2);
+    filter: saturate(2);
 }
 
 .char-images {
