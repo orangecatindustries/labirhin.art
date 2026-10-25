@@ -33,7 +33,7 @@ body {
 
 body {
     background-image: url("/imgs/background-website.png");
-    background-size: 2500px;
+    background-size: 3000px;
     font-family: "Outfit", sans-serif;
     margin: 0;
 }
@@ -743,6 +743,17 @@ header a {
     max-height: 300px;
 }
 
+.badges-top {
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+}
+
+.badges-top img {
+    height: 24vw;
+    max-height: 600px;
+}
+
 .merch-back-image {
     position: relative;
     display: flex;
@@ -763,14 +774,30 @@ header a {
 }
 
 .merch-promo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.merch-content-wrap {
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 2rem;
-    box-sizing: border-box;
+}
+
+.merch-preview {
+    position: relative;
+    margin-top: 3%;
+}
+
+.merch-preview img {
+    height: 18vw;
+    max-height: 400px;
 }
 
 .merch-stuff {

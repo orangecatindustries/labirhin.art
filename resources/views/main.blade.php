@@ -112,19 +112,27 @@
                 <img src="{{ asset("imgs/xenobotpoint.webp") }}" alt="">
                 <h1>MERCH</h1>
             </div>
+            <div class="badges-top">
+                <img src="{{ asset("imgs/badgestop.webp") }}" alt="">
+            </div>
             <div class="merch-back-image">
                 <img class="merch-img" src="{{ asset("imgs/meow.webp") }}" alt="">
                 <div class="merch-promo">
-                    <div class="merch-stuff">
-                        <img class="merch-promo-image" src="{{ asset("imgs/october_promo.png") }}" alt="">
-                        <div class="merch-button-area">
-                            <h2>CHECK OUT THE SHOP HERE!</h2>
-                            <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button
-                                    class="mma-merch-button"></button></a>
+                    <div class="merch-content-wrap">
+                        <div class="merch-stuff">
+                            <img class="merch-promo-image" src="{{ asset("imgs/october_promo.png") }}" alt="">
+                            <div class="merch-button-area">
+                                <h2>CHECK OUT THE SHOP HERE!</h2>
+                                <a href="https://shop.labirhin.com" alt="Labirhin Shop Merchandise"><button
+                                        class="mma-merch-button"></button></a>
+                            </div>
+                        </div>
+                        <div class="merch-character">
+                            <img src="{{ asset("imgs/merchcharacters.webp") }}" alt="">
                         </div>
                     </div>
-                    <div class="merch-character">
-                        <img src="{{ asset("imgs/merchcharacters.webp") }}" alt="">
+                    <div class="merch-preview">
+                        <img src="{{ asset("imgs/merch-bottom-stuff.png") }}" alt="">
                     </div>
                 </div>
             </div>
