@@ -1312,6 +1312,11 @@ footer {
         margin-top: 6%;
     }
 
+    .mma-thingies {
+        height: unset;
+        position: unset;
+    }
+
     .mma-text h2,
     .merch-button-area h2,
     .community-button-area h2 {
