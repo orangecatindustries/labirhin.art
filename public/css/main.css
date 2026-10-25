@@ -355,7 +355,6 @@ header a {
     background-color: #1b1b1dc4;
     position: relative;
     display: flex;
-    backdrop-filter: blur(10px);
 }
 
 .buttons {
@@ -526,8 +525,14 @@ header a {
     filter: saturate(2);
 }
 
-.char-images {
+.mma-thingies {
     position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.char-images {
     height: 100%;
     bottom: 15%;
     left: 0;
@@ -539,7 +544,6 @@ header a {
 }
 
 .mma-info {
-    position: absolute;
     right: 1vw;
     transform-style: preserve-3d;
     top: 2vw;
@@ -678,7 +682,7 @@ header a {
     border: 1px solid #909090;
     transition: 0.2s;
     background-position: center;
-    box-shadow: 0 0 2px white;
+    box-shadow: 0 0 16px #ffffff61;
 }
 
 .mma-art-button:hover,
