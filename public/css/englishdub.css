@@ -1,25 +1,22 @@
-#info-top {
+#info-top, #english-dub {
     display: flex;
     justify-content: center;
-    padding: 30px 5vw;
 }
 
 .video {
     position: relative;
     box-sizing: border-box;
     padding: 30px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background: #232427;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+    border: 1px solid var(--main-border-color);
+    border-radius: var(--main-border-radius);;
 }
 
 .video-wrap {
     position: absolute;
     inset: 30px;
-    border-radius: 16px;
+    border-radius: var(--main-border-radius);;
     overflow: hidden;
     z-index: 0;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
@@ -54,7 +51,28 @@
 
 .info-content h1 {
     font-family: "Jaya", sans-serif;
-    font-size: 4vw;
+    font-size: clamp(16px, 4vw, 100px);
     text-align: center;
     margin: 0 -80px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);
+}
+
+/* english wrap */
+
+.english-wrap {
+    background: linear-gradient(rgb(27, 27, 29) 0%, rgb(156, 93, 16) 50%, rgb(255, 151, 32) 100%);
+}
+
+.english-wrap iframe {
+    height: 21vw;
+    width: 38vw;
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--main-border-color);
+}
+
+.top-english-info {
+    padding: 1.5em;
+    background-color: rgba(27, 27, 29, 0.77);
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--main-border-color);
 }
