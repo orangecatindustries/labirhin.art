@@ -29,7 +29,7 @@
                     <div class="first-info">
                         <div class="info-text">
                             <h3>ORGANIZED BY:</h1>
-                            <h3><a href="">AWOOMINATI RECORDS</a></h3>
+                            <h3><a href="">AWOOMINATI<br>RECORDS</a></h3>
                         </div>
                         <div class="info-image">
                             <img src="{{ asset("imgs/awoominatirecords.webp") }}" alt="">
@@ -38,7 +38,7 @@
                     <div class="second-info">
                         <div class="info-text">
                             <h3>CASTING BY:</h1>
-                            <h3><a href="">CASE JACKAL / JP BAAS</a></h3>
+                            <h3><a href="">CASE JACKAL<br>/ JP BAAS</a></h3>
                         </div>
                         <div class="info-image">
                             <img src="{{ asset("imgs/imageCase.png") }}" alt="">
