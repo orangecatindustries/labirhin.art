@@ -111,19 +111,19 @@
             <div class="why-info">
                 <div class="wrappy-wrap">
                     <p>Mau Makan Apa's English Dub is actively being organized & funded by Awoominati Records on their
-                        own!
-                        <br>
-                        This project has a high level of production and effort, including the features of professional
+                        own!</p>
+                    <br>
+                    <p>This project has a high level of production and effort, including the features of professional
                         voice
                         actors that are also heard in official dubs for projects like: The Amazing Digital Circus,
                         Jojo's
                         Bizarre Adventure and Genshin Impact.
+                    </p>
                         <br>
-                        It's not really easy to manage it all, so if you enjoy the work by this team, please do consider
+                    <p>It's not really easy to manage it all, so if you enjoy the work by this team, please do consider
                         donating to them, as it would help them cover the costs and show them your precious appreciation
                         for
-                        their passion & contribution to the series!
-                    </p>
+                        their passion & contribution to the series!</p>
                 </div>
                 <div class="wrappy-wrap">
                     <img src="{{ asset("imgs/engdubright.png") }}" alt="">
