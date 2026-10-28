@@ -1322,7 +1322,7 @@ footer {
 
     .carousel-prev,
     .carousel-next {
-        top: 110%;
+        top: 105%;
         bottom: 0;
         transform: none;
     }
