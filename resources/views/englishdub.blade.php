@@ -32,7 +32,7 @@
                             <h3><a href="">AWOOMINATI<br>RECORDS</a></h3>
                         </div>
                         <div class="info-image">
-                            <img src="{{ asset("imgs/awoominatirecords.webp") }}" alt="">
+                            <img src="{{ asset("imgs/awoominatirecords.png") }}" alt="">
                         </div>
                     </div>
                     <div class="second-info">

@@ -82,7 +82,7 @@
 }
 
 .top-english-info {
-    padding: 1.5vw;
+    padding: 20px;
     background-color: rgba(27, 27, 29, 0.77);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--main-border-color);
@@ -98,13 +98,15 @@
 
 .first-info, .second-info {
     display: flex;
+    align-items: center;
+    gap: 3em;
     justify-content: space-between;
-    gap: 4vw;
+    width: 100%;
 }
 
 .first-info h3, .second-info h3 {
     font-family: "Jaya";
-    font-size: 2.5vw;
+    font-size: clamp(16px, 2.5vw, 50px);
     margin: 0;
     filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);
 }
@@ -116,16 +118,18 @@
 }
 
 .info-image {
-    padding: 1em;
+    padding: 0.8rem;
     background-color: rgba(27, 27, 29, 0.50);
     border-radius: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1 / 1;
+    height: 8vw;
+    max-height: 160px;
 }
 
 .info-image img {
-    height: 8vw;
+    height: 100%;
     border-radius: 22px;
 }
