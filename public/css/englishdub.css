@@ -4,11 +4,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-}
-
-.reusables {
-    margin-top: 10%;
 }
 
 .video {
@@ -274,6 +269,16 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    #info-top,
+    #english-dub {
+        margin-top: 10px;
+    }
+
+    .reusables {
+        margin-top: 10%;
+    }
+
     .video {
         width: 92%;
         height: 100%;
@@ -307,16 +312,21 @@
         margin-top: 8%;
     }
 
-    .first-info, .second-info {
+    .first-info,
+    .second-info {
         flex-direction: column;
     }
 
-    .first-info h3, .second-info h3, .actors-wrap h3, .wrappy-wrap h3 {
+    .first-info h3,
+    .second-info h3,
+    .actors-wrap h3,
+    .wrappy-wrap h3 {
         font-size: 10vw;
         text-align: center;
     }
 
-    .first-info, .second-info {
+    .first-info,
+    .second-info {
         gap: 1em;
     }
 
@@ -329,12 +339,14 @@
         align-items: center;
     }
 
-    .actors-wrap, .donations-wrap {
+    .actors-wrap,
+    .donations-wrap {
         width: 100%;
         justify-content: center;
     }
 
-    .wrappy-wrap h3, .why-donate h3 {
+    .wrappy-wrap h3,
+    .why-donate h3 {
         font-size: 6vw;
     }
 
