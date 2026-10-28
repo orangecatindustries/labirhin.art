@@ -33,7 +33,7 @@
     <div class="navwrap">
         <div class="nav">
             <div class="main-nav">
-                <a href="https://labirhin.art">
+                <a href="/">
                     <div class="logo2">
                         <img class="labirhin" src="{{ asset('imgs/labiPoint.webp') }}" alt="">
                     </div>
