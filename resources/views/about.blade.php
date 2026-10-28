@@ -11,7 +11,7 @@
                 <div class="main-info">
                     <div class="wrap-first">
                         <div class="hanging-gix">
-                            <img src="{{ asset("imgs/gixhold.png") }}" alt="">
+                            <img src="{{ asset("imgs/lobihold.png") }}" alt="">
                         </div>
                         <div class="info">
                             <div class="text">
