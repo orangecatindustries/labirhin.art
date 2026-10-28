@@ -29,7 +29,7 @@
                     <div class="first-info">
                         <div class="info-text">
                             <h3>ORGANIZED BY:</h1>
-                            <h3><a href="">AWOOMINATI<br>RECORDS</a></h3>
+                                <h3><a href="">AWOOMINATI<br>RECORDS</a></h3>
                         </div>
                         <div class="info-image">
                             <img src="{{ asset("imgs/awoominatirecords.png") }}" alt="">
@@ -38,11 +38,62 @@
                     <div class="second-info">
                         <div class="info-text">
                             <h3>CASTING BY:</h1>
-                            <h3><a href="">CASE JACKAL<br>/ JP BAAS</a></h3>
+                                <h3><a href="">CASE JACKAL<br>/ JP BAAS</a></h3>
                         </div>
                         <div class="info-image">
                             <img src="{{ asset("imgs/imageCase.png") }}" alt="">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reusables english-actors">
+            <div class="actors-wrap">
+                <h3 class="starring-text" >STARRING:</h3>
+                <div class="column-wrap">
+                    <div class="first-column">
+                        <a href="">
+                            <h3>JP BAAS</h3>
+                        </a>
+                        <a href="">
+                            <h3>KYLEE HENKE</h3>
+                        </a>
+                        <a href="">
+                            <h3>ZACH HOLZMAN</h3>
+                        </a>
+                        <a href="">
+                            <h3>KIRA BUCKLAND</h3>
+                        </a>
+                        <a href="">
+                            <h3>STUART A. HUTSON</h3>
+                        </a>
+                        <a href="">
+                            <h3>SEAN CHIPLOCK</h3>
+                        </a>
+                        <a href="">
+                            <h3>LU WALL</h3>
+                        </a>
+                    </div>
+                    <div class="second-column">
+                        <a href="">
+                            <h3>SIMON DAVISON</h3>
+                        </a>
+                        <a href="">
+                            <h3>RED HUNT</h3>
+                        </a>
+                        <a href="">
+                            <h3>ANTHONY STEIGER</h3>
+                        </a>
+                        <a href="">
+                            <h3>NICK CARRY</h3>
+                        </a>
+                        <a href="">
+                            <h3>KAI CLAVIER</h3>
+                        </a>
+                        <a href="">
+                            <h3>TAMARA FRITZ</h3>
+                        </a>
+                        <h4>and more to come!</h4>
                     </div>
                 </div>
             </div>

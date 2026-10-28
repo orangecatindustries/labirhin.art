@@ -1,6 +1,8 @@
 #info-top, #english-dub {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video {
@@ -82,7 +84,7 @@
     width: 94%;
 }
 
-.top-english-info {
+.top-english-info, .actors-wrap {
     padding: 20px;
     background-color: rgba(27, 27, 29, 0.77);
     border-radius: var(--main-border-radius);
@@ -105,7 +107,7 @@
     width: 100%;
 }
 
-.first-info h3, .second-info h3 {
+.first-info h3, .second-info h3, .actors-wrap h3 {
     font-family: "Jaya";
     font-size: clamp(16px, 2.5vw, 50px);
     margin: 0;
@@ -133,4 +135,46 @@
 .info-image img {
     height: 100%;
     border-radius: 22px;
+}
+
+/* actors */
+
+.english-actors {
+    width: 75%;
+    background: linear-gradient(rgb(255, 151, 32) 0%, rgb(156, 93, 16) 65%, rgb(27, 27, 29) 100%);
+    justify-content: center;
+}
+
+.actors-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.actors-wrap h3 {
+    margin: 12px 0px 15px 0px;
+    text-align: center;
+}
+
+.actors-wrap h4 {
+    color: rgba(255, 255, 255, 0.411);
+    text-align: center;
+}
+
+.actors-wrap a {
+    text-decoration-color: rgba(255, 255, 255, 0.562);
+    text-decoration-thickness: 2px;
+    text-decoration-style: dashed;
+}
+
+.starring-text {
+    background: linear-gradient(-45deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.column-wrap {
+    display: flex;
+    justify-content: space-between;
 }
