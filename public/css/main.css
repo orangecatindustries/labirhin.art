@@ -404,6 +404,11 @@ header a {
     text-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
 }
 
+.donations-button:hover {
+    transition: ease 0.1s;
+    animation: pulsating-shadow alternate infinite 5s;
+}
+
 .content {
     display: flex;
     flex-direction: column;

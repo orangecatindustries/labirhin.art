@@ -195,6 +195,7 @@
 .donations-button {
     padding: 1.05rem 1rem;
     font-size: clamp(16px, 2vw, 30px);
+    transition: ease 0.1s;
 }
 
 .donations-wrap a {
@@ -204,4 +205,14 @@
 .donations-wrap img {
     width: 22vw;
     max-width: 420px;
+}
+
+@keyframes pulsating-shadow {
+    0% {
+        box-shadow: rgba(255, 151, 32, 0.2) 0px 0px 12px;
+    }
+
+    100% {
+        box-shadow: rgba(255, 143, 15, 0.582) 0px 0px 24px;
+    }
 }
