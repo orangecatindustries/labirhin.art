@@ -100,7 +100,33 @@
             <div class="donations-wrap">
                 <div class="wrappy-wrap">
                     <a href=""><button class="donations-button">Donate for the voices!</button></a>
+                    <h3
+                        style="font-family: 'Jaya', sans-serif; font-size: clamp(16px, 2vw, 50px); text-align: center; filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);">
+                        IF YOU ENJOY WHAT YOU SEE!</h3>
                     <img src="{{ asset("imgs/xenobot 2.webp") }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="reusables why-donate">
+            <h3>WHY SHOULD WE DONATE?</h3>
+            <div class="why-info">
+                <div class="wrappy-wrap">
+                    <p>Mau Makan Apa's English Dub is actively being organized & funded by Awoominati Records on their
+                        own!
+                        <br>
+                        This project has a high level of production and effort, including the features of professional
+                        voice
+                        actors that are also heard in official dubs for projects like: The Amazing Digital Circus,
+                        Jojo's
+                        Bizarre Adventure and Genshin Impact.
+                        <br>
+                        It's not really easy to manage it all, so if you enjoy the work by this team, please do consider
+                        donating to them, as it would help them cover the costs and show them your precious appreciation
+                        for
+                        their passion & contribution to the series!</p>
+                </div>
+                <div class="wrappy-wrap">
+                <img src="{{ asset("imgs/engdubright.png") }}" alt="">
                 </div>
             </div>
         </div>

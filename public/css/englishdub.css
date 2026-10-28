@@ -216,3 +216,38 @@
         box-shadow: rgba(255, 143, 15, 0.582) 0px 0px 24px;
     }
 }
+
+/* why donate! */
+
+.why-donate {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    background: linear-gradient(rgb(27, 27, 29) 0%, rgb(156, 93, 16) 50%, rgb(255, 151, 32) 100%);
+}
+
+.why-donate h3 {
+    font-size: clamp(16px, 3.5vw, 75px);
+    font-family: "Jaya", sans-serif;
+    margin: 0% 0px 2% 0px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);
+}
+
+.why-info {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.why-info p {
+    font-size: clamp(16px, 1.6vw, 30px);
+    margin: 0;
+}
+
+.why-info img {
+    transform: rotateY(180deg);
+    height: 25vw;
+    max-height: 360px;
+}
