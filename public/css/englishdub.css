@@ -84,7 +84,7 @@
     width: 94%;
 }
 
-.top-english-info, .actors-wrap {
+.top-english-info, .actors-wrap, .donations-wrap, .wrappy-wrap {
     padding: 20px;
     background-color: rgba(27, 27, 29, 0.77);
     border-radius: var(--main-border-radius);
@@ -142,13 +142,14 @@
 .english-actors {
     width: 75%;
     background: linear-gradient(rgb(255, 151, 32) 0%, rgb(156, 93, 16) 65%, rgb(27, 27, 29) 100%);
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .actors-wrap {
     display: flex;
     flex-direction: column;
     width: 60%;
+    align-items: center;
 }
 
 .actors-wrap h3 {
@@ -177,8 +178,30 @@
 .column-wrap {
     display: flex;
     justify-content: space-between;
+    width: 98%;
+}
+
+.wrappy-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .donations-wrap {
-    
+    align-items: center;
+    display: flex;
+}
+
+.donations-button {
+    padding: 1.05rem 1rem;
+    font-size: clamp(16px, 2vw, 30px);
+}
+
+.donations-wrap a {
+    text-decoration: none;
+}
+
+.donations-wrap img {
+    width: 22vw;
+    max-width: 420px;
 }

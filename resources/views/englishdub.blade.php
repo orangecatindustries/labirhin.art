@@ -98,7 +98,10 @@
                 </div>
             </div>
             <div class="donations-wrap">
-
+                <div class="wrappy-wrap">
+                    <a href=""><button class="donations-button">Donate for the voices!</button></a>
+                    <img src="{{ asset("imgs/xenobot 2.webp") }}" alt="">
+                </div>
             </div>
         </div>
     </section>

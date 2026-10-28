@@ -121,7 +121,8 @@ header a {
 .changables,
 .logo-foot,
 .hamburgermenu,
-#skip-loading-button {
+#skip-loading-button,
+.donations-button {
     padding: .15rem;
     background-color: var(--main-background-color);
     border-radius: 12px;
@@ -365,7 +366,8 @@ header a {
 }
 
 .btn,
-#skip-loading-button {
+#skip-loading-button,
+.donations-button {
     padding: .55rem 1rem;
     border-radius: 12px;
     font-size: 1.3rem;
@@ -379,7 +381,8 @@ header a {
 }
 
 .btn:hover,
-#skip-loading-button:hover {
+#skip-loading-button:hover,
+.donations-button:hover {
     transform: scale(1.05);
     transition: 0.2s;
     background-color: var(--main-orange-color);
