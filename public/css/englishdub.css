@@ -67,8 +67,8 @@
 }
 
 .english-wrap iframe {
-    height: 21vw;
-    width: 38vw;
+    height: 19vw;
+    width: 35vw;
     border-radius: var(--main-border-radius);
     border: 1px solid var(--main-border-color);
     max-height: 380px;
@@ -94,13 +94,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 41%;
     gap: 1em;
 }
 
 .first-info, .second-info {
     display: flex;
     align-items: center;
-    gap: 3em;
     justify-content: space-between;
     width: 100%;
 }

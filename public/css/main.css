@@ -718,6 +718,7 @@ header a {
 .merch-wrap {
     height: auto;
     flex-direction: column;
+    background: linear-gradient(rgb(194, 106, 5) 0%, rgb(156, 93, 16) 65%, rgb(27, 27, 29) 100%);
 }
 
 .merch-text {
