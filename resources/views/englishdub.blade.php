@@ -38,7 +38,7 @@
                     <div class="second-info">
                         <div class="info-text">
                             <h3>CASTING BY:</h1>
-                                <h3><a href="">CASE JACKAL<br>/ JP BAAS</a></h3>
+                                <h3><a href="https://case.dog">CASE JACKAL<br>/ JP BAAS</a></h3>
                         </div>
                         <div class="info-image">
                             <img src="{{ asset("imgs/imageCase.png") }}" alt="">
@@ -49,10 +49,10 @@
         </div>
         <div class="reusables english-actors">
             <div class="actors-wrap">
-                <h3 class="starring-text" >STARRING:</h3>
+                <h3 class="starring-text">STARRING:</h3>
                 <div class="column-wrap">
                     <div class="first-column">
-                        <a href="">
+                        <a href="https://case.dog">
                             <h3>JP BAAS</h3>
                         </a>
                         <a href="">
@@ -96,6 +96,9 @@
                         <h4>and more to come!</h4>
                     </div>
                 </div>
+            </div>
+            <div class="donations-wrap">
+
             </div>
         </div>
     </section>

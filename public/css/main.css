@@ -212,7 +212,7 @@ header a {
     border-radius: var(--main-border-radius);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
     border: 1px solid var(--main-border-color);
-    background-color: #1b1b1d;
+    background-color: #131313;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -1374,6 +1374,16 @@ footer {
         padding: 1em;
     }
 
+    .badges-top {
+        top: 2%;
+        right: 21%;
+    }
+
+    .badges-top img {
+        height: 50vw;
+        max-height: 250px;
+    }
+
     .merch-promo {
         position: relative;
         left: auto;
@@ -1381,9 +1391,23 @@ footer {
         top: auto;
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 1.5rem;
+    }
+
+    .merch-preview {
+        position: relative;
+        margin-top: 25%;
+        margin-bottom: -15%;
+    }
+
+    .merch-content-wrap {
+        flex-direction: column;
+    }
+
+    .merch-preview img {
+        height: 22vw;
+        max-height: 400px;
     }
 
     .merch-promo-image {
