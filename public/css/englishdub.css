@@ -251,3 +251,9 @@
     height: 25vw;
     max-height: 360px;
 }
+
+@media screen and (max-width: 900px) {
+    .video {
+        width: 100%;
+    }
+}
