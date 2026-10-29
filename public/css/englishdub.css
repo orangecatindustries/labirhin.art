@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.reusables {
+    margin-top: 3rem;
+}
+
 .video {
     position: relative;
     box-sizing: border-box;
