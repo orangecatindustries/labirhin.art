@@ -17,3 +17,7 @@ Route::get('/about/', function () {
 Route::get('/english-dub/', function () {
     return view('englishdub');
 });
+
+Route::get('/animations/', function () {
+    return view('animations');
+});
