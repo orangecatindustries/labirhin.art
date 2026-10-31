@@ -998,11 +998,7 @@ footer h3 {
 .logo-foot:hover {
     transition: 0.2s;
     background-color: #3b3b3b;
-}
-
-.ext-links a:hover {
     transform: scale(1.10);
-    transition: 0.2s;
 }
 
 .logo-foot img {

@@ -15,6 +15,19 @@
             </div>
         </div>
     </section>
+    <section id="animations-list">
+        <div class="animations-wrap reusables">
+            <div class="mma">
+                
+            </div>
+            <div class="tsrf">
+
+            </div>
+            <div class="rar">
+
+            </div>
+        </div>
+    </section>
     <script>
         const video = document.getElementById("js-video");
         const canvas = document.getElementById("js-canvas");

@@ -1,0 +1,16 @@
+.video {
+    justify-content: center;
+    height: 400px;
+}
+
+.info-content h1 {
+    font-size: clamp(16px, 8vw, 125px);
+}
+
+/* animations */
+
+#animations-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
