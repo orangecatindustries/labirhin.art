@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    background-image: url("/imgs/background-website.png");
+    background-image: url("../imgs/background-website.png");
     background-size: 3000px;
     font-family: "Outfit", sans-serif;
     margin: 0;
@@ -678,7 +678,7 @@ header a {
 .mma-art-button,
 .mma-merch-button,
 .mma-community-button {
-    background-image: url("/imgs/mmaart.webp");
+    background-image: url("../imgs/mmaart.webp");
     background-size: cover;
     width: 29vw;
     height: 6vw;
@@ -841,7 +841,7 @@ header a {
 }
 
 .mma-merch-button {
-    background-image: url("/imgs/merchbutton.webp");
+    background-image: url("../imgs/merchbutton.webp");
 }
 
 .merch-character {
@@ -954,7 +954,7 @@ header a {
 }
 
 .mma-community-button {
-    background-image: url("/imgs/communitybutton.webp");
+    background-image: url("../imgs/communitybutton.webp");
     background-size: 130%;
     background-position-y: 48%;
 }
