@@ -4,7 +4,7 @@
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
         ['/english-dub', 'camera-reels', 'English Dub'],
-        ['/#stuff', 'pen', 'Animations'],
+        ['/animations', 'pen', 'Animations'],
         ['', 'music-note', 'Music'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
@@ -17,7 +17,7 @@
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
         ['/english-dub', 'camera-reels', 'English Dub'],
-        ['/#stuff', 'pen', 'Animations'],
+        ['/animations', 'pen', 'Animations'],
     ];
 
     $linksSecond = [
