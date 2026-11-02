@@ -17,55 +17,26 @@
     </section>
     <section id="animations-list">
         <div class="animations-wrap reusables">
-            <div class="mma">
-            <h2>MAU MAKAN APA?</h2>
-            <div class="mma-wrap">
-                
+            <div class="tsrf wrapped">
+                <h2>THE STARS<br>ARE FALLING</h2>
+                <div class="tsrf-wrap wrapped-wrap">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
+                </div>
             </div>
+            <div class="mma wrapped">
+                <h2>MAU<br>MAKAN APA?</h2>
+                <div class="mma-wrap wrapped-wrap">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/postermma.jpg") }}" alt="">
+                </div>
             </div>
-            <div class="tsrf">
-
-            </div>
-            <div class="rar">
-
+            <div class="rar wrapped">
+                <h2>REVISION<br>AFTER REVISION</h2>
+                <div class="rar-wrap wrapped-wrap">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/posterrar.png") }}" alt="">
+                </div>
             </div>
         </div>
     </section>
-    <script>
-        const video = document.getElementById("js-video");
-        const canvas = document.getElementById("js-canvas");
-        const ctx = canvas.getContext("2d");
-        let step;
-        const frameduration = 1000 / 30;
-        let lastframetime = 0;
-
-        canvas.width = 32;
-        canvas.height = 18;
-
-        const draw = () => ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const drawLoop = (currentTime) => {
-            step = window.requestAnimationFrame(drawLoop);
-
-            const elapsed = currentTime - lastframetime;
-            if (elapsed >= frameduration) {
-                lastframetime = currentTime - (elapsed % frameduration);
-                draw();
-            }
-        };
-
-        const start = () => {
-            if (!step) drawLoop();
-        };
-
-        const stop = () => {
-            cancelAnimationFrame(step); step = null;
-        };
-
-        video.addEventListener("play", start);
-        video.addEventListener("pause", stop);
-
-        new IntersectionObserver(([event]) => {
-            event.isIntersecting ? video.play().catch(() => { }) : video.pause();
-        }).observe(video);
-    </script>
+    <script src="{{ asset("js/canva.js") }}"></script>
+    <script src="{{ asset("js/tilt.js") }}"></script>
 </x-layout>

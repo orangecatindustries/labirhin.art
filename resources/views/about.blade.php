@@ -18,7 +18,7 @@
                                 <div class="top-text">
                                     <div class="text-again">
                                         <h1>ABOUT ME</h1>
-                                        <h2>(about me)</h2>
+                                        <h2>(tentang saya)</h2>
                                     </div>
                                     <div class="button-wrap">
                                         <button id="langswitch">Language</button>
@@ -67,6 +67,7 @@
     <div id="xenobotlittle">
         <img src="{{ asset("imgs/kepala_lobi.webp") }}" alt="">
     </div>
+    <script src="{{ asset("js/canva.js") }}"></script>
     <script>
 
         const topText = document.querySelector(".h2-below");
@@ -105,42 +106,6 @@
                 new Audio("{{ asset('sound/xeno3.mp3') }}").play();
             }
         });
-
-        const video = document.getElementById("js-video");
-        const canvas = document.getElementById("js-canvas");
-        const ctx = canvas.getContext("2d");
-        let step;
-        const frameduration = 1000 / 30;
-        let lastframetime = 0;
-
-        canvas.width = 32;
-        canvas.height = 18;
-
-        const draw = () => ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const drawLoop = (currentTime) => {
-            step = window.requestAnimationFrame(drawLoop);
-
-            const elapsed = currentTime - lastframetime;
-            if (elapsed >= frameduration) {
-                lastframetime = currentTime - (elapsed % frameduration);
-                draw();
-            }
-        };
-
-        const start = () => {
-            if (!step) drawLoop();
-        };
-
-        const stop = () => {
-            cancelAnimationFrame(step); step = null;
-        };
-
-        video.addEventListener("play", start);
-        video.addEventListener("pause", stop);
-
-        new IntersectionObserver(([event]) => {
-            event.isIntersecting ? video.play().catch(() => { }) : video.pause();
-        }).observe(video);
 
         const move = document.getElementById("xenobotlittle");
 
