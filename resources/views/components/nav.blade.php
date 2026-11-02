@@ -1,31 +1,31 @@
 @php
     $links = [
         ['/', 'home', 'Home'],
-        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
-        ['/english-dub', 'camera-reels', 'English Dub'],
         ['/animations', 'pen', 'Animations'],
+        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['/english-dub', 'camera-reels', 'English Dub'],
         ['', 'music-note', 'Music'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
-        ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
+        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
     ];
 
     $linksFirst = [
         ['/', 'home', 'Home'],
-        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/about', 'person', 'About'],
-        ['/english-dub', 'camera-reels', 'English Dub'],
         ['/animations', 'pen', 'Animations'],
+        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['/english-dub', 'camera-reels', 'English Dub'],
     ];
 
     $linksSecond = [
+        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
         ['', 'music-note', 'Music'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
-        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
     ];
 @endphp
 
