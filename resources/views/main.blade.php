@@ -39,9 +39,9 @@
                 <div class="button-area">
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
-                        <button class="btn" id="btn">Videos</button>
+                        <button class="btn" id="btn">Music</button>
                         <button class="btn" id="btn2">Animations</button>
-                        <button class="btn" id="btn3">Tracks</button>
+                        <button class="btn" id="btn3">Videos</button>
                     </div>
                 </div>
                 <div class="carousel-con">
@@ -212,7 +212,7 @@
             }, 250);
         }
 
-        btn.addEventListener("mousedown", () => {
+        btn3.addEventListener("mousedown", () => {
             swapContent(changable1, '<img src="{{ asset("imgs/advertisement.webp") }}" alt=""><h2>TUGAS BAHASA INGGRIS</h2>');
             swapContent(changable2, '<img src="{{ asset("imgs/mereka.webp") }}" alt=""><h2>MEREKA NYATA?</h2>');
             swapContent(changable3, '<img src="{{ asset("imgs/blender.webp") }}" alt=""><h2>RGB LED Monitor Tutorial</h2>');
@@ -226,7 +226,7 @@
             links.forEach((link, i) => { if (animationLinks[i]) link.href = animationLinks[i]; });
         });
 
-        btn3.addEventListener("mousedown", () => {
+        btn.addEventListener("mousedown", () => {
             swapContent(changable1, '<img src="{{ asset("imgs/newmenu.webp") }}" alt=""><h2>New Menu</h2>');
             swapContent(changable2, '<img src="{{ asset("imgs/runaway.webp") }}" alt=""><h2>Runway of Catalog Horror</h2>');
             swapContent(changable3, '<img src="{{ asset("imgs/STOP.webp") }}" alt=""><h2>STOP</h2>');

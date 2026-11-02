@@ -24,13 +24,13 @@
                         src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
                     <div class="info-wrap">
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Letterboxd</div>
                         </a>
                         <a href="">
                             <div class="info-buttons">IMDB</div>
                         </a>
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
                 </div>
@@ -42,13 +42,13 @@
                         src="{{ asset("imgs/postermma.jpg") }}" alt="">
                     <div class="info-wrap">
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Trailer</div>
                         </a>
                         <a href="">
                             <div class="info-buttons">IMDB</div>
                         </a>
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
                 </div>
@@ -60,13 +60,13 @@
                         src="{{ asset("imgs/posterrar.png") }}" alt="">
                     <div class="info-wrap">
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Letterboxd</div>
                         </a>
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">IMBD</div>
                         </a>
                         <a href="">
-                            <div class="info-buttons">IMDB</div>
+                            <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
                 </div>
