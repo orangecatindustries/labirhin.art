@@ -119,7 +119,7 @@
                         Jojo's
                         Bizarre Adventure and Genshin Impact.
                     </p>
-                        <br>
+                    <br>
                     <p>It's not really easy to manage it all, so if you enjoy the work by this team, please do consider
                         donating to them, as it would help them cover the costs and show them your precious appreciation
                         for
@@ -136,13 +136,21 @@
         const canvas = document.getElementById("js-canvas");
         const ctx = canvas.getContext("2d");
         let step;
+        const frameduration = 1000 / 30;
+        let lastframetime = 0;
+
         canvas.width = 32;
         canvas.height = 18;
 
         const draw = () => ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const drawLoop = () => {
-            draw();
+        const drawLoop = (currentTime) => {
             step = window.requestAnimationFrame(drawLoop);
+
+            const elapsed = currentTime - lastframetime;
+            if (elapsed >= frameduration) {
+                lastframetime = currentTime - (elapsed % frameduration);
+                draw();
+            }
         };
 
         const start = () => {
