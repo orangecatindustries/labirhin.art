@@ -184,8 +184,14 @@ span {
     border-radius: var(--main-border-radius);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
     border: 1px solid var(--main-border-color);
-    background-color: #1b1b1d63;
+    background-color: hsla(240, 4%, 11%, 0.388);
     padding: 0.8rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#langswitch:hover {
+    transform: scale(1.05);
 }
 
 .langdrop {
