@@ -20,19 +20,55 @@
             <div class="tsrf wrapped">
                 <h2>THE STARS<br>ARE FALLING</h2>
                 <div class="tsrf-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                        src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
+                    <div class="info-wrap">
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="mma wrapped">
                 <h2>MAU<br>MAKAN APA?</h2>
                 <div class="mma-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/postermma.jpg") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                        src="{{ asset("imgs/postermma.jpg") }}" alt="">
+                    <div class="info-wrap">
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="rar wrapped">
                 <h2>REVISION<br>AFTER REVISION</h2>
                 <div class="rar-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/posterrar.png") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                        src="{{ asset("imgs/posterrar.png") }}" alt="">
+                    <div class="info-wrap">
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                        <a href="">
+                            <div class="info-buttons">IMDB</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
