@@ -3,7 +3,8 @@
     height: 400px;
 }
 
-.info-content h1 {
+.info-content h1, .music-wrap h1 {
+    font-family: "Jaya", sans-serif;
     font-size: clamp(16px, 8vw, 125px);
 }
 
@@ -85,4 +86,16 @@ a {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.music-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-column img {
+    width: 30vw;
+    max-width: 426px;
+    max-height: 240px;
+    height: 18vw
 }
