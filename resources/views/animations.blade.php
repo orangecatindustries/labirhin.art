@@ -17,6 +17,10 @@
     </section>
     <section id="animations-list">
         <div class="animations-wrap reusables">
+            <div class="gradients">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
             <div class="tsrf wrapped">
                 <h2>THE STARS<br>ARE FALLING</h2>
                 <div class="tsrf-wrap wrapped-wrap">

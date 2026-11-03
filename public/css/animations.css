@@ -20,6 +20,34 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
+    position: relative;
+}
+
+.gradients {
+    position: absolute;
+    filter: blur(50px);
+    justify-content: space-between;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 25%;
+}
+
+.box1, .box2 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    opacity: 0.4;
+    background-color: orangered;
+}
+
+.box1 {
+    top: 1%;
+}
+
+.box2 {
+    top: 5%;
 }
 
 .animations-wrap h2 {
@@ -38,6 +66,8 @@
     background-color: #1d1d1d;
     border: 1px solid var(--main-border-color);
     border-radius: var(--main-border-radius);
+    position: relative;
+    z-index: 1;
 }
 
 .wrapped-wrap img {
