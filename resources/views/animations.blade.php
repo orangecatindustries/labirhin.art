@@ -90,8 +90,9 @@
                         <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                             src="{{ asset("imgs/newmenu.avif") }}" alt="">
                         <div class="info-wrap">
+                            <h2>NEW MENU</h2>
                             <a href="/music">
-                                <div class="info-buttons">Sound Tracks</div>
+                                <div class="info-buttons">Youtube</div>
                             </a>
                         </div>
                     </div>
@@ -99,8 +100,9 @@
                         <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                             src="{{ asset("imgs/STOP.webp") }}" alt="">
                         <div class="info-wrap">
+                            <h2>STOP</h2>
                             <a href="/music">
-                                <div class="info-buttons">Sound Tracks</div>
+                                <div class="info-buttons">Youtube</div>
                             </a>
                         </div>
                     </div>
@@ -110,8 +112,9 @@
                         <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                             src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
                         <div class="info-wrap">
+                            <h2>THE STARS<br>ARE FALLING</h2>
                             <a href="/music">
-                                <div class="info-buttons">Sound Tracks</div>
+                                <div class="info-buttons">Youtube</div>
                             </a>
                         </div>
                     </div>
@@ -119,8 +122,9 @@
                         <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                             src="{{ asset("imgs/sas.avif") }}" alt="">
                         <div class="info-wrap">
+                            <h2>SAHABAT<br>TERBAIK SEDUNIA</h2>
                             <a href="/music">
-                                <div class="info-buttons">Sound Tracks</div>
+                                <div class="info-buttons">Youtube</div>
                             </a>
                         </div>
                     </div>
