@@ -35,12 +35,17 @@
     top: 25%;
 }
 
-.box1, .box2 {
+.box1, .box2, .box3, .box4 {
     position: absolute;
     height: 350px;
     width: 350px;
     opacity: 0.4;
     background-color: orangered;
+}
+
+.box3, .box4 {
+    height: 450px;
+    width: 450px;
 }
 
 .box1 {
@@ -49,6 +54,15 @@
 
 .box2 {
     top: -20%;
+    right: 0%;
+}
+
+.box3 {
+    top: -30%;
+}
+
+.box4 {
+    top: 35%;
     right: 0%;
 }
 
@@ -99,8 +113,8 @@ a {
 
 .video-column img {
     width: 28vw;
-    max-width: 500px;
-    max-height: 270px;
+    max-width: 620px;
+    max-height: 340px;
     height: 16vw;
     box-shadow: 0px 5px 15px #000000;
 }

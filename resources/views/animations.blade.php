@@ -79,6 +79,10 @@
     </section>
     <section id="music-list">
         <div class="music-wrap reusables">
+            <div class="gradients">
+                <div class="box3"></div>
+                <div class="box4"></div>
+            </div>
             <h1>MUSIC VIDEOS</h1>
             <div class="music-video-wrap wrapped">
                 <div class="first-videos video-column">
