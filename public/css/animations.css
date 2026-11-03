@@ -9,13 +9,13 @@
 
 /* animations */
 
-#animations-list {
+#animations-list, #music-list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.animations-wrap {
+.animations-wrap, .music-wrap {
     display: flex;
     align-items: center;
     justify-content: center;

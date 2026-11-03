@@ -77,6 +77,19 @@
             </div>
         </div>
     </section>
+    <section id="music-list">
+        <div class="music-wrap reusables">
+            <h1>MUSIC VIDEOS</h1>
+            <div class="video-wrap wrapped">
+                <div class="first-videos">
+
+                </div>
+                <div class="second-videos">
+
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="{{ asset("js/canva.js") }}"></script>
     <script src="{{ asset("js/tilt.js") }}"></script>
 </x-layout>

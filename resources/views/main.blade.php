@@ -6,9 +6,8 @@
         <link rel="preload" as="image" href="{{ asset('imgs/EXOHEAD.webp') }}">
         <link rel="preload" as="image" href="{{ asset('imgs/GIXHEAD.webp') }}">
         <link rel="preload" as="image" href="{{ asset('imgs/ERIKAHEAD.webp') }}">
+        <x-loading />
     </x-slot:head>
-
-    <x-loading />
 
     <section id="main">
         <div class="main-topic">
