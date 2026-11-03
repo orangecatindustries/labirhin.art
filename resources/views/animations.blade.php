@@ -87,18 +87,42 @@
             <div class="music-video-wrap wrapped">
                 <div class="first-videos video-column">
                     <div class="newmenu-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/newmenu.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                            src="{{ asset("imgs/newmenu.avif") }}" alt="">
+                        <div class="info-wrap">
+                            <a href="/music">
+                                <div class="info-buttons">Sound Tracks</div>
+                            </a>
+                        </div>
                     </div>
                     <div class="stop-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/STOP.webp") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                            src="{{ asset("imgs/STOP.webp") }}" alt="">
+                        <div class="info-wrap">
+                            <a href="/music">
+                                <div class="info-buttons">Sound Tracks</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="second-videos video-column">
                     <div class="tsrf-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                            src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
+                        <div class="info-wrap">
+                            <a href="/music">
+                                <div class="info-buttons">Sound Tracks</div>
+                            </a>
+                        </div>
                     </div>
                     <div class="sts-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/sas.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
+                            src="{{ asset("imgs/sas.avif") }}" alt="">
+                        <div class="info-wrap">
+                            <a href="/music">
+                                <div class="info-buttons">Sound Tracks</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
