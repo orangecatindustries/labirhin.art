@@ -80,21 +80,21 @@
     <section id="music-list">
         <div class="music-wrap reusables">
             <h1>MUSIC VIDEOS</h1>
-            <div class="video-wrap wrapped">
+            <div class="music-video-wrap wrapped">
                 <div class="first-videos video-column">
                     <div class="newmenu-video">
-                        <img src="{{ asset("imgs/newmenu.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/newmenu.avif") }}" alt="">
                     </div>
                     <div class="stop-video">
-                        <img src="{{ asset("imgs/STOP.webp") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/STOP.webp") }}" alt="">
                     </div>
                 </div>
                 <div class="second-videos video-column">
                     <div class="tsrf-video">
-                        <img src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
                     </div>
                     <div class="sts-video">
-                        <img src="{{ asset("imgs/sas.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8" src="{{ asset("imgs/sas.avif") }}" alt="">
                     </div>
                 </div>
             </div>
