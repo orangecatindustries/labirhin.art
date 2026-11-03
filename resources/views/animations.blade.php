@@ -23,13 +23,13 @@
                     <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                         src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
                     <div class="info-wrap">
-                        <a href="">
+                        <a href="https://letterboxd.com/film/the-stars-are-falling/">
                             <div class="info-buttons">Letterboxd</div>
                         </a>
-                        <a href="">
+                        <a href="https://www.imdb.com/title/tt34613483/?ref_=nm_knf_t_3">
                             <div class="info-buttons">IMDB</div>
                         </a>
-                        <a href="">
+                        <a href="/music">
                             <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
@@ -41,13 +41,13 @@
                     <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                         src="{{ asset("imgs/postermma.jpg") }}" alt="">
                     <div class="info-wrap">
-                        <a href="">
+                        <a href="https://www.youtube.com/watch?v=KxKA8qY0Shs">
                             <div class="info-buttons">Trailer</div>
                         </a>
-                        <a href="">
+                        <a href="https://www.imdb.com/title/tt37536894/?ref_=nm_knf_t_2">
                             <div class="info-buttons">IMDB</div>
                         </a>
-                        <a href="">
+                        <a href="/music">
                             <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
@@ -59,13 +59,13 @@
                     <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
                         src="{{ asset("imgs/posterrar.png") }}" alt="">
                     <div class="info-wrap">
-                        <a href="">
+                        <a href="https://letterboxd.com/film/revision-after-revision/">
                             <div class="info-buttons">Letterboxd</div>
                         </a>
-                        <a href="">
+                        <a href="https://www.imdb.com/title/tt37536912/?ref_=nm_knf_t_1">
                             <div class="info-buttons">IMBD</div>
                         </a>
-                        <a href="">
+                        <a href="/music">
                             <div class="info-buttons">Sound Tracks</div>
                         </a>
                     </div>
