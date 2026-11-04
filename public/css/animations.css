@@ -140,3 +140,17 @@ a {
     font-size: clamp(16px, 2.2vw, 55px);
     margin: 5px 0px 15px;
 }
+
+@media screen and (max-width: 900px) {
+    .animations-wrap {
+        flex-direction: column;
+    }
+
+    .wrapped-wrap img {
+        height: 80vw;
+    }
+
+    .animations-wrap h2 {
+        font-size: 8vw;
+    }
+}
