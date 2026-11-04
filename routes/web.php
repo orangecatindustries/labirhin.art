@@ -21,3 +21,7 @@ Route::get('/english-dub/', function () {
 Route::get('/animations/', function () {
     return view('animations');
 });
+
+Route::get('/music/', function () {
+    return view('music');
+});
