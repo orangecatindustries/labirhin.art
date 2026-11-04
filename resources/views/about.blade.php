@@ -101,30 +101,25 @@
             langDrop.classList.remove("show");
         })
 
+        const move = document.getElementById("xenobotlittle");
+        let animOut;
+
         document.addEventListener("click", (event) => {
             if (event.target.closest("#meow")) {
                 new Audio("{{ asset('sound/xeno3.mp3') }}").play();
+                const { clientX, clientY } = event;
+                if (!move) return;
+                clearTimeout(animOut);
+                move.classList.remove("animate")
+                void move.offsetWidth;
+                move.classList.add("animate");
+                move.style.display = "block";
+                move.style.left = `calc(${clientX}px - 20px)`;
+                move.style.top = `calc(${clientY}px - 40px)`;
+                animOut = setTimeout(() => {
+                    move.style.display = "none";
+                }, 500);
             }
         });
-
-        const move = document.getElementById("xenobotlittle");
-
-        let animOut;
-
-        document.body.addEventListener("click", (event) => {
-            const { clientX, clientY } = event;
-            if (!move) return;
-            clearTimeout(animOut);
-            move.classList.remove("animate")
-            void move.offsetWidth;
-            move.classList.add("animate");
-            move.style.display = "block";
-            move.style.left = `calc(${clientX}px - 20px)`;
-            move.style.top = `calc(${clientY}px - 40px)`;
-            animOut = setTimeout(() => {
-                move.style.display = "none";
-            }, 500);
-        })
-
     </script>
 </x-layout>
