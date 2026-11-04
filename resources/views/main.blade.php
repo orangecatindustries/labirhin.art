@@ -83,8 +83,10 @@
                     <h2>Check out Labirhin's work here!</h2>
                     <div class="buttons">
                         <button class="btn" id="btn">Music</button>
-                        <button class="btn" id="btn2">Animations</button>
-                        <button class="btn" id="btn3">Videos</button>
+                        <div class="sec-column">
+                            <button class="btn" id="btn2">Animations</button>
+                            <button class="btn" id="btn3">Videos</button>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-con">
