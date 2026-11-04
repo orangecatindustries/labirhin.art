@@ -113,8 +113,6 @@ a {
 }
 
 .video-column img {
-    width: 28vw;
-    max-width: 620px;
     max-height: 340px;
     height: 16vw;
     box-shadow: 0px 5px 15px #000000;
@@ -142,6 +140,19 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+
+    .video {
+        height: 150px;
+    }
+
+    .info-content h1 {
+        margin: 0;
+    }
+
+    .reusables {
+        width: 75%;
+    }
+    
     .animations-wrap {
         flex-direction: column;
     }
@@ -150,7 +161,20 @@ a {
         height: 80vw;
     }
 
-    .animations-wrap h2 {
+    .info-content h1, .music-wrap h1 {
+        font-size: 12vw;
+    }
+
+    .animations-wrap h2, .info-wrap h2 {
         font-size: 8vw;
+    }
+
+    .video-column {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .video-column img {
+        height: 36vw;
     }
 }
