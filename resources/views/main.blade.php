@@ -88,19 +88,19 @@
                     </div>
                 </div>
                 <div class="carousel-con">
-                    <a class="links" href="">
+                    <a class="links" href="https://youtu.be/Y5hOaY8GwMY?si=QJ5UFIlyrKnYUVKZ">
                         <div id="changable1" class="changables change1">
                             <img src="{{ asset("imgs/fightover.webp") }}" alt="">
                             <h2>Fight Over! Scene from MMA4</h2>
                         </div>
                     </a>
-                    <a class="links" href="">
+                    <a class="links" href="https://youtu.be/mNnNFEJ-6f8?si=pCfXgWymlDxrdyA0">
                         <div id="changable2" class="changables change2">
                             <img src="{{ asset("imgs/thestarsarefalling.webp") }}" alt="">
                             <h2>The Stars Are Falling</h2>
                         </div>
                     </a>
-                    <a class="links" href="">
+                    <a class="links" href="https://youtu.be/oUMFNhB4dK8?si=t0jwgmwTcjFGfTeR">
                         <div id="changable3" class="changables change3">
                             <img src="{{ asset("imgs/revisionafterrevision.webp") }}" alt="">
                             <h2>Revision After Revision</h2>
