@@ -93,6 +93,7 @@
                             <h2>NEW MENU</h2>
                             <a href="/music">
                                 <div class="info-buttons">Youtube</div>
+                                <div class="info-buttons">Music</div>
                             </a>
                         </div>
                     </div>
@@ -103,6 +104,7 @@
                             <h2>STOP</h2>
                             <a href="/music">
                                 <div class="info-buttons">Youtube</div>
+                                <div class="info-buttons">Music</div>
                             </a>
                         </div>
                     </div>
@@ -115,6 +117,7 @@
                             <h2>THE STARS<br>ARE FALLING</h2>
                             <a href="/music">
                                 <div class="info-buttons">Youtube</div>
+                                <div class="info-buttons">Music</div>
                             </a>
                         </div>
                     </div>
@@ -125,6 +128,7 @@
                             <h2>SAHABAT<br>TERBAIK SEDUNIA</h2>
                             <a href="/music">
                                 <div class="info-buttons">Youtube</div>
+                                <div class="info-buttons">Music</div>
                             </a>
                         </div>
                     </div>
