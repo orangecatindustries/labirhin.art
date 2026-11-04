@@ -400,6 +400,10 @@ header a {
     transform: scale(0.95);
 }
 
+.sec-column {
+    display: flex;
+}
+
 .button-area h2 {
     font-family: "Indie Flower", cursive;
     font-size: 2.2rem;
@@ -1474,5 +1478,47 @@ footer {
     .footer-second,
     .footer-third {
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .main-text {
+        align-items: baseline;
+        left: 10%;
+    }
+
+    .main-text h1, .main-text h3 {
+        font-size: 12vw;
+    }
+
+    .main-text p {
+        width: 275px;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .sorbitol-img {
+        justify-content: end;
+    }
+    
+    .buttons {
+        flex-direction: row;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .button-area h2 {
+        font-size: 6vw;
+    }
+
+    .merch-character img {
+        width: 45vw;
+    }
+
+    .merch-preview {
+        margin-top: 12%;
+        margin-bottom: -5%;
     }
 }
