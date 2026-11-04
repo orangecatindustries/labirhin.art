@@ -139,7 +139,7 @@ a {
     margin: 5px 0px 15px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
     .video {
         height: 150px;

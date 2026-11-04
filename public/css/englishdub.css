@@ -272,7 +272,7 @@
     max-height: 360px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
     #info-top,
     #english-dub {
