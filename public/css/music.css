@@ -10,13 +10,13 @@
 
 /* music section */
 
-#music-section, .music-wrap, .music-wrap-wrap {
+#music-section, .music-wrap, .music-wrap-wrap, .music-info, .wrapped-music {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.music-wrap-wrap {
+.music-wrap-wrap, .music-info {
     border-radius: var(--main-border-radius);
     border: 1px solid var(--main-border-color);
     background-color: #1d1d1d;
@@ -24,9 +24,12 @@
     gap: 24px;
 }
 
+.music-info {
+    display: flex;
+}
+
 .music-column {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 24px;
 }
@@ -35,4 +38,13 @@
     height: 20vw;
     box-shadow: 0px 5px 15px #000000;
     max-height: 460px;
+    margin-bottom: 20px;
+}
+
+.music-info h3 {
+    font-family: "Jaya", sans-serif;
+    font-size: clamp(16px, 1.8vw, 40px);
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
