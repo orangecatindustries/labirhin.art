@@ -20,91 +20,92 @@
             <div class="music-wrap-wrap">
                 <div class="first-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/newmenu.webp") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/new-menu-music.webp") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/psychological-music.png") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/psychological-music.png") }}" alt="">
                     </div>
                 </div>
                 <div class="second-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/catastrophic-music.png") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/catastrophic-music.png") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/runway-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/runway-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/going-back-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/going-back-music.jpg") }}" alt="">
                     </div>
                 </div>
                 <div class="third-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/mma-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/mma-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/ini-lagi-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/ini-lagi-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/stop-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/stop-music.jpg") }}" alt="">
                     </div>
                 </div>
                 <div class="fourth-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/salamat-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/salamat-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/need-someone-music.png") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/need-someone-music.png") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/bambang-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/bambang-music.jpg") }}" alt="">
                     </div>
                 </div>
                 <div class="fifth-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/kandang-music.png") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/kandang-music.png") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/apa-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/apa-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/not-as-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/not-as-music.jpg") }}" alt="">
                     </div>
                 </div>
                 <div class="sixth-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/moving-away-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/moving-away-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/hurt-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/hurt-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/the-stars-music.png") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/the-stars-music.png") }}" alt="">
                     </div>
                 </div>
                 <div class="seventh-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/going-to-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/going-to-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/deus-ex-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/deus-ex-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/late-night-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/late-night-music.jpg") }}" alt="">
                     </div>
                 </div>
                 <div class="eigth-column music-column">
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/sahabat-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/sahabat-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/fight-over-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/fight-over-music.jpg") }}" alt="">
                     </div>
                     <div class="wrapped-music">
-                        <img src="{{ asset("imgs/revisi-music.jpg") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/revisi-music.jpg") }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="{{ asset('js/canva.js') }}"></script>
+    <script src="{{ asset("js/tilt.js") }}"></script>
 </x-layout>

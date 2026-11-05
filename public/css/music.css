@@ -10,16 +10,29 @@
 
 /* music section */
 
-#music-section, .music-wrap {
+#music-section, .music-wrap, .music-wrap-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.music-wrap-wrap {
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--main-border-color);
+    background-color: #1d1d1d;
+    padding: 1.5em;
+    gap: 24px;
+}
+
 .music-column {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .music-column img {
-    height: 2vw;
+    height: 20vw;
+    box-shadow: 0px 5px 15px #000000;
+    max-height: 460px;
 }
