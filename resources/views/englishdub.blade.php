@@ -99,7 +99,8 @@
             </div>
             <div class="donations-wrap">
                 <div class="wrappy-wrap">
-                    <a href="https://ko-fi.com/awoominatirecords"><button class="donations-button">Donate for the voices!</button></a>
+                    <a href="https://ko-fi.com/awoominatirecords"><button class="donations-button">Donate for the
+                            voices!</button></a>
                     <h3>
                         IF YOU ENJOY WHAT YOU SEE!</h3>
                     <img src="{{ asset("imgs/xenobot 2.webp") }}" alt="">
