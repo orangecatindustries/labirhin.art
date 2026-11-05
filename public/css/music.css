@@ -1,0 +1,9 @@
+.video {
+    justify-content: center;
+    height: 400px;
+}
+
+.info-content h1 {
+    font-family: "Jaya", sans-serif;
+    font-size: clamp(16px, 8vw, 125px);
+}
