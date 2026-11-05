@@ -10,6 +10,11 @@ this repository is dedicated to the website https://labirhin.art, a website abou
 and while the website is "almost" done, there can be loads of changes bound to happen any time soon,
 so please consider this a huge WIP!!!
 
+## credits
+- halt // working on the renders
+- urbair // working on labi about page render
+- this awesome community <3
+
 made with love, by your fellow web developer, laurah, aka, orangecatindustries <3
 
 75% done
