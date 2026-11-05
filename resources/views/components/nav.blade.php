@@ -5,7 +5,7 @@
         ['/animations', 'pen', 'Animations'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/english-dub', 'camera-reels', 'English Dub'],
-        ['', 'music-note', 'Music'],
+        ['/music', 'music-note', 'Music'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
@@ -24,7 +24,7 @@
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
-        ['', 'music-note', 'Music'],
+        ['/music', 'music-note', 'Music'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
     ];
 @endphp
