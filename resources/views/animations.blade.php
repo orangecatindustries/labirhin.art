@@ -24,8 +24,7 @@
             <div class="tsrf wrapped">
                 <h2>THE STARS<br>ARE FALLING</h2>
                 <div class="tsrf-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                        src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/postertsrf.jpg") }}" alt="">
                     <div class="info-wrap">
                         <a href="https://letterboxd.com/film/the-stars-are-falling/">
                             <div class="info-buttons">Letterboxd</div>
@@ -42,8 +41,7 @@
             <div class="mma wrapped">
                 <h2>MAU<br>MAKAN APA?</h2>
                 <div class="mma-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                        src="{{ asset("imgs/postermma.jpg") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/postermma.jpg") }}" alt="">
                     <div class="info-wrap">
                         <a href="https://www.youtube.com/watch?v=KxKA8qY0Shs">
                             <div class="info-buttons">Trailer</div>
@@ -60,8 +58,7 @@
             <div class="rar wrapped">
                 <h2>REVISION<br>AFTER REVISION</h2>
                 <div class="rar-wrap wrapped-wrap">
-                    <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                        src="{{ asset("imgs/posterrar.png") }}" alt="">
+                    <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/posterrar.png") }}" alt="">
                     <div class="info-wrap">
                         <a href="https://letterboxd.com/film/revision-after-revision/">
                             <div class="info-buttons">Letterboxd</div>
@@ -87,8 +84,7 @@
             <div class="music-video-wrap wrapped">
                 <div class="first-videos video-column">
                     <div class="newmenu-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                            src="{{ asset("imgs/newmenu.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/newmenu.avif") }}" alt="">
                         <div class="info-wrap">
                             <h2>NEW MENU</h2>
                             <a href="/music">
@@ -98,8 +94,7 @@
                         </div>
                     </div>
                     <div class="stop-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                            src="{{ asset("imgs/STOP.webp") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/STOP.webp") }}" alt="">
                         <div class="info-wrap">
                             <h2>STOP</h2>
                             <a href="/music">
@@ -111,8 +106,7 @@
                 </div>
                 <div class="second-videos video-column">
                     <div class="tsrf-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                            src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/thestarsarefalling.avif") }}" alt="">
                         <div class="info-wrap">
                             <h2>THE STARS<br>ARE FALLING</h2>
                             <a href="/music">
@@ -122,8 +116,7 @@
                         </div>
                     </div>
                     <div class="sts-video">
-                        <img data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.8"
-                            src="{{ asset("imgs/sas.avif") }}" alt="">
+                        <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/sas.avif") }}" alt="">
                         <div class="info-wrap">
                             <h2>SAHABAT<br>TERBAIK SEDUNIA</h2>
                             <a href="/music">
