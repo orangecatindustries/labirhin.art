@@ -23,21 +23,21 @@
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/new-menu-music.webp") }}" alt="">
                         <div class="music-info">
                             <h3>NEW MENU</h3>
-                            <a style="text-decoration: none;" href=""><div class="info-buttons">Youtube Music</div></a>
+                            <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=Vesh2adg2kI&list=OLAK5uy_l-twUs8cpE71eDV1MD3Nw4UfFM8ozx8Ag"><div class="info-buttons">Youtube Music</div></a>
                         </div>
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/psychological-music.png") }}" alt="">
                         <div class="music-info">
                             <h3>PSYCHOLOGICAL HORROR EXPERIMENT WITH ELECTRIC TOOTHBRUSH PRICE</h3>
-                            <a style="text-decoration: none;" href=""><div class="info-buttons">Youtube Music</div></a>
+                            <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=bLoK8VpnYZc&list=OLAK5uy_lUfW0eSRupA5OCStM9TgcYK0BrkOAL_mY"><div class="info-buttons">Youtube Music</div></a>
                         </div>
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/catastrophic-music.png") }}" alt="">
                         <div class="music-info">
                             <h3>CATASTOPHIC FAILURE OF IMITATION CRAB MEAT</h3>
-                            <a style="text-decoration: none;" href=""><div class="info-buttons">Youtube Music</div></a>
+                            <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=CjrhsBESurY&list=OLAK5uy_lwT2z31yZxSTiz4ArYyH6mLH5uoHwcKQg"><div class="info-buttons">Youtube Music</div></a>
                         </div>
                     </div>
                 </div>
