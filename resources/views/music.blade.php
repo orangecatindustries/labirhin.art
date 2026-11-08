@@ -46,7 +46,7 @@
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/runway-music.jpg") }}" alt="">
                         <div class="music-info">
                             <h3>RUNWAY OF CATALOG HORROR</h3>
-                            <a style="text-decoration: none;" href=""><div class="info-buttons">Youtube Music</div></a>
+                            <a style="text-decoration: none;" href="https://www.youtube.com/playlist?list=OLAK5uy_my29LV4QuKywvXN7KDWPOnj5aASXEbCGQ"><div class="info-buttons">Youtube Music</div></a>
                         </div>
                     </div>
                     <div class="wrapped-music">
