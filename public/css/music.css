@@ -32,6 +32,8 @@
 .music-info {
     display: flex;
     flex: 1;
+    max-height: 250px;
+    overflow: hidden;
 }
 
 .music-column {
