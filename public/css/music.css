@@ -34,9 +34,20 @@
     flex: 1;
     max-height: 250px;
     overflow: hidden;
-    box-shadow: inset 0 -26px 18px -11px #000000;
     position: relative;
     z-index: 2;
+}
+
+.music-info::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    background: linear-gradient(to bottom, transparent, #000000);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .music-column {
@@ -65,8 +76,7 @@
 
 .music-info a {
     margin: -15px;
-    position: relative;
-    z-index: -1;
+    text-decoration: none;
 }
 
 .wrapped-music {
