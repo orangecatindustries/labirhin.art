@@ -34,6 +34,9 @@
     flex: 1;
     max-height: 250px;
     overflow: hidden;
+    box-shadow: inset 0 -26px 18px -11px #000000;
+    position: relative;
+    z-index: 2;
 }
 
 .music-column {
@@ -58,6 +61,12 @@
 
 .info-buttons {
     text-align: center;
+}
+
+.music-info a {
+    margin: -15px;
+    position: relative;
+    z-index: -1;
 }
 
 .wrapped-music {
