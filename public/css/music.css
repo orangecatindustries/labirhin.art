@@ -48,15 +48,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 10%;
-    z-index: 2;
+    bottom: 5%;
+    z-index: 3;
     color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.expand-button p {
+    opacity: 0;
+    max-height: 0;
+    white-space: nowrap;
+}
+
+.expand-button:hover svg {
+    display: none;
+}
+
+.expand-button:hover p {
+    opacity: 1;
+    max-height: none;
     transition: 0.5s;
 }
 
 .expand-button:hover {
-    transition: 0.5s;
-    animation: expanded-button 0.5s forwards ease;
+    animation: expanded-button 0.4s forwards ease;
 }
 
 @keyframes expanded-button {
@@ -70,16 +86,16 @@
     }
 
     80% {
-        width: 120px;
+        width: 135px;
     }
 
     100% {
         transform: translateY(0px) scale(1.02);
-        width: 120px;
+        width: 135px;
     }
 }
 
-.expand-button svg {
+svg {
     height: 100%;
     filter: invert();
 }
@@ -128,6 +144,7 @@
 .wrapped-music {
     width: 20vw;
     max-width: 460px;
+    position: relative;
 }
 
 .music-column img,
