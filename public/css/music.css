@@ -38,6 +38,52 @@
     z-index: 2;
 }
 
+.expand-button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 99px;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%;
+    z-index: 2;
+    color: white;
+    transition: 0.5s;
+}
+
+.expand-button:hover {
+    transition: 0.5s;
+    animation: expanded-button 0.5s forwards ease;
+}
+
+@keyframes expanded-button {
+    0% {
+        height: 50px;
+        width: 50px;
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    80% {
+        width: 120px;
+    }
+
+    100% {
+        transform: translateY(0px) scale(1.02);
+        width: 120px;
+    }
+}
+
+.expand-button svg {
+    height: 100%;
+    filter: invert();
+}
+
 .music-info::after {
     content: "";
     position: absolute;

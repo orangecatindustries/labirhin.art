@@ -30,7 +30,7 @@
             loadingTexts[Math.floor(Math.random() * loadingTexts.length)];
 
         const loadingscreen = document.querySelector(".loading-meow");
-        const loadingSkip = document.getElementById("skip-loading-button")
+        const loadingSkip = document.getElementById("skip-loading-button");
 
         window.addEventListener('load', () => {
             loadingscreen.style.opacity = "0";
