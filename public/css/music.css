@@ -55,19 +55,23 @@
     cursor: pointer;
 }
 
+.arrow-down {
+    height: 100%;
+}
+
 .expand-button p {
     opacity: 0;
-    max-height: 0;
+    max-width: 0;
     white-space: nowrap;
 }
 
-.expand-button:hover svg {
+.expand-button:hover .arrow-down {
     display: none;
 }
 
 .expand-button:hover p {
     opacity: 1;
-    max-height: none;
+    max-width: none;
     transition: 0.5s;
 }
 
@@ -95,18 +99,13 @@
     }
 }
 
-svg {
-    height: 100%;
-    filter: invert();
-}
-
 .music-info::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 45px;
+    height: 120px;
     background: linear-gradient(to bottom, transparent, #000000);
     pointer-events: none;
     z-index: 1;
