@@ -21,14 +21,15 @@
                 <div class="first-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/new-menu-music.webp") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>NEW MENU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -58,14 +59,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/psychological-music.png") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>PSYCHOLOGICAL HORROR EXPERIMENT WITH ELECTRIC TOOTHBRUSH PRICE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -95,14 +97,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/catastrophic-music.png") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>CATASTROPHIC FAILURE OF IMITATION CRAB MEAT</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -134,14 +137,15 @@
                 <div class="second-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/runway-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>RUNWAY OF CATALOG HORROR</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -171,14 +175,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/dawn-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>DAWN IN LAWU CITY</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -208,14 +213,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/going-back-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>GOING BACK TO WHERE I BEGIN</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -247,14 +253,15 @@
                 <div class="third-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/mma-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>MAU MAKAN APA? [OST]</h3>
                             <a href="https://open.spotify.com/album/6ZB19k7qtZaTV3t9agXh53" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -276,14 +283,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/ini-lagi-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>INI LAGI</h3>
                             <a href="https://open.spotify.com/track/0p1FkRJzFOf6845wuQFpOY" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -313,14 +321,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/stop-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>STOP (FT.BATU GINJAL 55)</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -344,14 +353,15 @@
                 <div class="fourth-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/salamat-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>SELAMAT BERBELANJA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -381,14 +391,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/need-someone-music.png") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>NEED SOMEONE LIKE YOU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -414,14 +425,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/bambang-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>BAMBANG'S NEW FACE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -453,14 +465,15 @@
                 <div class="fifth-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/kandang-music.png") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>KANDANG KERUATAN SUPER</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -490,14 +503,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/apa-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>APA MAKNA NYA</h3>
                             <a href="https://open.spotify.com/track/0p1FkRJzFOf6845wuQFpOY" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -523,14 +537,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/not-as-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>NOT AS GOOD AS I USED TO BE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -550,14 +565,15 @@
                 <div class="sixth-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/moving-away-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>MOVING AWAY FROM PERFECT</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -587,14 +603,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/hurt-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>HURT OVERLAY</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -624,14 +641,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/the-stars-music.png") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>THE STARS ARE FALLING</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -663,14 +681,15 @@
                 <div class="seventh-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/going-to-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>GOING TO PUNCH YOU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -688,14 +707,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/deus-ex-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>DEUS EX MACHINA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -725,14 +745,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/late-night-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>LATE NIGHT WORK</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -760,14 +781,15 @@
                 <div class="eigth-column music-column">
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/sahabat-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>SAHABAT TERBAIK SEDUNIA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -789,14 +811,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/fight-over-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>FIGHT OVER</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -822,14 +845,15 @@
                     </div>
                     <div class="wrapped-music">
                         <img data-tilt data-tilt-scale="1.05" src="{{ asset("imgs/revisi-music.jpg") }}" alt="">
-                        <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            <p>click to expand</p>
-                        </div>
                         <div class="music-info">
+                            <div class="expand-button"><svg class="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                <p>click to expand</p>
+                            </div>
                             <h3>REVISI SETELAH REVISI</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
@@ -852,17 +876,16 @@
     <script src="{{ asset('js/canva.js') }}"></script>
     <script src="{{ asset("js/tilt.js") }}"></script>
     <script>
-        const btn = document.querySelector(".expand-button");
+        document.querySelectorAll(".expand-button").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const parentMusic = btn.closest(".wrapped-music");
+                const musicInfo = parentMusic.querySelector(".music-info");
 
-        btn.addEventListener("click", () => {
-            const parentMusic = btn.closest(".wrapped-music");
-            const musicInfo = parentMusic.querySelector('.music-info');
-            
-            if (musicInfo) {
-                musicInfo.style.maxHeight = "none";
-                btn.style.display = "none";
-            }
+                if (musicInfo) {
+                    musicInfo.style.maxHeight = "none";
+                    btn.style.display = "none";
+                }
+            });
         });
-
     </script>
 </x-layout>
