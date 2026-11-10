@@ -852,5 +852,17 @@
     <script src="{{ asset('js/canva.js') }}"></script>
     <script src="{{ asset("js/tilt.js") }}"></script>
     <script>
+        const btn = document.querySelector(".expand-button");
+
+        btn.addEventListener("click", () => {
+            const parentMusic = btn.closest(".wrapped-music");
+            const musicInfo = parentMusic.querySelector('.music-info');
+            
+            if (musicInfo) {
+                musicInfo.style.maxHeight = "none";
+                btn.style.display = "none";
+            }
+        });
+
     </script>
 </x-layout>
