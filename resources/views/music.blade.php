@@ -884,6 +884,11 @@
                 if (musicInfo) {
                     musicInfo.style.maxHeight = "none";
                     btn.style.display = "none";
+                    musicInfo.classList.add("no-after");
+
+                    const style = document.createElement("style");
+                    style.textContent = ".no-after::after { display: none !important; }";
+                    document.head.appendChild(style);
                 }
             });
         });
