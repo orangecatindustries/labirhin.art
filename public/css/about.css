@@ -143,6 +143,7 @@
 .top-text h1 {
     font-family: "Jaya", sans-serif;
     font-size: clamp(2rem, 3.2vw, 3.5rem);
+    white-space: nowrap;
 }
 
 .top-text h2 {
