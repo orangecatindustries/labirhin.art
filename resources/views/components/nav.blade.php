@@ -7,7 +7,7 @@
         ['/english-dub', 'camera-reels', 'English Dub'],
         ['/music', 'music-note', 'Music'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
-        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
+        ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
     ];
