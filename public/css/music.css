@@ -153,3 +153,13 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 800px) {
+    .music-column {
+        flex-direction: column;
+    }
+
+    .wrapped-music {
+        width: 64vw;
+    }
+}
