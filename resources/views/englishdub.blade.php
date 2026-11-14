@@ -55,22 +55,22 @@
                         <a href="https://case.dog">
                             <h3>JP BAAS</h3>
                         </a>
-                        <a href="">
+                        <a href="https://linktr.ee/kyleehenke">
                             <h3>KYLEE HENKE</h3>
                         </a>
-                        <a href="">
+                        <a href="https://zachholzman.com/">
                             <h3>ZACH HOLZMAN</h3>
                         </a>
-                        <a href="">
+                        <a href="https://linktr.ee/kirabuckland">
                             <h3>KIRA BUCKLAND</h3>
                         </a>
-                        <a href="">
+                        <a href="https://x.com/ElEmGeeWun">
                             <h3>STUART A. HUTSON</h3>
                         </a>
-                        <a href="">
+                        <a href="https://bsky.app/profile/sonicmega.bsky.social">
                             <h3>SEAN CHIPLOCK</h3>
                         </a>
-                        <a href="">
+                        <a href="https://bsky.app/profile/spoonycatt.com">
                             <h3>LU WALL</h3>
                         </a>
                     </div>
@@ -81,16 +81,16 @@
                         <a href="">
                             <h3>RED HUNT</h3>
                         </a>
-                        <a href="">
+                        <a href="https://boosty.to/neitony">
                             <h3>ANTHONY STEIGER</h3>
                         </a>
-                        <a href="">
+                        <a href="https://bsky.app/profile/girthwyrmjim.bsky.social">
                             <h3>NICK CARRY</h3>
                         </a>
-                        <a href="">
+                        <a href="https://kaiclavier.com/">
                             <h3>KAI CLAVIER</h3>
                         </a>
-                        <a href="">
+                        <a href="https://www.tamarafritz.com/">
                             <h3>TAMARA FRITZ</h3>
                         </a>
                         <h4>and more to come!</h4>
