@@ -52,7 +52,7 @@
     bottom: 5%;
     z-index: 3;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
 }
 
@@ -60,45 +60,9 @@
     height: 100%;
 }
 
-.expand-button p {
-    opacity: 0;
-    max-width: 0;
-    white-space: nowrap;
-}
-
-.expand-button:hover .arrow-down {
-    display: none;
-}
-
-.expand-button:hover p {
-    opacity: 1;
-    max-width: none;
-    transition: 0.5s;
-}
-
 .expand-button:hover {
-    animation: expanded-button 0.5s forwards ease;
-}
-
-@keyframes expanded-button {
-    0% {
-        height: 50px;
-        width: 50px;
-    }
-
-    10% {
-        transform: translateY(-12px);
-    }
-
-    65% {
-        width: 135px;
-        transform: translateY(1px);
-    }
-
-    100% {
-        transform: translateY(0px) scale(1.02);
-        width: 135px;
-    }
+    transition: 0.2s;
+    transform: scale(1.05);
 }
 
 .music-info::after {

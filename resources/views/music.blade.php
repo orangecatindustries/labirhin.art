@@ -28,7 +28,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>NEW MENU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -66,7 +66,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>PSYCHOLOGICAL HORROR EXPERIMENT WITH ELECTRIC TOOTHBRUSH PRICE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -104,7 +104,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>CATASTROPHIC FAILURE OF IMITATION CRAB MEAT</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -144,7 +144,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>RUNWAY OF CATALOG HORROR</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -182,7 +182,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>DAWN IN LAWU CITY</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -220,7 +220,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>GOING BACK TO WHERE I BEGIN</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -260,7 +260,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>MAU MAKAN APA? [OST]</h3>
                             <a href="https://open.spotify.com/album/6ZB19k7qtZaTV3t9agXh53" target="_blank"
@@ -290,7 +290,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>INI LAGI</h3>
                             <a href="https://open.spotify.com/track/0p1FkRJzFOf6845wuQFpOY" target="_blank"
@@ -328,7 +328,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>STOP (FT.BATU GINJAL 55)</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -360,7 +360,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>SELAMAT BERBELANJA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -398,7 +398,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>NEED SOMEONE LIKE YOU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -432,7 +432,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>BAMBANG'S NEW FACE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -472,7 +472,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>KANDANG KERUATAN SUPER</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -510,7 +510,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>APA MAKNA NYA</h3>
                             <a href="https://open.spotify.com/track/0p1FkRJzFOf6845wuQFpOY" target="_blank"
@@ -544,7 +544,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>NOT AS GOOD AS I USED TO BE</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -572,7 +572,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>MOVING AWAY FROM PERFECT</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -610,7 +610,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>HURT OVERLAY</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -648,7 +648,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>THE STARS ARE FALLING</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -688,7 +688,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>GOING TO PUNCH YOU</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -714,7 +714,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>DEUS EX MACHINA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -752,7 +752,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>LATE NIGHT WORK</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -788,7 +788,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>SAHABAT TERBAIK SEDUNIA</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -818,7 +818,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>FIGHT OVER</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
@@ -852,7 +852,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                                 </svg>
-                                <p>click to expand</p>
+
                             </div>
                             <h3>REVISI SETELAH REVISI</h3>
                             <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
