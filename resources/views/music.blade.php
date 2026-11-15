@@ -882,7 +882,7 @@
                 const musicInfo = parentMusic.querySelector(".music-info");
 
                 if (musicInfo) {
-                    musicInfo.style.maxHeight = "none";
+                    musicInfo.style.maxHeight = "max-content";
                     btn.style.display = "none";
                     musicInfo.classList.add("no-after");
 
