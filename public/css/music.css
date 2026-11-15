@@ -120,6 +120,24 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .video {
+        height: 150px;
+    }
+
+    .info-content h1 {
+        margin: 0;
+        font-size: 12vw;
+    }
+
+    .reusables {
+        width: 75%;
+    }
+
+    .music-info h3 {
+        font-size: 6vw;
+    }
+
     .music-column {
         flex-direction: column;
     }
