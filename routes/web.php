@@ -14,12 +14,12 @@ Route::get('/about/', function () {
     return view('about');
 });
 
-Route::get('/english-dub/', function () {
-    return view('englishdub');
+Route::get('/engdub/', function () {
+    return view('engdub');
 });
 
-Route::get('/animations/', function () {
-    return view('animations');
+Route::get('/animation/', function () {
+    return view('animation');
 });
 
 Route::get('/music/', function () {

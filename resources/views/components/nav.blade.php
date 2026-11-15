@@ -2,7 +2,7 @@
     $links = [
         ['/', 'home', 'Home'],
         ['/about', 'person', 'About'],
-        ['/animations', 'pen', 'Animations'],
+        ['/animation', 'pen', 'Animations'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/engdub', 'camera-reels', 'English Dub'],
         ['/music', 'music-note', 'Music'],
@@ -15,7 +15,7 @@
     $linksFirst = [
         ['/', 'home', 'Home'],
         ['/about', 'person', 'About'],
-        ['/animations', 'pen', 'Animations'],
+        ['/animation', 'pen', 'Animations'],
         ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['/engdub', 'camera-reels', 'English Dub'],
     ];
