@@ -373,7 +373,7 @@ header a {
 .info-buttons {
     padding: .55rem 1rem;
     border-radius: 12px;
-    font-size: 1.3rem;
+    font-size: clamp(16px, 1vw, 20px);
     transition: 0.2s;
     box-shadow: rgba(255, 151, 32, 0.2) 0px 0px 12px;
     color: white;

@@ -1,6 +1,7 @@
 .video {
     justify-content: center;
-    height: 400px;
+    height: 30vw;
+    max-height: 400px;
 }
 
 .info-content h1, .music-wrap h1 {
@@ -20,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 1vw;
     position: relative;
 }
 
