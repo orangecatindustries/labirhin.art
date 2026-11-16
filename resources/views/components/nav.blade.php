@@ -54,24 +54,24 @@
             </div>
             <div class="hamburger-expand">
                 <div class="first-header">
-                @foreach ($linksFirst as [$href, $icon, $label])
-                    <a href="{{ $href }}" alt="{{ $label }}">
-                        <div class="logo-expand">
-                            <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
-                            <h2>{{ $label }}</h2>
-                        </div>
-                    </a>
-                @endforeach
+                    @foreach ($linksFirst as [$href, $icon, $label])
+                        <a href="{{ $href }}" alt="{{ $label }}">
+                            <div class="logo-expand">
+                                <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
+                                <h2>{{ $label }}</h2>
+                            </div>
+                        </a>
+                    @endforeach
                 </div>
                 <div class="second-header">
-                @foreach ($linksSecond as [$href, $icon, $label])
-                    <a href="{{ $href }}" alt="{{ $label }}">
-                        <div class="logo-expand">
-                            <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
-                            <h2>{{ $label }}</h2>
-                        </div>
-                    </a>
-                @endforeach
+                    @foreach ($linksSecond as [$href, $icon, $label])
+                        <a href="{{ $href }}" alt="{{ $label }}">
+                            <div class="logo-expand">
+                                <img src="{{ asset("svg/{$icon}.svg") }}" alt="">
+                                <h2>{{ $label }}</h2>
+                            </div>
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -81,6 +81,28 @@
 <script>
     const dropdownbtn = document.getElementById("ham-expand");
     const navdrop = document.querySelector(".nav");
+    const nav = document.querySelector("header");
+    let state;
+
+    if (screen.width > "800") {
+        setTimeout(() => {
+            nav.classList.add("hidden");
+            console.log("removed!");
+        }, 1500);
+    }
+
+    navdrop.addEventListener("mouseenter", () => {
+        nav.classList.remove("hidden");
+        nav.classList.add("shown");
+    });
+
+    navdrop.addEventListener("mouseleave", () => {
+        console.log("meow")
+        setTimeout(() => {
+            nav.classList.remove("shown");
+            nav.classList.add("hidden");
+        }, 2500);
+    })
 
     dropdownbtn.addEventListener("click", (event) => {
         event.stopPropagation();
