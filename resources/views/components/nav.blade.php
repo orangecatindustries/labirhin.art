@@ -84,7 +84,7 @@
     const nav = document.querySelector("header");
     let state;
 
-    if (screen.width > "800") {
+    if (screen.height <= "600") {
         setTimeout(() => {
             nav.classList.add("hidden");
             console.log("removed!");
@@ -92,17 +92,21 @@
     }
 
     navdrop.addEventListener("mouseenter", () => {
-        nav.classList.remove("hidden");
-        nav.classList.add("shown");
+        if (screen.height <= "600") {
+            nav.classList.remove("hidden");
+            nav.classList.add("shown");
+        }
     });
 
     navdrop.addEventListener("mouseleave", () => {
         console.log("meow")
-        setTimeout(() => {
-            nav.classList.remove("shown");
-            nav.classList.add("hidden");
-        }, 2500);
-    })
+        if (screen.height <= "600") {
+            setTimeout(() => {
+                nav.classList.remove("shown");
+                nav.classList.add("hidden");
+            }, 2500);
+        }
+    });
 
     dropdownbtn.addEventListener("click", (event) => {
         event.stopPropagation();
