@@ -3,28 +3,28 @@
         ['/', 'home', 'Home'],
         ['/about', 'person', 'About'],
         ['/animation', 'pen', 'Animations'],
-        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['/music', 'comic', 'Mau Makan Apa'],
         ['/engdub', 'camera-reels', 'English Dub'],
-        ['/music', 'music-note', 'Music'],
+        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
-        ['https://discord.gg/labirhin', 'discord', 'Discord'],
         ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
+        ['https://discord.gg/labirhin', 'discord', 'Discord'],
     ];
 
     $linksFirst = [
         ['/', 'home', 'Home'],
         ['/about', 'person', 'About'],
         ['/animation', 'pen', 'Animations'],
-        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
+        ['/music', 'comic', 'Mau Makan Apa'],
         ['/engdub', 'camera-reels', 'English Dub'],
     ];
 
     $linksSecond = [
-        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
+        ['https://maumakanapa.art', 'comic', 'Mau Makan Apa'],
         ['https://shop.labirhin.com', 'shop', 'Shop'],
         ['https://maumakanapa.wiki.gg', 'wiki', 'Wiki'],
-        ['/music', 'music-note', 'Music'],
+        ['https://patreon.com/@labirhin', 'patreon-icon', 'Patreon'],
         ['https://discord.gg/labirhin', 'discord', 'Discord'],
     ];
 @endphp
@@ -82,7 +82,6 @@
     const dropdownbtn = document.getElementById("ham-expand");
     const navdrop = document.querySelector(".nav");
     const nav = document.querySelector("header");
-    let state;
 
     if (screen.height <= "600") {
         setTimeout(() => {

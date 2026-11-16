@@ -1177,7 +1177,7 @@ footer {
     }
 
     .nav.open {
-        max-height: 322px;
+        max-height: calc-size(max-content, size);
     }
 
     .video,
