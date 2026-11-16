@@ -736,6 +736,7 @@ header a {
     flex-direction: column;
     background: linear-gradient(rgb(194, 106, 5) 0%, rgb(156, 93, 16) 20%, rgb(27, 27, 29) 100%);
 }
+
 .merch-text {
     display: flex;
     justify-content: center;
@@ -1482,12 +1483,124 @@ footer {
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        align-items: stretch;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98%;
+    }
+
+    .hamburger-expand {
+        display: flex;
+        margin-bottom: 6px;
+    }
+
+    .logo-expand {
+        display: flex;
+        gap: 5px;
+        background-color: var(--main-background-color);
+        border-radius: 12px;
+        align-items: center;
+        width: 37vw;
+        max-width: 160px;
+        margin: 5px;
+        padding: 0.65rem 0.2rem;
+        margin-bottom: 8px;
+        border: 1px solid var(--main-border-color);
+    }
+
+    .logo-expand img {
+        filter: invert();
+        height: 16px;
+        margin-top: 1px;
+        margin-left: 11px;
+    }
+
+    .logo-expand h2 {
+        font-size: 0.9rem;
+        margin: 0;
+        margin-left: 3px;
+    }
+
+    .video,
+    .main-stuff,
+    .mma-con,
+    .merch-wrap,
+    .community-wrap {
+        box-sizing: border-box;
+        max-width: none;
+        padding: 1rem;
+        width: 90vw;
+    }
+
+    header {
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw;
+        max-width: 370px;
+        z-index: 9999;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+        width: 40px;
+        height: 40px;
+        padding: .15rem;
+    }
+
+    .labirhin {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .hamburgermenu {
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburgermenu img {
+        height: 20px;
+        margin-top: 0;
+    }
+
+    .nav,
+    .navright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        max-height: 68px;
+        overflow-y: hidden;
+        transition: max-height 0.2s ease;
+    }
+
+    .nav.open {
+        max-height: 322px;
+    }
+
     .main-text {
         align-items: baseline;
         left: 10%;
     }
 
-    .main-text h1, .main-text h3 {
+    .main-text h1,
+    .main-text h3 {
         font-size: 12vw;
     }
 
@@ -1500,7 +1613,7 @@ footer {
     .sorbitol-img {
         justify-content: end;
     }
-    
+
     .buttons {
         flex-direction: row;
     }

@@ -4,20 +4,23 @@
     max-height: 400px;
 }
 
-.info-content h1, .music-wrap h1 {
+.info-content h1,
+.music-wrap h1 {
     font-family: "Jaya", sans-serif;
     font-size: clamp(16px, 8vw, 125px);
 }
 
 /* animations */
 
-#animations-list, #music-list {
+#animations-list,
+#music-list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.animations-wrap, .music-wrap {
+.animations-wrap,
+.music-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +39,10 @@
     top: 25%;
 }
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
     position: absolute;
     height: 350px;
     width: 350px;
@@ -44,7 +50,8 @@
     background-color: orangered;
 }
 
-.box3, .box4 {
+.box3,
+.box4 {
     height: 450px;
     width: 450px;
 }
@@ -67,19 +74,21 @@
     right: 0%;
 }
 
-.animations-wrap h2, .info-wrap h2 {
+.animations-wrap h2,
+.info-wrap h2 {
     font-family: "Jaya", sans-serif;
-    font-size: clamp(16px, 2vw, 55px);
+    font-size: clamp(24px, 2.2vw, 55px);
     margin: 10px 0 30px 0;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
 }
 
-.wrapped, .info-wrap {
+.wrapped,
+.info-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 25px;
+    padding: clamp(16px, 2vw, 25px);
     background-color: #1d1d1d;
     border: 1px solid var(--main-border-color);
     border-radius: var(--main-border-radius);
@@ -136,14 +145,13 @@ a {
 }
 
 .info-wrap h2 {
-    font-size: clamp(16px, 2.2vw, 55px);
     margin: 5px 0px 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .video {
-        height: 150px;
+        height: 35vw;
     }
 
     .info-content h1 {
@@ -153,7 +161,7 @@ a {
     .reusables {
         width: 75%;
     }
-    
+
     .animations-wrap {
         flex-direction: column;
     }
@@ -162,11 +170,13 @@ a {
         height: 80vw;
     }
 
-    .info-content h1, .music-wrap h1 {
+    .info-content h1,
+    .music-wrap h1 {
         font-size: 12vw;
     }
 
-    .animations-wrap h2, .info-wrap h2 {
+    .animations-wrap h2,
+    .info-wrap h2 {
         font-size: 8vw;
     }
 
@@ -177,5 +187,23 @@ a {
 
     .video-column img {
         height: 36vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .video {
+        height: 35vw;
+    }
+
+    .video-wrap {
+        inset: 15px;
+    }
+
+    .reusables {
+        width: 85%;
+    }
+
+    .video-column img {
+        height: 18vw;
     }
 }
