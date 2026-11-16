@@ -5,12 +5,12 @@ let step;
 const frameduration = 1000 / 30;
 let lastframetime = 0;
 
-canvas.width = 32;
-canvas.height = 18;
+canvas.width = 16;
+canvas.height = 9;
 
 const draw = () => ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 const drawLoop = (currentTime) => {
-    step = window.requestAnimationFrame(drawLoop);
+    step = video.requestVideoFrameCallback(drawLoop);
 
     const elapsed = currentTime - lastframetime;
     if (elapsed >= frameduration) {
