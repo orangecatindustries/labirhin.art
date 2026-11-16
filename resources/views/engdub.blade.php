@@ -126,7 +126,7 @@
                         for
                         their passion & contribution to the series!</p>
                 </div>
-                <div class="wrappy-wrap">
+                <div class="wrappy-wrap why-image">
                     <img src="{{ asset("imgs/engdubright.png") }}" alt="">
                 </div>
             </div>

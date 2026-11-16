@@ -168,6 +168,7 @@
 .actors-wrap h3 {
     margin: 12px 0px 15px 0px;
     text-align: center;
+    white-space: normal;
 }
 
 .actors-wrap h4 {
@@ -258,11 +259,11 @@
 .why-info {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .why-info p {
-    font-size: clamp(16px, 1.6vw, 30px);
+    font-size: clamp(16px, 1.4vw, 30px);
     margin: 0;
 }
 
@@ -375,7 +376,7 @@
     }
 
     .why-info p {
-        font-size: 5vw;
+        font-size: clamp(16px, 5vw, 24px);
         text-align: center;
     }
 
@@ -451,6 +452,7 @@
 
     .wrappy-wrap h3 {
         width: 75%;
+        font-size: 30px;
     }
 
     .why-donate h3 {
@@ -459,5 +461,9 @@
 
     .why-info {
         gap: 1rem;
+    }
+
+    .why-image {
+        display: none;
     }
 }
