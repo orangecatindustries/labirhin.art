@@ -119,15 +119,14 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .video {
-        height: 150px;
+        height: 35vw;
     }
 
     .info-content h1 {
         margin: 0;
-        font-size: 12vw;
     }
 
     .reusables {
@@ -144,5 +143,27 @@
 
     .wrapped-music {
         width: 64vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .video {
+        height: 35vw;
+    }
+
+    .video-wrap {
+        inset: 15px;
+    }
+
+    .reusables {
+        width: 85%;
+    }
+
+    .video-column img {
+        height: 18vw;
+    }
+
+    .wrapped-music {
+        width: 25vw;
     }
 }
