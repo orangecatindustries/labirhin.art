@@ -123,6 +123,7 @@
     font-size: clamp(24px, 2.5vw, 50px);
     margin: 0;
     filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);
+    white-space: nowrap;
 }
 
 .first-info a,
@@ -201,7 +202,7 @@
 
 .wrappy-wrap h3 {
     font-family: 'Jaya', sans-serif;
-    font-size: clamp(32px, 2vw, 50px);
+    font-size: clamp(24px, 2vw, 50px);
     text-align: center;
     filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 3px);
 }
@@ -213,7 +214,6 @@
 
 .donations-button {
     padding: 1.05rem 1rem;
-    font-size: clamp(16px, 2vw, 30px);
     transition: ease 0.1s;
     font-size: clamp(24px, 2vw, 30px);
 }
@@ -293,7 +293,7 @@
     }
 
     .info-content h1 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .engdubleft,
@@ -324,7 +324,7 @@
     .second-info h3,
     .actors-wrap h3,
     .wrappy-wrap h3 {
-        font-size: 10vw;
+        font-size: 8vw;
         text-align: center;
     }
 
@@ -384,7 +384,12 @@
 @media screen and (min-width: 601px) and (max-width: 800px) {
 
     .video {
+        margin-top: 125px;
         height: 35vw;
+    }
+
+    .info-content h1 {
+        font-size: clamp(16px, 5vw, 100px);
     }
 
     .video-wrap {
@@ -400,7 +405,14 @@
         width: 100%;
     }
 
+    .first-info,
+    .second-info {
+        width: unset;
+        gap: 15px;
+    }
+
     .side-english-info {
+        margin-top: 25px;
         flex-direction: row;
     }
 
@@ -419,7 +431,7 @@
     }
 
     .side-english-info {
-        gap: 2em;
+        gap: 1em;
     }
 
     .english-actors {
@@ -427,7 +439,8 @@
         flex-direction: column;
     }
 
-    .actors-wrap, .donations-wrap {
+    .actors-wrap,
+    .donations-wrap {
         width: 100%;
         justify-content: center;
     }
@@ -438,6 +451,10 @@
 
     .wrappy-wrap h3 {
         width: 75%;
+    }
+
+    .why-donate h3 {
+        margin-bottom: 25px;
     }
 
     .why-info {
