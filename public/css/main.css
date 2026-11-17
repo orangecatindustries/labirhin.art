@@ -1036,7 +1036,6 @@ footer h3 {
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 99999;
 }
 
 .logo-foot {
