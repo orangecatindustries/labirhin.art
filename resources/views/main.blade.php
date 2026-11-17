@@ -210,9 +210,9 @@
             if (!xenobotClick) return;
             clicksCounted++
             if (clicksCounted >= 1) {
-                xenobotClick.classList.remove('clicked');
+                xenobotClick.classList.remove('clickedxeno');
                 void xenobotClick.offsetWidth;
-                xenobotClick.classList.add("clicked");
+                xenobotClick.classList.add("clickedxeno");
             }
 
             if (clicksCounted >= 20) {
