@@ -32,7 +32,7 @@
         <div class="main-stuff">
             <div class="xenobot-share">
                 <h1>ANIMATIONS</h1>
-                <img src="{{ asset('imgs/xenobot 2.webp') }}" alt="">
+                <img class="xenobot-click" src="{{ asset('imgs/xenobot 2.webp') }}" alt="">
             </div>
             <div class="content">
                 <div class="button-area">
@@ -195,7 +195,9 @@
             "https://youtu.be/TwZo7bzVfoo?si=hcP1MUj5MtbObvhV",
             "https://youtu.be/3MwTd8UIJTM?si=-gSnNHujc74nML4Z"
         ];
-
+        
+        const xenobotClick = document.querySelector(".xenobot-click");
+        let clicksCounted = 0;
         const links = document.querySelectorAll(".links");
         const btn = document.getElementById("btn");
         const btn2 = document.getElementById("btn2");
@@ -203,6 +205,20 @@
         const changable1 = document.getElementById("changable1");
         const changable2 = document.getElementById("changable2");
         const changable3 = document.getElementById("changable3");
+
+        xenobotClick.addEventListener("click", () => {
+            if (!xenobotClick) return;
+            clicksCounted++
+            if (clicksCounted >= 1) {
+                xenobotClick.classList.remove('clicked');
+                void xenobotClick.offsetWidth;
+                xenobotClick.classList.add("clicked");
+            }
+
+            if (clicksCounted >= 20) {
+                window.location.href = "https://maumakanapa.art/english/xenobot";
+            }
+        });
 
         function swapContent(el, html) {
             el.classList.add("fading");
@@ -294,7 +310,7 @@
 
         }(document));
     </script>
-    <!-- i.. could be your exo <3
+    <!-- i.. could be your exo <3 (type "erika()" in console :3)
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------+--------------+--------------------------------------
 ---------------------------------------------:%%-----------:%%::------------------------------------
