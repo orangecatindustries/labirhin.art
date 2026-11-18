@@ -21,7 +21,7 @@
 
 <footer>
     <div class="footer-image">
-         <img class="together" src="{{ asset("imgs/footer-down.png") }}" alt="">
+        <img class="together" src="{{ asset("imgs/footer-down.png") }}" alt="">
     </div>
     <div class="footer-nav">
         <div class="footer-text">
@@ -42,4 +42,10 @@
         </div>
         <h3>made with love, by laurah ♥</h3>
     </div>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-p40KZmZbH_7mjpUwXOph3.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
+        plausible.init()
+    </script>
 </footer>
