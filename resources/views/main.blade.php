@@ -195,7 +195,7 @@
             "https://youtu.be/TwZo7bzVfoo?si=hcP1MUj5MtbObvhV",
             "https://youtu.be/3MwTd8UIJTM?si=-gSnNHujc74nML4Z"
         ];
-        
+
         const xenobotClick = document.querySelector(".xenobot-click");
         let clicksCounted = 0;
         const links = document.querySelectorAll(".links");
@@ -309,6 +309,11 @@
             initCarousel();
 
         }(document));
+
+        function erika() {
+            
+        }
+
     </script>
     <!-- i.. could be your exo <3 (type "erika()" in console :3)
 ----------------------------------------------------------------------------------------------------
