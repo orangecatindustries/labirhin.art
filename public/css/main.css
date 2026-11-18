@@ -1178,6 +1178,7 @@ footer {
     .hamburgermenu img {
         height: 20px;
         margin-top: 0;
+        user-select: none;
     }
 
     .nav,
@@ -1618,6 +1619,7 @@ footer {
     .hamburgermenu img {
         height: 20px;
         margin-top: 0;
+        user-select: none;
     }
 
     .nav,
