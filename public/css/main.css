@@ -1683,4 +1683,8 @@ footer {
         margin-top: 12%;
         margin-bottom: -5%;
     }
+
+    footer {
+        margin-top: 8em;
+    }
 }
