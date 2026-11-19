@@ -1240,7 +1240,7 @@ footer {
 
     .xenobot-share img {
         height: 35vw;
-        margin-top: -5em;
+        margin-top: -4em;
     }
 
     .main-text {
@@ -1288,7 +1288,7 @@ footer {
     }
 
     .btn {
-        font-size: 1rem;
+        font-size: clamp(10px, 4vw, 100px);
     }
 
     .buttons {
@@ -1408,10 +1408,6 @@ footer {
 
     .mma-text {
         margin-top: 86px;
-    }
-
-    .merch-button-area {
-        margin-top: 6%;
     }
 
     .mma-thingies {
