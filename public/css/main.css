@@ -19,7 +19,7 @@
 }
 
 :root {
-    --header-size: clamp(60px, 7vw, 160px);
+    --header-size: clamp(60px, 7vw, 160px); 
     --main-orange-color: rgba(255, 151, 32, 1);
     --main-border-color: rgb(83, 83, 83);
     --main-border-radius: 18px;
@@ -1249,6 +1249,10 @@ footer {
         align-items: center;
         top: 8%;
         z-index: 999;
+    }
+
+    .main-text h3, .main-text h1 {
+        font-size: clamp(36px, 14vw, 160px);
     }
 
     .t1,

@@ -311,7 +311,7 @@
         }(document));
 
         function erika() {
-            
+            window.location.href = "/imgs/erika_dance.webp";
         }
 
     </script>
