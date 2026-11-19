@@ -1031,6 +1031,7 @@ header a {
 footer h3 {
     filter: opacity(0.5);
     margin: 12px 0px 12px 0px;
+    text-align: center;
 }
 
 .ext-links {
