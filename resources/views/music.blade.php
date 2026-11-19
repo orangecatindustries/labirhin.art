@@ -30,11 +30,11 @@
                                 </svg>
                             </div>
                             <h3>HEXA</h3>
-                            <a href="https://open.spotify.com/artist/2rYGNtQDYXTIbFHWYUCFqJ" target="_blank"
+                            <a href="https://on.soundcloud.com/35M4YQsECAwEZVzU7v" target="_blank"
                                 rel="noopener" class="platform-btn spotify">
-                                <div class="info-buttons">Spotify</div>
+                                <div class="info-buttons">SoundCloud</div>
                             </a>
-                            <a href="https://www.youtube.com/watch?v=Vesh2adg2kI" target="_blank" rel="noopener"
+                            <a href="https://youtu.be/zWOxdpzlLe8" target="_blank" rel="noopener"
                                 class="platform-btn youtube">
                                 <div class="info-buttons">YouTube Music</div>
                             </a>
