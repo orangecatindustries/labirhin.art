@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>labirhin.art</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset("imgs/kepala_lobi.webp")}}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <meta property="og:title" content="labirhin.art // labirhin's official website!">
     <meta property="og:description"
