@@ -20,12 +20,13 @@
 @endphp
 
 <footer>
+    <script src="{{ asset("js/reveal.js") }}"></script>
     <div class="footer-image">
         <img class="together" src="{{ asset("imgs/footer-down.png") }}" alt="">
     </div>
     <div class="footer-nav">
         <div class="footer-text">
-            <h3>labirhin - 2026</h3>
+            <h3 style="margin-top: 20px;">check out the socials!</h3>
         </div>
         <div class="ext-links">
             @foreach ($groups as $i => $group)
@@ -40,7 +41,9 @@
                 </div>
             @endforeach
         </div>
-        <h3>made with love, by laurah ♥</h3>
+        <h3 style="margin: 10px; margin-top: 12px;">©2021-2026 Bajra Gadha Panglima Balangga a.k.a. Labirhin - All Rights Reserved</h3>
+        <h3 style="margin: 10px;">for contact: <b>hi@scraper.die</b></h3>
+        <h3 style="margin: 10px; margin-bottom: 15px;">website made with love, by laurah ♥</h3>
     </div>
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-p40KZmZbH_7mjpUwXOph3.js"></script>
