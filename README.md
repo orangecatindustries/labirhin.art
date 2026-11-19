@@ -7,8 +7,11 @@ this repository is dedicated to the website https://labirhin.art, a website abou
 - ENGLISH DUB FOR MAU MAKAN APA
 - (and more :3)
 
-and while the website is "almost" done, there can be loads of changes bound to happen any time soon,
-so please consider this a huge WIP!!!
+this website will have more stuff added in the future, such as:
+- dedicated pages for each music track
+- dedicated pages for each (main) animation
+- dedicated page for other communities (maybe)
+- and other things!
 
 ## credits
 - halt // working on the renders
@@ -16,5 +19,3 @@ so please consider this a huge WIP!!!
 - this awesome community <3
 
 made with love, by your fellow web developer, laurah, aka, orangecatindustries <3
-
-75% done
